@@ -5,30 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="src/css/estilo.css">
+
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
     <title>O Espro que eu vejo</title>
-    <!--link rel="shortcut icon" href="./" type="image/x-icon">-->
+
 </head>
+<!--link rel="shortcut icon" href="./" type="image/x-icon">-->
 
 <body>
     <div id="logoPersonalizado"><img src="src/fotos/Logo/Logo_Espro_personalizado.png" alt="Logo personalizado: Espro + Paulo/ Lucas/ Guilherme"></div>
-    <a id=exPla class= hidden href="https://1drv.ms/x/s!AjyXhFdwcJjrgP8WRne7CY1VOzOGyQ?e=guyA2a" target="_blank" rel="noopener noreferrer" title="Enjoy it :>">FOLHA DE PONTO<p>AUTOMÁTICA👽</p></a>
-    <button id="PauloAP" onmousedown="return false;"><img src="src/fotos/Paulo_FOTO.png"></button>
-    <button id="Lucas" onmousedown="return false;"><img src="src/fotos/lucas_FOTO.png"></button>
-    <button id="Guilherme" onmousedown="return false;"><img src="src/fotos/Guilherme_FOTO.png"></button>
+    <div class="hidden" id="logoPersonalizadoMB"><img src="src/fotos/Logo/Logo_Espro_personalizado_mobile.png" alt="Logo personalizado: Espro + Paulo/ Lucas/ Guilherme"></div>
+
+    <a id=exPla class=hidden href="https://1drv.ms/x/s!AjyXhFdwcJjrgP8WRne7CY1VOzOGyQ?e=guyA2a" target="_blank"
+        rel="noopener noreferrer" title="Enjoy it :>">FOLHA DE PONTO<p>AUTOMÁTICA👽</p></a>
+
+    <div class="container">
+        <button id="PauloAP" onmousedown="return false;"><img src="src/fotos/Paulo_FOTO.png"></button>
+        <button id="Lucas" onmousedown="return false;"><img src="src/fotos/lucas_FOTO.png"></button>
+        <button id="Guilherme" onmousedown="return false;"><img src="src/fotos/Guilherme_FOTO.png"></button>
+    </div>
+
     <span id="texto">Clique em alguma foto para ver a visão do jovem ESPRO</span>
+
     <iframe id="visaoEspro" width="800" height="800" src=""></iframe>
+
     <button id="fecharVisao" class="hidden">X</button>
-    <a href="https://espro-app.taqe.com.br/#!/home" target="_blank" rel="noopener noreferrer" class="linkAprendiz">Clique aqui e veja o caminho para se tornar um aprendiz</a>
+
+    <a href="https://espro-app.taqe.com.br/#!/home" target="_blank" rel="noopener noreferrer"
+        class="linkAprendiz">Clique aqui e veja o caminho para se tornar um aprendiz</a>
+
     <button id="etc">Como foi feito?</button>
+
     <div id="source" class="hidden">Usando:<button id="fecharSource">x</button>
         <ul id="linksLista">
-            <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" title="HTML, CSS e JS">VS Code</a></li>
+            <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"
+                    title="HTML, CSS e JS">VS Code</a></li>
             <li><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a></li>
-            <li><a href="https://mdigi.tools/color-extractor/" target="_blank" rel="noopener noreferrer">Color Extractor</a></li>
+            <li><a href="https://mdigi.tools/color-extractor/" target="_blank" rel="noopener noreferrer">Color
+                    Extractor</a></li>
             <li title="Sites de Hex, fóruns, etc" style="color: #5e1f51; font-size: 13px;">Entre outros</li>
         </ul>
     </div>
+    
     <script src="src/js/index.js"></script>
 </body>
 

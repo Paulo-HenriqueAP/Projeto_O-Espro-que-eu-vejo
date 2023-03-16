@@ -1,0 +1,61 @@
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        bottom: 11%;
+        width: 100%;
+    }
+
+    #PauloAP,
+    #Lucas,
+    #Guilherme {
+        position: static;
+        margin: 0 10px;
+        transform: none;
+    }
+
+
+    #logoPersonalizado {
+        display: none;
+        /*Não gostei do resultado ao diminuir a imagem. Fiz uma versão menor do logo⬇*/
+    }
+
+    #logoPersonalizadoMB {
+        display: flex;
+    }
+
+    .linkAprendiz {
+        position: absolute;
+        bottom: 4%;
+    }
+
+    #texto {
+        position: absolute;
+        top: 15%;
+        left: -1.5%;
+        height: 50px;
+        width: 190px;
+        font-size: small;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #visaoEspro {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    #exPla {
+        top: 14%;
+        left: 70%;
+        font-size: medium;
+        height: 60px;
+        width: 105px;
+        box-shadow: 6px 6px #147C44;
+        text-align: center;
+    }
+}

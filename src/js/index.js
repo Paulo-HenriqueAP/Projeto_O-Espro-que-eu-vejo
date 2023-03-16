@@ -26,7 +26,7 @@ Paulo.addEventListener("mousedown", () => {
 Lucas.addEventListener("mousedown", () => {
   visaoEspro.classList.remove("hidden");
   fecharVisao.classList.remove("hidden");
-  visaoEspro.setAttribute ("src", "src/fotos/Visão/Lucas_VISÃO.png");
+  visaoEspro.setAttribute("src", "src/fotos/Visão/Lucas_VISÃO.png");
   Lucas.style.backgroundColor = '#F16B39';
   Paulo.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -55,15 +55,14 @@ fecharVisao.addEventListener("click", () => {
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
   fecharVisao.classList.add("hidden");
-  console.log(visaoNaoVista)
 });
 
 function verificarVisaoNaoVista(apertou) {
   if (visaoNaoVista.length === 0) {
-    tutoVisao.textContent = ("Voce viu todos! Aproveite a planilha")
+    tutoVisao.textContent = ("Você viu todos! Aproveite a planilha")
     liberarPlanilha.classList.remove("hidden")
   } else {
-    tutoVisao.textContent = ("Agora veja o do " + visaoNaoVista)
+    tutoVisao.textContent = ("Agora veja o: " + visaoNaoVista)
   };
 }
 

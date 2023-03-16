@@ -2,38 +2,15 @@ body {
     background-color: #1C2C4C;
 }
 
-#PauloAP {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    background-color: #1C2C4C;
-    border: none;
-    cursor: pointer;
-}
+#PauloAP, #Lucas, #Guilherme {cursor: pointer;  background-color: #1C2C4C; border: none;  position: absolute; transform: translate(-50%, -50%);}
+  
 
-#Lucas {
-    
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    background-color: #1C2C4C;
-    border: none;
-}
+#PauloAP {top: 40%; left: 40%;}
 
-#Guilherme {
-    cursor: pointer;
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    background-color: #1C2C4C;
-    border: none;
+#Lucas {top: 50%; left: 40%;}
 
-}
+#Guilherme {top: 60%;left: 40%;;}
+
 
 #texto {
     color: #343434;
