@@ -30,6 +30,8 @@ body {
     right: 10%;
     border: none;
     pointer-events: none;
+    width: 800px;
+    height: 800px;
 }
 
 #fecharVisao {

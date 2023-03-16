@@ -1,11 +1,28 @@
+@media (min-width: 1200px) {
+    #visaoEspro {
+        top: 10%;
+        right: 0;
+        transform: scale(0.5);
+    }
+}
+
+
 @media (max-width: 600px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
     .container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         position: fixed;
-        bottom: 11%;
+        bottom: 15%;
         width: 100%;
     }
 
@@ -17,14 +34,16 @@
         transform: none;
     }
 
-
-    #logoPersonalizado {
-        display: none;
-        /*Não gostei do resultado ao diminuir a imagem. Fiz uma versão menor do logo⬇*/
+    #PauloAPFoto,
+    #LucasFoto,
+    #GuilhermeFoto {
+       height: 70px;
     }
 
-    #logoPersonalizadoMB {
-        display: flex;
+
+    #logoPersonalizado {
+        height: auto;
+        width: 360px;
     }
 
     .linkAprendiz {
@@ -33,18 +52,18 @@
     }
 
     #texto {
-        position: absolute;
+        position: fixed;
         top: 15%;
-        left: -1.5%;
+        left: -0.7%;
         height: 50px;
-        width: 190px;
+        width: 205px;
         font-size: small;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     #visaoEspro {
-        top: 50%;
+        top: 48%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.5);
     }
@@ -57,5 +76,18 @@
         width: 105px;
         box-shadow: 6px 6px #147C44;
         text-align: center;
+    }
+
+    #source {
+        width: 120px;
+        height: 80px;
+        box-shadow: 5px 5px #FA044B;
+        font-size: small;
+        text-align: left;
+
+    }
+
+    #etc {
+        font-size: small;
     }
 }
