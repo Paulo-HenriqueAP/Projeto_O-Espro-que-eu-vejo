@@ -17,9 +17,17 @@
         overflow: hidden;
     }
 
-    .container {
-        display: flex;
-        flex-direction: row;
+    #container:not(.hidden),
+    #container2:not(.hidden),
+    #container3:not(.hidden),
+    #container4:not(.hidden) {
+      display: flex;
+    }
+
+    #container,
+    #container2,
+    #container3,
+    #container4 {
         justify-content: center;
         position: fixed;
         bottom: 15%;
@@ -28,7 +36,19 @@
 
     #PauloAP,
     #Lucas,
-    #Guilherme {
+    #Guilherme,
+    #AlunoGenerico1,
+    #AlunoGenerico2,
+    #AlunoGenerico3,
+    #AlunoGenerico4,
+    #AlunoGenerico5,
+    #AlunoGenerico6,
+    #AlunoGenerico7,
+    #AlunoGenerico8,
+    #AlunoGenerico9
+     {
+        width: 80px;
+        text-align: center;
         position: static;
         margin: 0 10px;
         transform: none;
@@ -40,6 +60,20 @@
        height: 70px;
     }
 
+    /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
+    #proximo {
+        left: 95%;  
+        width: 30px;
+        height: 20px;
+        bottom: 17%;
+      }
+      
+      #anterior {
+        left: 5%;
+        width: 30px;
+        height: 20px;
+        top: 80%;
+      }
 
     #logoPersonalizado {
         height: auto;

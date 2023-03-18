@@ -108,12 +108,10 @@ proximoB.addEventListener("click", () => {
   console.log(proximoB);
   console.log(contarAlunos);
   contarAlunos = contarAlunos + 1
-  if (contarAlunos === 5) {
-    contarAlunos = 4
-  }
   if (contarAlunos === 2) {
     container.classList.add('hidden');
     container2.classList.remove('hidden');
+    anteriorB.classList.remove("hidden")
   }
   if (contarAlunos === 3) {
     container2.classList.add('hidden');
@@ -122,19 +120,19 @@ proximoB.addEventListener("click", () => {
   if (contarAlunos === 4) {
     container3.classList.add('hidden')
     container4.classList.remove('hidden')
+    proximoB.classList.add("hidden")
   }
 });
 
 anteriorB.addEventListener("click", () => {
+
   console.log(anteriorB);
   console.log(contarAlunos);
   contarAlunos = contarAlunos - 1
-  if (contarAlunos === 0) {
-    contarAlunos = 1
-  }
   if (contarAlunos === 1) {
     container.classList.remove('hidden');
     container2.classList.add('hidden');
+    anteriorB.classList.add("hidden")
   }
   if (contarAlunos === 2) {
     container2.classList.remove('hidden');
@@ -143,5 +141,6 @@ anteriorB.addEventListener("click", () => {
   if (contarAlunos === 3) {
     container3.classList.remove('hidden')
     container4.classList.add('hidden')
+    proximoB.classList.remove("hidden")
   }
 });

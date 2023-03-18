@@ -27,7 +27,6 @@ body {
 #Guilherme {
     top: 60%;
     left: 40%;
-    ;
 }
 
 
@@ -115,7 +114,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 #exPla {
@@ -139,6 +138,9 @@ body {
     left: 40%;
     bottom: 31.5%;
     width: 80px;
+    background-color: #bfc1c2;
+    border: none;
+    border-radius: 10px;
 }
 
 #anterior {
@@ -148,6 +150,9 @@ body {
     left: 40%;
     top: 33.5%;
     width: 80px;
+    background-color: #bfc1c2;
+    border: none;
+    border-radius: 10px;
 
 }
 
