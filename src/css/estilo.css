@@ -2,14 +2,33 @@ body {
     background-color: #1C2C4C;
 }
 
-#PauloAP, #Lucas, #Guilherme {cursor: pointer;  background-color: #1C2C4C; border: none;  position: absolute; transform: translate(-50%, -50%);}
-  
 
-#PauloAP {top: 40%; left: 40%;}
+#PauloAP,
+#Lucas,
+#Guilherme {
+    cursor: pointer;
+    background-color: #1C2C4C;
+    border: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
 
-#Lucas {top: 50%; left: 40%;}
 
-#Guilherme {top: 60%;left: 40%;;}
+#PauloAP {
+    top: 40%;
+    left: 40%;
+}
+
+#Lucas {
+    top: 50%;
+    left: 40%;
+}
+
+#Guilherme {
+    top: 60%;
+    left: 40%;
+    ;
+}
 
 
 #texto {
@@ -111,4 +130,99 @@ body {
     height: 80px;
     width: 125px;
     box-shadow: 10px 10px #147C44;
+}
+
+#proximo {
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    left: 40%;
+    bottom: 31.5%;
+    width: 80px;
+}
+
+#anterior {
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    left: 40%;
+    top: 33.5%;
+    width: 80px;
+
+}
+
+#AlunoGenerico1,
+#AlunoGenerico2,
+#AlunoGenerico3,
+#AlunoGenerico4,
+#AlunoGenerico5,
+#AlunoGenerico6,
+#AlunoGenerico7,
+#AlunoGenerico8,
+#AlunoGenerico9 {
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    color: #ffffff;
+    top: 40%;
+    left: 40%;
+}
+
+#AlunoGenerico1 {
+    top: 40%;
+    left: 40%;
+    background-color: #147C44;
+}
+
+#AlunoGenerico2 {
+    background-color: #1C2C4C;
+    top: 50%;
+    left: 40%;
+}
+
+#AlunoGenerico3 {
+    background-color: #343434;
+    top: 60%;
+    left: 40%;
+}
+
+#AlunoGenerico4 {
+    background-color: #bfc1c2;
+    top: 40%;
+    left: 40%;
+}
+
+#AlunoGenerico5 {
+    background-color: #FA044B;
+    top: 50%;
+    left: 40%;
+}
+
+#AlunoGenerico6 {
+    background-color: #FABA04;
+    top: 60%;
+    left: 40%;
+}
+
+#AlunoGenerico7 {
+    background-color: antiquewhite;
+    color: #343434;
+    top: 40%;
+    left: 40%;
+}
+
+#AlunoGenerico8 {
+    background-color: aqua;
+    color: #343434;
+    top: 50%;
+    left: 40%;
+}
+
+#AlunoGenerico9 {
+    background-color: aquamarine;
+    color: #343434;
+    top: 60%;
+    left: 40%;
 }
