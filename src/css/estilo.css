@@ -36,7 +36,7 @@ body {
     border-radius: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
-    right: 52%;
+    right: 32%;
     bottom: 68%;
     font-size: medium;
 }
@@ -230,4 +230,12 @@ body {
     color: #343434;
     top: 60%;
     left: 40%;
+}
+
+#todosAlunos {
+    position: absolute;
+    color: #ffffff;
+    top: 15%;
+    left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

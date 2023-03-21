@@ -10,8 +10,9 @@ const sourceLinks = document.getElementById('source');
 const fecharLinks = document.getElementById('fecharSource');
 let visaoEspro = document.querySelector("#visaoEspro");
 let tutoVisao = document.getElementById("texto");
-let visaoNaoVista = [" Paulo", " Lucas", " Guilherme"];
-let liberarPlanilha = document.getElementById("exPla");
+let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "AlunoG1", , "AlunoG2", , "AlunoG3"];
+let atualizarLista = document.getElementById("todosAlunos")
+let listaAlunos = document.createElement("ul");
 let anteriorB = document.getElementById("anterior");
 let proximoB = document.getElementById("proximo");
 const container = document.getElementById('container');
@@ -21,6 +22,27 @@ const container4 = document.getElementById('container4');
 let contarAlunos = 1;
 
 
+atualizarLista.appendChild(listaAlunos);
+verificarVisaoNaoVista();
+
+
+function verificarVisaoNaoVista(apertou) {
+  if (visaoNaoVista.length === 5) {
+    tutoVisao.textContent = ("Explore usando ᐃ ou ᐁ e descubra perspectivas únicas deixadas por cada aluno. Consulte a lista ao lado para verificar quem ainda não foi visto.")
+    //colocar um texto separado para cada situação?
+  }
+  if (visaoNaoVista.length === 0) {
+    tutoVisao.textContent = ("Você viu todos!")
+    atualizarLista.classList.add("hidden")
+  } else {
+    listaAlunos.innerHTML = "";
+    visaoNaoVista.forEach(function(aluno) {
+      let nomeAluno = document.createElement("li");
+      nomeAluno.textContent = aluno;
+      listaAlunos.appendChild(nomeAluno);
+    });
+  }
+}
 
 
 Paulo.addEventListener("mousedown", () => {
@@ -32,8 +54,9 @@ Paulo.addEventListener("mousedown", () => {
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#FABA04';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-    return filtrar !== " Paulo";
+    return filtrar !== "Paulo";
   });
+  console.log(visaoNaoVista)
 })
 
 Lucas.addEventListener("mousedown", () => {
@@ -45,8 +68,10 @@ Lucas.addEventListener("mousedown", () => {
   Guilherme.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#F16B39';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-    return filtrar !== " Lucas";
+    return filtrar !== "Lucas";
   });
+
+
 })
 
 Guilherme.addEventListener("mousedown", () => {
@@ -58,19 +83,30 @@ Guilherme.addEventListener("mousedown", () => {
   Paulo.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#04AB93';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-    return filtrar !== " Guilherme";
+    return filtrar !== "Guilherme";
   });
 })
 
 aluno1.addEventListener("mousedown", () => {
  console.log(aluno1)
+ visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+  return filtrar !== "AlunoG1";
+});
 })
+
 aluno2.addEventListener("mousedown", () => {
   console.log(aluno2)
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG2";
+  });
  })
  aluno3.addEventListener("mousedown", () => {
   console.log(aluno3)
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG3";
+  });
  })
+
 
 fecharVisao.addEventListener("click", () => {
   visaoEspro.classList.add("hidden");
@@ -80,19 +116,12 @@ fecharVisao.addEventListener("click", () => {
   fecharVisao.classList.add("hidden");
 });
 
-function verificarVisaoNaoVista(apertou) {
-  if (visaoNaoVista.length === 0) {
-    tutoVisao.textContent = ("Você viu todos! Aproveite a planilha")
-    liberarPlanilha.classList.remove("hidden")
-  } else {
-    tutoVisao.textContent = ("Agora veja o: " + visaoNaoVista)
-  };
-}
-
 Paulo.addEventListener("mouseup", verificarVisaoNaoVista);
 Lucas.addEventListener("mouseup", verificarVisaoNaoVista);
 Guilherme.addEventListener("mouseup", verificarVisaoNaoVista);
-
+aluno1.addEventListener("mouseup", verificarVisaoNaoVista);
+aluno2.addEventListener("mouseup", verificarVisaoNaoVista);
+aluno3.addEventListener("mouseup", verificarVisaoNaoVista);
 
 botaoETC.addEventListener("click", () => {
   sourceLinks.classList.toggle("hidden");

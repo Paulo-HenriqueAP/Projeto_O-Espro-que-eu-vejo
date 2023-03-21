@@ -87,13 +87,17 @@
 
     #texto {
         position: fixed;
-        top: 15%;
+        top: 9%;
         left: -0.7%;
-        height: 50px;
+        height: 120px;
         width: 205px;
         font-size: small;
         text-align: center;
         border-radius: 8px;
+    }
+
+    #todosAlunos {
+        top: 30%;
     }
 
     #visaoEspro {
@@ -114,7 +118,7 @@
 
     #source {
         width: 120px;
-        height: 80px;
+        height: 100px;
         box-shadow: 5px 5px #FA044B;
         font-size: small;
         text-align: left;
