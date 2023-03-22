@@ -13,42 +13,65 @@
     <title>O Espro que eu vejo</title>
 
 </head>
+
 <link rel="shortcut icon" href="src/fotos/Logo/ico.ico" type="image/x-icon">
 
+<div><img  id="logoPersonalizado" src="src/fotos/Logo/Logo_Espro_personalizado.png" alt="Logo personalizado: Espro + Paulo/ Lucas/ Guilherme"></div>
+
+
 <body>
-    <div ><img id="logoPersonalizado" onmousedown="return false;" src="src/fotos/Logo/Logo_Espro_personalizado.png"
-            alt="Logo personalizado: Espro + Paulo/ Lucas/ Guilherme"></div>
 
     <div id="container" oncontextmenu="return false;">
-        <button id="PauloAP" onmousedown="return false;"><img id="PauloAPFoto" alt="Paulo" src="src/fotos/Paulo_FOTO.png"></button>
-        <button id="Lucas" onmousedown="return false;"><img id="LucasFoto" alt="Lucas" src="src/fotos/lucas_FOTO.png"></button>
-        <button id="Guilherme" onmousedown="return false;"><img id="GuilhermeFoto" alt="Guilherme" src="src/fotos/Guilherme_FOTO.png"></button>
+        <button id="PauloAP"><img id="PauloAPFoto" alt="Paulo"
+                src="src/fotos/Paulo_FOTO.png"></button>
+        <button id="Lucas" ><img id="LucasFoto" alt="Lucas"
+                src="src/fotos/lucas_FOTO.png"></button>
+        <button id="Guilherme"><img id="GuilhermeFoto" alt="Guilherme"
+                src="src/fotos/Guilherme_FOTO.png"></button>
     </div>
     <div id="container2" class="hidden" oncontextmenu="return false;">
-        <button id="AlunoGenerico1" onmousedown="return false;">ALUNO GENÉRICO 1</button>
-        <button id="AlunoGenerico2" onmousedown="return false;">ALUNO GENÉRICO 2</button>
-        <button id="AlunoGenerico3" onmousedown="return false;">ALUNO GENÉRICO 3</button>
+        <button id="AlunoGenerico1">ALUNO GENÉRICO 1</button>
+        <button id="AlunoGenerico2">ALUNO GENÉRICO 2</button>
+        <button id="AlunoGenerico3">ALUNO GENÉRICO 3</button>
     </div>
 
     <div id="container3" class="hidden" oncontextmenu="return false;">
-        <button id="AlunoGenerico4" onmousedown="return false;">ALUNO GENÉRICO 4</button>
-        <button id="AlunoGenerico5" onmousedown="return false;">ALUNO GENÉRICO 5</button>
-        <button id="AlunoGenerico6" onmousedown="return false;">ALUNO GENÉRICO 6</button>
+        <button id="AlunoGenerico4">ALUNO GENÉRICO 4</button>
+        <button id="AlunoGenerico5">ALUNO GENÉRICO 5</button>
+        <button id="AlunoGenerico6">ALUNO GENÉRICO 6</button>
     </div>
     <div id="container4" class="hidden" oncontextmenu="return false;">
-        <button id="AlunoGenerico7" onmousedown="return false;">ALUNO GENÉRICO 7</button>
-        <button id="AlunoGenerico8" onmousedown="return false;">ALUNO GENÉRICO 8</button>
-        <button id="AlunoGenerico9" onmousedown="return false;">ALUNO GENÉRICO 9</button>
+        <button id="AlunoGenerico7">ALUNO GENÉRICO 7</button>
+        <button id="AlunoGenerico8">ALUNO GENÉRICO 8</button>
+        <button id="AlunoGenerico9">ALUNO GENÉRICO 9</button>
     </div>
-    
-    <button id="proximo">ᐁ</button> 
+
+    <button id="proximo">ᐁ</button>
     <button id="anterior" class="hidden">ᐃ</button>
 
-    <span id="texto">Clique em alguma foto para ver a visão do jovem ESPRO</span>
+    <span id="textoTuto">Clique em alguma foto para ver a visão do jovem ESPRO</span>
+    <span id="textoTuto2" class="hidden">Explore usando ᐃ ou ᐁ e descubra perspectivas únicas deixadas por cada aluno.
+        Consulte a lista para verificar quem ainda não foi visto.</span>
+    <span id="textoTuto3" class="hidden">Você viu todos!</span>
 
-    <ul id="todosAlunos">Falta ver: <p></p></ul>
+    <ul id="todosAlunos">Falta ver: <p></p>
+    </ul>
 
-    <iframe id="visaoEspro" src=""></iframe>
+    <iframe id="visaoEspro" class="hidden" src=""></iframe>
+
+    <video controls class="hidden" id="visaoEspro-midia" autoplay>
+        <source src="" type="video/mp4">
+        Video do aluno Espro, seu navegador não suporta :/
+      </video>
+
+      <audio controls class="hidden" id="visaoEspro-midia">
+        <source src="" type="audio/mpeg">
+        Áudio do aluno Espro, seu navegador não suporta :/
+      </audio>
+
+      <a class="hidden" id="visaoEspro-link" href="" target="_blank" rel="noopener noreferrer"
+        >Clique aqui, eu deixei isso para você.</a>
+      
 
     <button id="fecharVisao" class="hidden">X</button>
 
@@ -62,10 +85,14 @@
             <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"
                     title="HTML, CSS e JS">VS Code</a></li>
             <li><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a></li>
-            <li><a href="https://mdigi.tools/color-extractor/" target="_blank" rel="noopener noreferrer">Color
-                    Extractor</a></li>
+            <li><a href="https://mdigi.tools/color-extractor/" target="_blank" rel="noopener noreferrer">Ext cores</a>
+            </li>
             <li title="Sites de Hex, fóruns, etc" style="color: #5e1f51; font-size: 13px;">Entre outros</li>
+            <p>
+                <li><a href="https://1drv.ms/f/s!AjyXhFdwcJjrgP45uk5wgN2FcOLpqQ?e=nx4sO1" style="font-size: 14px;"
+                        target="_blank" rel="noopener noreferrer">VER PRINTS</a></li>
         </ul>
+        </p>
     </div>
 
     <script src="src/js/index.js"></script>

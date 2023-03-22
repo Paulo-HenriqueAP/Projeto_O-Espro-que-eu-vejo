@@ -85,12 +85,36 @@
         bottom: 4%;
     }
 
-    #texto {
+    #textoTuto {
         position: fixed;
-        top: 9%;
-        left: -0.7%;
-        height: 120px;
+        top: 15%;
+        left: 0%;
+        height: 40px;
         width: 205px;
+        font-size: small;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    #textoTuto2 {
+        position: fixed;
+        top: 12%;
+        left: 0%;
+        height: 60px;
+        width: 350px;
+        text-align: center;
+        font-size: small;
+        text-align: center;
+        border-radius: 0%;
+        border-top-right-radius: 10px;
+    }
+
+    #textoTuto3 {
+        position: fixed;
+        top: 15%;
+        left: 0%;
+        height: 20px;
+        width: 120px;
         font-size: small;
         text-align: center;
         border-radius: 8px;
@@ -106,19 +130,21 @@
         transform: translate(-50%, -50%) scale(0.5);
     }
 
-    #exPla {
-        top: 14%;
-        left: 70%;
-        font-size: medium;
-        height: 60px;
-        width: 105px;
-        box-shadow: 6px 6px #147C44;
-        text-align: center;
+    #visaoEspro-midia{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.7);
+
     }
 
+    #fecharVisao {
+        top: 22%;
+        right: 1%;
+    }
+    
     #source {
         width: 120px;
-        height: 100px;
+        height: 125px;
         box-shadow: 5px 5px #FA044B;
         font-size: small;
         text-align: left;

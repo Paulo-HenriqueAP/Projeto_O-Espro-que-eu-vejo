@@ -1,25 +1,32 @@
-const Paulo = document.getElementById('PauloAP');
-const Lucas = document.getElementById('Lucas');
-const Guilherme = document.getElementById('Guilherme');
-const aluno1 = document.getElementById('AlunoGenerico1')
-const aluno2 = document.getElementById('AlunoGenerico2')
-const aluno3 = document.getElementById('AlunoGenerico3')
-const fecharVisao = document.getElementById('fecharVisao');
-const botaoETC = document.getElementById('etc');
-const sourceLinks = document.getElementById('source');
-const fecharLinks = document.getElementById('fecharSource');
-let visaoEspro = document.querySelector("#visaoEspro");
-let tutoVisao = document.getElementById("texto");
+const Paulo = document.getElementById("PauloAP");
+const Lucas = document.getElementById("Lucas");
+const Guilherme = document.getElementById("Guilherme");
+const aluno1 = document.getElementById("AlunoGenerico1");
+const aluno2 = document.getElementById("AlunoGenerico2");
+const aluno3 = document.getElementById("AlunoGenerico3");
+const fecharVisao = document.getElementById("fecharVisao");
+const botaoETC = document.getElementById("etc");
+const sourceLinks = document.getElementById("source");
+const fecharLinks = document.getElementById("fecharSource");
+const container = document.getElementById("container");
+const container2 = document.getElementById("container2");
+const container3 = document.getElementById("container3");
+const container4 = document.getElementById("container4");
+const simplificarLista = [Paulo, Lucas, Guilherme, aluno1, aluno2, aluno3];
+let visaoEspro = document.querySelector('#visaoEspro');
+let visaoEspro_Midia = document.querySelector('#visaoEspro-midia');
+let href = document.querySelector('#visaoEspro-link');
+let tutoVisao = document.getElementById("textoTuto");
+let tutoVisao2 = document.getElementById("textoTuto2");
+let tutoVisao3 = document.getElementById("textoTuto3");
 let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "AlunoG1", , "AlunoG2", , "AlunoG3"];
 let atualizarLista = document.getElementById("todosAlunos")
 let listaAlunos = document.createElement("ul");
 let anteriorB = document.getElementById("anterior");
 let proximoB = document.getElementById("proximo");
-const container = document.getElementById('container');
-const container2 = document.getElementById('container2');
-const container3 = document.getElementById('container3');
-const container4 = document.getElementById('container4');
 let contarAlunos = 1;
+var visaoEspro_Link = document.getElementById("visaoEspro-link");
+
 
 
 atualizarLista.appendChild(listaAlunos);
@@ -28,11 +35,12 @@ verificarVisaoNaoVista();
 
 function verificarVisaoNaoVista(apertou) {
   if (visaoNaoVista.length === 5) {
-    tutoVisao.textContent = ("Explore usando ᐃ ou ᐁ e descubra perspectivas únicas deixadas por cada aluno. Consulte a lista ao lado para verificar quem ainda não foi visto.")
-    //colocar um texto separado para cada situação?
+    tutoVisao.classList.add("hidden")
+   tutoVisao2.classList.remove("hidden")
   }
   if (visaoNaoVista.length === 0) {
-    tutoVisao.textContent = ("Você viu todos!")
+    tutoVisao2.classList.add("hidden")
+    tutoVisao3.classList.remove("hidden")
     atualizarLista.classList.add("hidden")
   } else {
     listaAlunos.innerHTML = "";
@@ -46,6 +54,9 @@ function verificarVisaoNaoVista(apertou) {
 
 
 Paulo.addEventListener("mousedown", () => {
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.remove("hidden");
   visaoEspro.setAttribute("src", "src/fotos/Visão/Paulo_VISÃO.png");
   Paulo.style.backgroundColor = '#FABA04';
@@ -60,6 +71,9 @@ Paulo.addEventListener("mousedown", () => {
 })
 
 Lucas.addEventListener("mousedown", () => {
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.remove("hidden");
   fecharVisao.classList.remove("hidden");
   visaoEspro.setAttribute("src", "src/fotos/Visão/Lucas_VISÃO.png");
@@ -75,6 +89,9 @@ Lucas.addEventListener("mousedown", () => {
 })
 
 Guilherme.addEventListener("mousedown", () => {
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.remove("hidden");
   fecharVisao.classList.remove("hidden");
   visaoEspro.setAttribute("src", "src/fotos/Visão/Guilherme_VISÃO.png");
@@ -88,20 +105,39 @@ Guilherme.addEventListener("mousedown", () => {
 })
 
 aluno1.addEventListener("mousedown", () => {
- console.log(aluno1)
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Link.classList.add("hidden")
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.remove("hidden")
+  visaoEspro_Midia.setAttribute("src", "src/fotos/Visão/Aluno1_VISÃO.mp4");
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#FABA04';
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
   return filtrar !== "AlunoG1";
 });
 })
 
 aluno2.addEventListener("mousedown", () => {
-  console.log(aluno2)
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Link.classList.add("hidden")
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.remove("hidden")
+  visaoEspro_Midia.setAttribute("src", "src/fotos/Visão/Aluno2_VISÃO.mp3");
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#F16B39';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG2";
   });
  })
  aluno3.addEventListener("mousedown", () => {
-  console.log(aluno3)
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#04AB93';
+  visaoEspro_Link.classList.remove("hidden")
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG3";
   });
@@ -109,19 +145,22 @@ aluno2.addEventListener("mousedown", () => {
 
 
 fecharVisao.addEventListener("click", () => {
+  visaoEspro_Midia.setAttribute("src", "");
   visaoEspro.classList.add("hidden");
   Paulo.style.backgroundColor = '';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
   fecharVisao.classList.add("hidden");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.add("hidden")
 });
 
-Paulo.addEventListener("mouseup", verificarVisaoNaoVista);
-Lucas.addEventListener("mouseup", verificarVisaoNaoVista);
-Guilherme.addEventListener("mouseup", verificarVisaoNaoVista);
-aluno1.addEventListener("mouseup", verificarVisaoNaoVista);
-aluno2.addEventListener("mouseup", verificarVisaoNaoVista);
-aluno3.addEventListener("mouseup", verificarVisaoNaoVista);
+
+simplificarLista.forEach(remover_da_lista => {
+ remover_da_lista.addEventListener("mouseup", verificarVisaoNaoVista);
+});
+
 
 botaoETC.addEventListener("click", () => {
   sourceLinks.classList.toggle("hidden");
@@ -154,7 +193,6 @@ proximoB.addEventListener("click", () => {
 });
 
 anteriorB.addEventListener("click", () => {
-
   console.log(anteriorB);
   console.log(contarAlunos);
   contarAlunos = contarAlunos - 1
