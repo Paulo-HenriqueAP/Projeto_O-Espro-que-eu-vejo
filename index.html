@@ -16,18 +16,16 @@
 
 <link rel="shortcut icon" href="src/fotos/Logo/ico.ico" type="image/x-icon">
 
-<div><img  id="logoPersonalizado" src="src/fotos/Logo/Logo_Espro_personalizado.png" alt="Logo personalizado: Espro + Paulo/ Lucas/ Guilherme"></div>
+<div><img id="logoPersonalizado" src="src/fotos/Logo/Logo_Espro_personalizado.png"
+        alt="Logo personalizado: Espro + Paulo/ Lucas/ Guilherme"></div>
 
 
 <body>
 
     <div id="container" oncontextmenu="return false;">
-        <button id="PauloAP"><img id="PauloAPFoto" alt="Paulo"
-                src="src/fotos/Paulo_FOTO.png"></button>
-        <button id="Lucas" ><img id="LucasFoto" alt="Lucas"
-                src="src/fotos/lucas_FOTO.png"></button>
-        <button id="Guilherme"><img id="GuilhermeFoto" alt="Guilherme"
-                src="src/fotos/Guilherme_FOTO.png"></button>
+        <button id="PauloAP"><img id="PauloAPFoto" alt="Paulo" src="src/fotos/Paulo_FOTO.png"></button>
+        <button id="Lucas"><img id="LucasFoto" alt="Lucas" src="src/fotos/lucas_FOTO.png"></button>
+        <button id="Guilherme"><img id="GuilhermeFoto" alt="Guilherme" src="src/fotos/Guilherme_FOTO.png"></button>
     </div>
     <div id="container2" class="hidden" oncontextmenu="return false;">
         <button id="AlunoGenerico1">ALUNO GENÉRICO 1</button>
@@ -57,21 +55,26 @@
     <ul id="todosAlunos">Falta ver: <p></p>
     </ul>
 
-    <iframe id="visaoEspro" class="hidden" src=""></iframe>
+    <img id="visaoEspro" class="hidden" src=""> 
+
+    <div id="visaoEsproTexto">
+        <p></p>
+    </div>
+
 
     <video controls class="hidden" id="visaoEspro-midia" autoplay>
         <source src="" type="video/mp4">
         Video do aluno Espro, seu navegador não suporta :/
-      </video>
+    </video>
 
-      <audio controls class="hidden" id="visaoEspro-midia">
+    <audio controls class="hidden" id="visaoEspro-midia">
         <source src="" type="audio/mpeg">
         Áudio do aluno Espro, seu navegador não suporta :/
-      </audio>
+    </audio>
 
-      <a class="hidden" id="visaoEspro-link" href="" target="_blank" rel="noopener noreferrer"
-        >Clique aqui, eu deixei isso para você.</a>
-      
+    <a class="hidden" id="visaoEspro-link" href="" target="_blank" rel="noopener noreferrer">Clique aqui, eu deixei isso
+        para você.</a>
+
 
     <button id="fecharVisao" class="hidden">X</button>
 

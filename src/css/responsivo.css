@@ -137,6 +137,13 @@
 
     }
 
+    #visaoEsproTexto {
+        top: 40%;
+        display: flex;
+        left: auto;
+        text-align: center;
+    }
+
     #fecharVisao {
         top: 22%;
         right: 1%;
