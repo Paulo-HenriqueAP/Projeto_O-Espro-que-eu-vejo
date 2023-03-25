@@ -122,6 +122,9 @@ Kamila.addEventListener("mousedown", () => {
   Kamila.style.backgroundColor = '#9966cc';
   visaoEspro_Texto.textContent = "\"Para os novos estudantes, desejo que aproveitem as oportunidades e absorvam todo o conteúdo que tivemos aqui. Com certeza, fazendo isso, obterão muito sucesso! 🙏🏻🙏🏻🙏🏻.\" - Kamila, março de 2023";
   fecharVisao.classList.remove("hidden");
+  Lucas.style.backgroundColor = '';
+  Paulo.style.backgroundColor = '';
+  Guilherme.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#9966cc';
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
   return filtrar !== "Kamila";
