@@ -40,33 +40,31 @@ button {
 }
 
 #textoTuto {
-    color: #343434;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     right: 50%;
     bottom: 68%;
     font-size: medium;
-
+    text-align: center;
 }
 
 #textoTuto2 {
-    color: #343434;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     right: 32%;
     bottom: 68%;
     font-size: medium;
+    text-align: center;
 }
 
 
 #textoTuto3 {
-    color: #343434;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     font-size: medium;
@@ -74,7 +72,6 @@ button {
     text-align: center;
     top: 17%;
     left: 2%;
-
 }
 
 
@@ -122,14 +119,15 @@ button {
 
 #fecharVisao {
     position: absolute;
-    right: 10%;
-    top: 30%;
+    top: 48%;
     cursor: pointer;
+    right: 0%;
+    border-top-right-radius: 0;
 }
 
 .linkAprendiz {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
+    color: #bbbbbb;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
