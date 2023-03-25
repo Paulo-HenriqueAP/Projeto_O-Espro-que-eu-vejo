@@ -1,7 +1,7 @@
 const Paulo = document.getElementById("PauloAP");
 const Lucas = document.getElementById("Lucas");
 const Guilherme = document.getElementById("Guilherme");
-const aluno1 = document.getElementById("AlunoGenerico1");
+const Kamila = document.getElementById("Kamila");
 const aluno2 = document.getElementById("AlunoGenerico2");
 const aluno3 = document.getElementById("AlunoGenerico3");
 const fecharVisao = document.getElementById("fecharVisao");
@@ -12,7 +12,7 @@ const container = document.getElementById("container");
 const container2 = document.getElementById("container2");
 const container3 = document.getElementById("container3");
 const container4 = document.getElementById("container4");
-const simplificarLista = [Paulo, Lucas, Guilherme, aluno1, aluno2, aluno3];
+const simplificarLista = [Paulo, Lucas, Guilherme, Kamila, aluno2, aluno3];
 let visaoEspro = document.querySelector('#visaoEspro');
 let visaoEspro_Midia = document.querySelector('#visaoEspro-midia');
 let href = document.querySelector('#visaoEspro-link');
@@ -20,14 +20,13 @@ let visaoEspro_Texto = document.querySelector('#visaoEsproTexto');
 let tutoVisao = document.getElementById("textoTuto");
 let tutoVisao2 = document.getElementById("textoTuto2");
 let tutoVisao3 = document.getElementById("textoTuto3");
-let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "AlunoG1", , "AlunoG2", , "AlunoG3"];
+let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "Kamila", , "AlunoG2", , "AlunoG3"];
 let atualizarLista = document.getElementById("todosAlunos")
 let listaAlunos = document.createElement("ul");
 let anteriorB = document.getElementById("anterior");
 let proximoB = document.getElementById("proximo");
 let contarAlunos = 1;
 var visaoEspro_Link = document.getElementById("visaoEspro-link");
-var colocarParagrafo = document.createElement("p");
 
 
 atualizarLista.appendChild(listaAlunos);
@@ -53,21 +52,24 @@ function verificarVisaoNaoVista(apertou) {
   }
 }
 
-
 Paulo.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
-  visaoEspro_Texto.textContent = "Visão Paulo";
+  visaoEspro_Texto.textContent = "Visão Paulo | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
   Paulo.style.backgroundColor = '#FABA04';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
+  Kamila.style.backgroundColor = '';
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#FABA04';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Paulo";
   });
-  console.log(visaoNaoVista)
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
 })
 
 Lucas.addEventListener("mousedown", () => {
@@ -75,16 +77,19 @@ Lucas.addEventListener("mousedown", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "Visão Lucas";
+  visaoEspro_Texto.textContent = "Visão Lucas | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.";
   Lucas.style.backgroundColor = '#F16B39';
   Paulo.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
+  Kamila.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#F16B39';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Lucas";
   });
-
-
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
 })
 
 Guilherme.addEventListener("mousedown", () => {
@@ -92,27 +97,39 @@ Guilherme.addEventListener("mousedown", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "Visão Guilherme";
+  visaoEspro_Texto.textContent = "Visão Guilherme | Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
   Guilherme.style.backgroundColor = '#04AB93';
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
+  Kamila.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#04AB93';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Guilherme";
   });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
 })
-//esconder a lista de visoes nao vistas ao apertar em alguem
-aluno1.addEventListener("mousedown", () => {
+
+Kamila.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
-  visaoEspro_Link.classList.add("hidden") //remover o hidden e colocar o instagram dela (https://instagram.com/kamilaemerick87?igshid=ZDdkNTZiNTM=) alterar a posição do link?
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Link.href = "https://instagram.com/kamilaemerick87?igshid=ZDdkNTZiNTM=";
+  visaoEspro_Link.textContent = "Meu instagram"
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
+  Kamila.style.backgroundColor = '#9966cc';
   visaoEspro_Texto.textContent = "\"Para os novos estudantes, desejo que aproveitem as oportunidades e absorvam todo o conteúdo que tivemos aqui. Com certeza, fazendo isso, obterão muito sucesso! 🙏🏻🙏🏻🙏🏻.\" - Kamila, março de 2023";
   fecharVisao.classList.remove("hidden");
-  fecharVisao.style.backgroundColor = '#FABA04';
+  fecharVisao.style.backgroundColor = '#9966cc';
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-  return filtrar !== "AlunoG1";
+  return filtrar !== "Kamila";
 });
+if (window.matchMedia("(max-width: 600px)").matches) {
+  listaAlunos.classList.add("hidden")
+  atualizarLista.classList.add("hidden")
+}
 })
 
 aluno2.addEventListener("mousedown", () => {
@@ -124,11 +141,17 @@ aluno2.addEventListener("mousedown", () => {
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#F16B39';
   visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG2";
   });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
  })
  aluno3.addEventListener("mousedown", () => {
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro.classList.add("hidden");
@@ -138,9 +161,14 @@ aluno2.addEventListener("mousedown", () => {
   fecharVisao.style.backgroundColor = '#04AB93';
   visaoEspro_Link.classList.remove("hidden")
   visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG3";
   });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
  })
 
 
@@ -150,11 +178,18 @@ fecharVisao.addEventListener("click", () => {
   Paulo.style.backgroundColor = '';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
+  Kamila.style.backgroundColor = '';
   fecharVisao.classList.add("hidden");
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   visaoEspro_Texto.textContent = (" ")
+  listaAlunos.classList.remove("hidden")
+  atualizarLista.classList.remove("hidden")
+  if (visaoNaoVista.length === 0) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
 });
 
 

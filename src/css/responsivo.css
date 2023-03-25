@@ -6,6 +6,8 @@
     }
 }
 
+/*Deixar a foto de quem não está sendo visto com fundo preto. Trocar minha foto etc*/ 
+
 
 @media (max-width: 600px) {
 
@@ -16,6 +18,7 @@
         padding: 0;
         overflow: hidden;
     }
+
 
     #container:not(.hidden),
     #container2:not(.hidden),
@@ -37,7 +40,7 @@
     #PauloAP,
     #Lucas,
     #Guilherme,
-    #AlunoGenerico1,
+    #Kamila,
     #AlunoGenerico2,
     #AlunoGenerico3,
     #AlunoGenerico4,
@@ -56,7 +59,8 @@
 
     #PauloAPFoto,
     #LucasFoto,
-    #GuilhermeFoto {
+    #GuilhermeFoto,
+    #KamilaFoto {
        height: 70px;
     }
 
@@ -139,9 +143,7 @@
 
     #visaoEsproTexto {
         top: 40%;
-        display: flex;
         left: auto;
-        text-align: center;
     }
 
     #fecharVisao {

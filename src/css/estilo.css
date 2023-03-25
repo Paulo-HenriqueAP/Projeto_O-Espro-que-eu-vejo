@@ -101,8 +101,8 @@ button {
     color: #FABA04;
     border-radius: 10px;
     position: absolute;
-    right: 15%;
-    top: 45%;
+    left: 70%;
+    top: 57%;
     font-size: medium;
 }
 
@@ -115,6 +115,7 @@ button {
     pointer-events: none;
     color: #ffffff;
     font-size: 20px;
+    text-align: center;
    
 }
 
@@ -209,7 +210,7 @@ button {
 
 }
 
-#AlunoGenerico1,
+#Kamila,
 #AlunoGenerico2,
 #AlunoGenerico3,
 #AlunoGenerico4,
@@ -219,49 +220,59 @@ button {
 #AlunoGenerico8,
 #AlunoGenerico9 {
     cursor: pointer;
+    background-color: #1C2C4C;
+    border: none;
     position: absolute;
     transform: translate(-50%, -50%);
-    height: 80px;
-    width: 80px;
-    color: #ffffff;
-    top: 40%;
-    left: 40%;
+  
 }
 
-#AlunoGenerico1 {
+#Kamila {
     top: 40%;
     left: 40%;
-    background-color: #147C44;
 }
 
 #AlunoGenerico2 {
     background-color: #1C2C4C;
     top: 50%;
     left: 40%;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    background-color: #1e1428;
 }
 
 #AlunoGenerico3 {
     background-color: #343434;
     top: 60%;
     left: 40%;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
 }
 
 #AlunoGenerico4 {
     background-color: #bfc1c2;
     top: 40%;
     left: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 #AlunoGenerico5 {
     background-color: #FA044B;
     top: 50%;
     left: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 #AlunoGenerico6 {
     background-color: #FABA04;
     top: 60%;
     left: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 #AlunoGenerico7 {
@@ -269,6 +280,8 @@ button {
     color: #343434;
     top: 40%;
     left: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 #AlunoGenerico8 {
@@ -276,6 +289,8 @@ button {
     color: #343434;
     top: 50%;
     left: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 #AlunoGenerico9 {
@@ -283,6 +298,8 @@ button {
     color: #343434;
     top: 60%;
     left: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 #todosAlunos {
