@@ -6,7 +6,7 @@
     }
 }
 
-/*Deixar a foto de quem não está sendo visto com fundo preto. Trocar minha foto etc*/ 
+/*Deixar a foto de quem não está sendo visto com fundo preto.*/
 
 
 @media (max-width: 600px) {
@@ -24,7 +24,7 @@
     #container2:not(.hidden),
     #container3:not(.hidden),
     #container4:not(.hidden) {
-      display: flex;
+        display: flex;
     }
 
     #container,
@@ -48,12 +48,11 @@
     #AlunoGenerico6,
     #AlunoGenerico7,
     #AlunoGenerico8,
-    #AlunoGenerico9
-     {
-        width: 80px;
-        text-align: center;
+    #AlunoGenerico9 {
+        width: auto;
+        height: auto;
         position: static;
-        margin: 0 10px;
+        margin: 0 5px;
         transform: none;
     }
 
@@ -61,23 +60,39 @@
     #LucasFoto,
     #GuilhermeFoto,
     #KamilaFoto {
-       height: 70px;
+        height: 60px;
+        width: 60px;
+    }
+
+    #AlunoGenerico2,
+    #AlunoGenerico3,
+    #AlunoGenerico4,
+    #AlunoGenerico5,
+    #AlunoGenerico6,
+    #AlunoGenerico7,
+    #AlunoGenerico8,
+    #AlunoGenerico9 {
+        width: 60px;
+        height: 60px;
+        font-size: x-small;
+        align-items: center;
+
     }
 
     /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
     #proximo {
-        left: 95%;  
+        left: 95%;
         width: 30px;
         height: 20px;
         bottom: 17%;
-      }
-      
-      #anterior {
+    }
+
+    #anterior {
         left: 5%;
         width: 30px;
         height: 20px;
         top: 80%;
-      }
+    }
 
     #logoPersonalizado {
         height: auto;
@@ -129,7 +144,7 @@
         transform: translate(-50%, -50%) scale(0.5);
     }
 
-    #visaoEspro-midia{
+    #visaoEspro-midia {
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.7);
@@ -143,7 +158,7 @@
     #fecharVisao {
         top: 37%;
     }
-    
+
     #source {
         width: 120px;
         height: 125px;

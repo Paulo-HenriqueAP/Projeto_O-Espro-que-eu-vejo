@@ -15,7 +15,8 @@ button {
 
 #PauloAP,
 #Lucas,
-#Guilherme {
+#Guilherme,
+#Kamila {
     cursor: pointer;
     background-color: #1C2C4C;
     border: none;
@@ -24,7 +25,7 @@ button {
 }
 
 
-#PauloAP {
+#PauloAP, #Kamila {
     top: 40%;
     left: 40%;
 }
@@ -210,7 +211,6 @@ button {
 
 }
 
-#Kamila,
 #AlunoGenerico2,
 #AlunoGenerico3,
 #AlunoGenerico4,
@@ -225,11 +225,6 @@ button {
     position: absolute;
     transform: translate(-50%, -50%);
   
-}
-
-#Kamila {
-    top: 40%;
-    left: 40%;
 }
 
 #AlunoGenerico2 {
