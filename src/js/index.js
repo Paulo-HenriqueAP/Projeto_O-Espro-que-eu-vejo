@@ -153,7 +153,7 @@ Sandra.addEventListener("mousedown", () => {
   Kamila.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#95456c';
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-  return filtrar !== "Kamila";
+  return filtrar !== "Sandra";
 });
   if (window.matchMedia("(max-width: 600px)").matches) {
     listaAlunos.classList.add("hidden")
