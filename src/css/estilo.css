@@ -17,7 +17,8 @@ button {
 #Lucas,
 #Guilherme,
 #Kamila,
-#Sandra {
+#Sandra,
+#Daniela {
     cursor: pointer;
     background-color: #1C2C4C;
     border: none;
@@ -38,7 +39,7 @@ button {
     left: 40%;
 }
 
-#Guilherme {
+#Guilherme, #Daniela {
     top: 60%;
     left: 40%;
 }
@@ -106,7 +107,7 @@ button {
     color: #FABA04;
     border-radius: 10px;
     position: absolute;
-    left: 70%;
+    right: 1%;
     top: 57%;
     font-size: medium;
 }
@@ -121,7 +122,6 @@ button {
     color: #ffffff;
     font-size: 20px;
     text-align: center;
-   
 }
 
 #fecharVisao {
@@ -217,7 +217,6 @@ button {
 
 }
 
-#AlunoGenerico3,
 #AlunoGenerico4,
 #AlunoGenerico5,
 #AlunoGenerico6,
@@ -230,15 +229,6 @@ button {
     position: absolute;
     transform: translate(-50%, -50%);
   
-}
-
-#AlunoGenerico3 {
-    background-color: #343434;
-    top: 60%;
-    left: 40%;
-    width: 80px;
-    height: 80px;
-    color: #ffffff;
 }
 
 #AlunoGenerico4 {

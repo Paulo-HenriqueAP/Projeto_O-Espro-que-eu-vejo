@@ -42,7 +42,7 @@
     #Guilherme,
     #Kamila,
     #Sandra,
-    #AlunoGenerico3,
+    #Daniela,
     #AlunoGenerico4,
     #AlunoGenerico5,
     #AlunoGenerico6,
@@ -58,13 +58,13 @@
     #LucasFoto,
     #GuilhermeFoto,
     #KamilaFoto,
-    #SandraFoto {
+    #SandraFoto,
+    #DanielaFoto {
         height: 60px;
         width: 60px;
         align-items: center;
     }
 
-    #AlunoGenerico3,
     #AlunoGenerico4,
     #AlunoGenerico5,
     #AlunoGenerico6,
@@ -150,11 +150,6 @@
     #visaoEsproTexto {
         top: 40%;
         left: auto;
-    }
-
-    #visaoEspro-link {
-        left: 20%;
-        width: max-content;
     }
 
     #fecharVisao {
