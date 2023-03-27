@@ -108,7 +108,7 @@
         left: 0%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        height: 40px;
+        height: 38px;
         width: 300px;
         font-size: small;
     }
@@ -119,7 +119,7 @@
         top: 15%;
         left: 0%;
         font-size: small;
-        height: 60px;
+        height: 56px;
         width: 350px;
     }
 
@@ -152,6 +152,11 @@
         left: auto;
     }
 
+    #visaoEspro-link {
+        left: 20%;
+        width: max-content;
+    }
+
     #fecharVisao {
         top: 37%;
     }
@@ -166,6 +171,6 @@
     }
 
     #etc {
-        font-size: small;
+        font-size: x-small;
     }
 }

@@ -2,8 +2,14 @@ const Paulo = document.getElementById("PauloAP");
 const Lucas = document.getElementById("Lucas");
 const Guilherme = document.getElementById("Guilherme");
 const Kamila = document.getElementById("Kamila");
-const aluno2 = document.getElementById("Sandra");
+const Sandra = document.getElementById("Sandra");
 const aluno3 = document.getElementById("AlunoGenerico3");
+const aluno4 = document.getElementById("AlunoGenerico4");
+const aluno5 = document.getElementById("AlunoGenerico5");
+const aluno6 = document.getElementById("AlunoGenerico6");
+const aluno7 = document.getElementById("AlunoGenerico7");
+const aluno8 = document.getElementById("AlunoGenerico8");
+const aluno9 = document.getElementById("AlunoGenerico9");
 const fecharVisao = document.getElementById("fecharVisao");
 const botaoETC = document.getElementById("etc");
 const sourceLinks = document.getElementById("source");
@@ -12,7 +18,7 @@ const container = document.getElementById("container");
 const container2 = document.getElementById("container2");
 const container3 = document.getElementById("container3");
 const container4 = document.getElementById("container4");
-const simplificarLista = [Paulo, Lucas, Guilherme, Kamila, Sandra, aluno3];
+const simplificarLista = [Paulo, Lucas, Guilherme, Kamila, Sandra, aluno3, aluno4, aluno5, aluno6, aluno7, aluno8, aluno9];
 let visaoEspro = document.querySelector('#visaoEspro');
 let visaoEspro_Midia = document.querySelector('#visaoEspro-midia');
 let href = document.querySelector('#visaoEspro-link');
@@ -20,7 +26,7 @@ let visaoEspro_Texto = document.querySelector('#visaoEsproTexto');
 let tutoVisao = document.getElementById("textoTuto");
 let tutoVisao2 = document.getElementById("textoTuto2");
 let tutoVisao3 = document.getElementById("textoTuto3");
-let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "Kamila", , "Sandra", , "AlunoG3"];
+let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "Kamila", , "Sandra", , "AlunoG3", "AlunoG4", "AlunoG5", "AlunoG6", "AlunoG7", "AlunoG8", "AlunoG9"];
 let atualizarLista = document.getElementById("todosAlunos")
 let listaAlunos = document.createElement("ul");
 let anteriorB = document.getElementById("anterior");
@@ -34,7 +40,7 @@ verificarVisaoNaoVista();
 
 
 function verificarVisaoNaoVista(apertou) {
-  if (visaoNaoVista.length === 5) {
+  if (visaoNaoVista.length === 11) {
     tutoVisao.classList.add("hidden")
    tutoVisao2.classList.remove("hidden")
   }
@@ -161,6 +167,7 @@ Sandra.addEventListener("mousedown", () => {
   }
  })
  aluno3.addEventListener("mousedown", () => {
+  console.log(aluno3)
   visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
   visaoEspro_Midia.setAttribute("src", "");
@@ -169,7 +176,6 @@ Sandra.addEventListener("mousedown", () => {
   visaoEspro_Link.classList.remove("hidden")
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#04AB93';
-  visaoEspro_Link.classList.remove("hidden")
   visaoEspro_Texto.textContent = (" ")
   Kamila.style.backgroundColor = '';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
@@ -181,6 +187,137 @@ Sandra.addEventListener("mousedown", () => {
   }
  })
 
+ aluno4.addEventListener("mousedown", () => {
+  console.log(aluno4)
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#ffffff';
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG4";
+  });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+ })
+
+ aluno5.addEventListener("mousedown", () => {
+  console.log(aluno5)
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#ffffff';
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG5";
+  });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+ })
+
+ aluno6.addEventListener("mousedown", () => {
+  console.log(aluno6)
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#ffffff';
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG6";
+  });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+ })
+
+ aluno7.addEventListener("mousedown", () => {
+  console.log(aluno7)
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#ffffff';
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG7";
+  });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+ })
+
+ aluno8.addEventListener("mousedown", () => {
+  console.log(aluno8)
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#ffffff';
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG8";
+  });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+ })
+
+ aluno9.addEventListener("mousedown", () => {
+  console.log(aluno9)
+  visaoEspro_Link.textContent = "Clique aqui, eu deixei isso para você."
+  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
+  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  visaoEspro_Link.classList.remove("hidden")
+  fecharVisao.classList.remove("hidden");
+  fecharVisao.style.backgroundColor = '#ffffff';
+  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Texto.textContent = (" ")
+  Kamila.style.backgroundColor = '';
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "AlunoG9";
+  });
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+ })
 
 fecharVisao.addEventListener("click", () => {
   visaoEspro_Midia.setAttribute("src", "");
