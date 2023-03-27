@@ -49,8 +49,6 @@
     #AlunoGenerico7,
     #AlunoGenerico8,
     #AlunoGenerico9 {
-        width: auto;
-        height: auto;
         position: static;
         margin: 0 5px;
         transform: none;
@@ -62,6 +60,7 @@
     #KamilaFoto {
         height: 60px;
         width: 60px;
+        align-items: center;
     }
 
     #AlunoGenerico2,
@@ -75,8 +74,6 @@
         width: 60px;
         height: 60px;
         font-size: x-small;
-        align-items: center;
-
     }
 
     /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
