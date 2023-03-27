@@ -41,7 +41,7 @@
     #Lucas,
     #Guilherme,
     #Kamila,
-    #AlunoGenerico2,
+    #Sandra,
     #AlunoGenerico3,
     #AlunoGenerico4,
     #AlunoGenerico5,
@@ -57,13 +57,13 @@
     #PauloAPFoto,
     #LucasFoto,
     #GuilhermeFoto,
-    #KamilaFoto {
+    #KamilaFoto,
+    #SandraFoto {
         height: 60px;
         width: 60px;
         align-items: center;
     }
 
-    #AlunoGenerico2,
     #AlunoGenerico3,
     #AlunoGenerico4,
     #AlunoGenerico5,
