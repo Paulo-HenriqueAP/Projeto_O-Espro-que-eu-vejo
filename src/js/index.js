@@ -334,6 +334,8 @@ fecharVisao.addEventListener("click", () => {
   Guilherme.style.backgroundColor = '';
   Kamila.style.backgroundColor = '';
   Sandra.style.backgroundColor = '';
+  Sandra.style.backgroundColor = '';
+  Daniela.style.backgroundColor = '';
   fecharVisao.classList.add("hidden");
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
