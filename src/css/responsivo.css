@@ -43,7 +43,7 @@
     #Kamila,
     #Sandra,
     #Daniela,
-    #AlunoGenerico4,
+    #Ester,
     #AlunoGenerico5,
     #AlunoGenerico6,
     #AlunoGenerico7,
@@ -59,13 +59,12 @@
     #GuilhermeFoto,
     #KamilaFoto,
     #SandraFoto,
-    #DanielaFoto {
+    #DanielaFoto,
+    #EsterFoto {
         height: 60px;
         width: 60px;
         align-items: center;
     }
-
-    #AlunoGenerico4,
     #AlunoGenerico5,
     #AlunoGenerico6,
     #AlunoGenerico7,

@@ -18,7 +18,8 @@ button {
 #Guilherme,
 #Kamila,
 #Sandra,
-#Daniela {
+#Daniela,
+#Ester {
     cursor: pointer;
     background-color: #1C2C4C;
     border: none;
@@ -29,7 +30,7 @@ button {
 }
 
 
-#PauloAP, #Kamila {
+#PauloAP, #Kamila, #Ester {
     top: 40%;
     left: 40%;
 }
@@ -217,7 +218,6 @@ button {
 
 }
 
-#AlunoGenerico4,
 #AlunoGenerico5,
 #AlunoGenerico6,
 #AlunoGenerico7,
@@ -229,14 +229,6 @@ button {
     position: absolute;
     transform: translate(-50%, -50%);
   
-}
-
-#AlunoGenerico4 {
-    background-color: #bfc1c2;
-    top: 40%;
-    left: 40%;
-    width: 80px;
-    height: 80px;
 }
 
 #AlunoGenerico5 {
