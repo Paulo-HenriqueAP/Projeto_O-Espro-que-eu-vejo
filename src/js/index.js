@@ -86,7 +86,7 @@ Lucas.addEventListener("mousedown", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para acumular um montante de dinheiro razoável e assim começar seu próprio negócio. Você trabalhará apenas 6 horas por dia e terá outras 18 para correr atrás do seu sonho. Pense grande e comece pequeno.\" Lucas Alves";
+  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para juntar um dinheiro considerável e começar o seu próprio negócio. Com uma carga horária de apenas 6 horas diárias, você terá outras 18 horas para perseguir seus sonhos. Lembre-se: pense grande, mas comece pequeno.\" Saudações, Lucas Alves.";
   Lucas.style.backgroundColor = '#F16B39';
   Paulo.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
