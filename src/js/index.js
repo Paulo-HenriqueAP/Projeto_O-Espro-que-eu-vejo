@@ -86,7 +86,7 @@ Lucas.addEventListener("mousedown", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "Visão Lucas | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.";
+  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para acumular um montante de dinheiro razoável e assim começar seu próprio negócio. Você trabalhará apenas 6 horas por dia e terá outras 18 para correr atrás do seu sonho. Pense grande e comece pequeno.\" Lucas Alves";
   Lucas.style.backgroundColor = '#F16B39';
   Paulo.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -135,7 +135,7 @@ Kamila.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Kamila.style.backgroundColor = '#9966cc';
-  visaoEspro_Texto.textContent = "\"Para os novos estudantes, desejo que aproveitem as oportunidades e absorvam todo o conteúdo que tivemos aqui. Com certeza, fazendo isso, obterão muito sucesso! 🙏🏻🙏🏻🙏🏻.\" - Kamila, março de 2023";
+  visaoEspro_Texto.textContent = "\"Para os novos estudantes, desejo que aproveitem as oportunidades e absorvam todo o conteúdo que tivemos aqui. Com certeza, fazendo isso, obterão muito sucesso! 🙏🏻🙏🏻🙏🏻.\" Kamila, março de 2023";
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -159,7 +159,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Sandra.style.backgroundColor = '#95456c';
-  visaoEspro_Texto.textContent = "\"Se tem algo que eu aprendi no Espro e que levarei para a vida toda é que devemos sempre dar o nosso melhor, mesmo com as condições atuais, até que possamos ter melhores condições. O Espro nos incentiva a desenvolver nossas habilidades profissionais e devemos aproveitar ao máximo cada dia da parte teórica.\" - Sandra, março de 2023"
+  visaoEspro_Texto.textContent = "\"Se tem algo que eu aprendi no Espro e que levarei para a vida toda é que devemos sempre dar o nosso melhor, mesmo com as condições atuais, até que possamos ter melhores condições. O Espro nos incentiva a desenvolver nossas habilidades profissionais e devemos aproveitar ao máximo cada dia da parte teórica.\" Sandra, março de 2023"
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -206,7 +206,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Ester.style.backgroundColor = '#6aa84f';
-  visaoEspro_Texto.textContent = "\"O Espro nos ajuda a evoluir, não só no âmbito profissional, mas também no pessoal, pois nos permite desenvolver nossas habilidades de liderança, comunicação interpessoal, trabalho em equipe e outras competências essenciais. Todos os dias do curso agregaram muito e sou grata por tudo o que aprendi.\" - Ester, março de 2023"
+  visaoEspro_Texto.textContent = "\"O Espro nos ajuda a evoluir, não só no âmbito profissional, mas também no pessoal, pois nos permite desenvolver nossas habilidades de liderança, comunicação interpessoal, trabalho em equipe e outras competências essenciais. Todos os dias do curso agregaram muito e sou grata por tudo o que aprendi.\" Ester, março de 2023"
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
