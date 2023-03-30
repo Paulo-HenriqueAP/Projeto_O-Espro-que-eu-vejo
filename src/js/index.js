@@ -109,7 +109,7 @@ Guilherme.addEventListener("mousedown", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "Visão Guilherme | Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
+  visaoEspro_Texto.textContent = "O meu processo de aprendizado foi muito enriquecedor, pois pude adquirir conhecimentos valiosos sobre autoconhecimento e descobrir o que realmente almejo para mim. Embora o curso tenha abrangido diversos temas, destaco a fase de autoconhecimento no contexto profissional como a mais significativa para mim. Guilherme Henrique";
   Guilherme.style.backgroundColor = '#04AB93';
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
