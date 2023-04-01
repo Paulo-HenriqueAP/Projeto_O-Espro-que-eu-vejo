@@ -65,6 +65,7 @@
         width: 60px;
         align-items: center;
     }
+
     #AlunoGenerico5,
     #AlunoGenerico6,
     #AlunoGenerico7,
@@ -81,6 +82,8 @@
         width: 30px;
         height: 20px;
         bottom: 17%;
+        height: max-content;
+        width: max-content;
     }
 
     #anterior {
@@ -88,6 +91,8 @@
         width: 30px;
         height: 20px;
         top: 80%;
+        height: max-content;
+        width: max-content;
     }
 
     #logoPersonalizado {
@@ -161,10 +166,150 @@
         box-shadow: 5px 5px #FA044B;
         font-size: small;
         text-align: left;
-
     }
 
     #etc {
         font-size: x-small;
+    }
+}
+
+/*Problemas com a lista ao mudar a perspectiva, investigar depois*/
+
+@media (max-height: 500px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #logoPersonalizado {
+        height: auto;
+        width: 300px;
+    }
+
+    #fecharVisao {
+        top: 30%;
+        max-height: fit-content;
+        max-width: fit-content;
+        font-size: x-small;
+    }
+
+    #etc {
+        font-size: x-small;
+    }
+
+    #textoTuto {
+        top: 19%;
+        left: 0%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 20px;
+        width: max-content;
+        font-size: 12px;
+    }
+
+    #textoTuto2 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        top: 19%;
+        left: 0%;
+        font-size: 12px;
+        height: fit-content;
+        width: max-content;
+    }
+
+    #textoTuto3 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        top: 35%;
+        left: 0%;
+        font-size: 12px;
+        height: 60px;
+        width: 200px;
+    }
+
+    #todosAlunos {
+        top: 25%;
+        font-size: small;
+        left: 0;
+    }
+
+    #PauloAPFoto,
+    #LucasFoto,
+    #GuilhermeFoto,
+    #KamilaFoto,
+    #SandraFoto,
+    #DanielaFoto,
+    #EsterFoto {
+        height: 50px;
+        width: 50px;
+    }
+
+    #proximo {
+        left: 35%;
+        width: 20px;
+        height: 20px;
+        top: 80%;
+        height: max-content;
+        width: max-content;
+    }
+
+    #anterior {
+        left: 35%;
+        width: 20px;
+        height: 20px;
+        top: 29%;
+        height: max-content;
+        width: max-content;
+    }
+
+    #visaoEsproTexto {
+        top: 35%;
+        font-size: medium;
+        right: 5%;
+
+    }
+
+    #PauloAP,
+    #Kamila,
+    #Ester {
+        top: 40%;
+        left: 35%;
+    }
+
+    #Lucas,
+    #Sandra {
+        top: 55%;
+        left: 35%;
+    }
+
+    #Guilherme,
+    #Daniela {
+        top: 70%;
+        left: 35%;
+    }
+
+    #AlunoGenerico5,
+    #AlunoGenerico6,
+    #AlunoGenerico7,
+    #AlunoGenerico8,
+    #AlunoGenerico9 {
+        font-size: xx-small;
+        position: fixed;
+        width: fit-content;
+        height: fit-content;
+        bottom: 10%;
+        left: 40%;
+    }
+
+    #source {
+        width: 110px;
+        height: 125px;
+        box-shadow: 5px 5px #FA044B;
+        font-size: smaller;
+        text-align: left;
     }
 }

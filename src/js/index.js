@@ -58,11 +58,18 @@ function verificarVisaoNaoVista(apertou) {
   }
 }
 
+function bloquearlista(bloquear) {
+  if (window.matchMedia("(max-width: 600px").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+}
+
 Paulo.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
-  visaoEspro_Texto.textContent = "Visão Paulo | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  visaoEspro_Texto.textContent = "\"Durante todo processo de aprendizado, eu desenvolvi habilidades para levar minhas ideias e meus projetos adiante. Agradeço a todos os envolvidos pela oportunidade e principalmente ao Hospital Orizonti. Por mais que eu não vá seguir carreira na área em que atuei durante o meu contrato, com toda certeza levarei o aprendizado para a vida toda.\" Paulo Henrique ΛP, 2023."
   Paulo.style.backgroundColor = '#FABA04';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -75,10 +82,7 @@ Paulo.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Paulo";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
 })
 
 Lucas.addEventListener("mousedown", () => {
@@ -98,10 +102,7 @@ Lucas.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Lucas";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
 })
 
 Guilherme.addEventListener("mousedown", () => {
@@ -121,10 +122,7 @@ Guilherme.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Guilherme";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
 })
 
 Kamila.addEventListener("mousedown", () => {
@@ -147,10 +145,7 @@ Kamila.addEventListener("mousedown", () => {
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
   return filtrar !== "Kamila";
 });
-if (window.matchMedia("(max-width: 600px)").matches) {
-  listaAlunos.classList.add("hidden")
-  atualizarLista.classList.add("hidden")
-}
+bloquearlista();
 })
 
 Sandra.addEventListener("mousedown", () => {
@@ -171,10 +166,7 @@ Sandra.addEventListener("mousedown", () => {
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
   return filtrar !== "Sandra";
 });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+bloquearlista();
  })
  Daniela.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
@@ -194,10 +186,7 @@ Sandra.addEventListener("mousedown", () => {
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
   return filtrar !== "Daniela";
 });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+bloquearlista();
  })
 
  Ester.addEventListener("mousedown", () => {
@@ -218,10 +207,7 @@ Sandra.addEventListener("mousedown", () => {
  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
   return filtrar !== "Ester";
 });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+bloquearlista();
  })
 
  aluno5.addEventListener("mousedown", () => {
@@ -262,10 +248,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG6";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
  })
 
  aluno7.addEventListener("mousedown", () => {
@@ -284,10 +267,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG7";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
  })
 
  aluno8.addEventListener("mousedown", () => {
@@ -306,10 +286,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG8";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
  })
 
  aluno9.addEventListener("mousedown", () => {
@@ -328,10 +305,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG9";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
  })
 
 fecharVisao.addEventListener("click", () => {

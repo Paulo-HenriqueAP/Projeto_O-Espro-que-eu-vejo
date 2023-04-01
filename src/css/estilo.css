@@ -203,6 +203,9 @@ button {
     background-color: #bfc1c2;
     border: none;
     border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+   
 }
 
 #anterior {
@@ -215,6 +218,8 @@ button {
     background-color: #bfc1c2;
     border: none;
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
 }
 
