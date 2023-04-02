@@ -42,7 +42,7 @@ verificarVisaoNaoVista();
 function verificarVisaoNaoVista(apertou) {
   if (visaoNaoVista.length === 11) {
     tutoVisao.classList.add("hidden")
-   tutoVisao2.classList.remove("hidden")
+    tutoVisao2.classList.remove("hidden")
   }
   if (visaoNaoVista.length === 0) {
     tutoVisao2.classList.add("hidden")
@@ -50,7 +50,7 @@ function verificarVisaoNaoVista(apertou) {
     atualizarLista.classList.add("hidden")
   } else {
     listaAlunos.innerHTML = "";
-    visaoNaoVista.forEach(function(aluno) {
+    visaoNaoVista.forEach(function (aluno) {
       let nomeAluno = document.createElement("li");
       nomeAluno.textContent = aluno;
       listaAlunos.appendChild(nomeAluno);
@@ -58,23 +58,17 @@ function verificarVisaoNaoVista(apertou) {
   }
 }
 
-function bloquearlista(bloquear) {
-  if (window.matchMedia("(max-width: 600px").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
-  window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     listaAlunos.classList.remove("hidden")
     atualizarLista.classList.remove("hidden")
-    bloquearlista()
-  });
-}
+});
+
 
 Paulo.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
-  visaoEspro_Texto.textContent = "\"Durante todo processo de aprendizado, eu desenvolvi habilidades para levar minhas ideias e meus projetos adiante. Agradeço a todos os envolvidos pela oportunidade e principalmente ao Hospital Orizonti. Por mais que eu não vá seguir carreira na área em que atuei durante o meu contrato, com toda certeza levarei o aprendizado para a vida toda.\" Paulo Henrique ΛP, 2023."
+  visaoEspro_Texto.textContent = "\"Durante todo processo de aprendizado, eu desenvolvi habilidades para levar minhas ideias e meus projetos adiante. Agradeço a todos os envolvidos pela oportunidade e principalmente ao Hospital Orizonti. Por mais que eu não vá seguir carreira na área em que atuei durante o meu contrato, com toda certeza levarei o aprendizado para a vida toda.\" Paulo Henrique ΛP, 2023"
   Paulo.style.backgroundColor = '#FABA04';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -87,7 +81,6 @@ Paulo.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Paulo";
   });
-  bloquearlista();
 })
 
 Lucas.addEventListener("mousedown", () => {
@@ -95,7 +88,7 @@ Lucas.addEventListener("mousedown", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para juntar um dinheiro considerável e começar o seu próprio negócio. Com uma carga horária de apenas 6 horas diárias, você terá outras 18 horas para perseguir seus sonhos. Lembre-se: pense grande, mas comece pequeno.\" Saudações, Lucas Alves.";
+  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para juntar um dinheiro considerável e começar o seu próprio negócio. Com uma carga horária de apenas 6 horas diárias, você terá outras 18 horas para perseguir seus sonhos. Lembre-se: pense grande, mas comece pequeno.\" Saudações, Lucas Alves";
   Lucas.style.backgroundColor = '#F16B39';
   Paulo.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -107,7 +100,6 @@ Lucas.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Lucas";
   });
-  bloquearlista();
 })
 
 Guilherme.addEventListener("mousedown", () => {
@@ -127,7 +119,6 @@ Guilherme.addEventListener("mousedown", () => {
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Guilherme";
   });
-  bloquearlista();
 })
 
 Kamila.addEventListener("mousedown", () => {
@@ -147,10 +138,9 @@ Kamila.addEventListener("mousedown", () => {
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#9966cc';
- visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-  return filtrar !== "Kamila";
-});
-bloquearlista();
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "Kamila";
+  });
 })
 
 Sandra.addEventListener("mousedown", () => {
@@ -168,12 +158,11 @@ Sandra.addEventListener("mousedown", () => {
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#95456c';
- visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-  return filtrar !== "Sandra";
-});
-bloquearlista();
- })
- Daniela.addEventListener("mousedown", () => {
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "Sandra";
+  });
+})
+Daniela.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -188,13 +177,12 @@ bloquearlista();
   Sandra.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#f5d1d1';
- visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-  return filtrar !== "Daniela";
-});
-bloquearlista();
- })
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "Daniela";
+  });
+})
 
- Ester.addEventListener("mousedown", () => {
+Ester.addEventListener("mousedown", () => {
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -209,13 +197,12 @@ bloquearlista();
   Sandra.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#6aa84f';
- visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-  return filtrar !== "Ester";
-});
-bloquearlista();
- })
+  visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
+    return filtrar !== "Ester";
+  });
+})
 
- aluno5.addEventListener("mousedown", () => {
+aluno5.addEventListener("mousedown", () => {
   console.log(aluno5)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -231,10 +218,9 @@ bloquearlista();
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG5";
   });
-  bloquearlista();
- })
+})
 
- aluno6.addEventListener("mousedown", () => {
+aluno6.addEventListener("mousedown", () => {
   console.log(aluno6)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -250,10 +236,9 @@ bloquearlista();
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG6";
   });
-  bloquearlista();
- })
+})
 
- aluno7.addEventListener("mousedown", () => {
+aluno7.addEventListener("mousedown", () => {
   console.log(aluno7)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -269,10 +254,9 @@ bloquearlista();
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG7";
   });
-  bloquearlista();
- })
+})
 
- aluno8.addEventListener("mousedown", () => {
+aluno8.addEventListener("mousedown", () => {
   console.log(aluno8)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -288,10 +272,9 @@ bloquearlista();
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG8";
   });
-  bloquearlista();
- })
+})
 
- aluno9.addEventListener("mousedown", () => {
+aluno9.addEventListener("mousedown", () => {
   console.log(aluno9)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -307,8 +290,7 @@ bloquearlista();
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG9";
   });
-  bloquearlista();
- })
+})
 
 fecharVisao.addEventListener("click", () => {
   visaoEspro_Midia.setAttribute("src", "");
@@ -334,11 +316,9 @@ fecharVisao.addEventListener("click", () => {
   }
 });
 
-
 simplificarLista.forEach(remover_da_lista => {
- remover_da_lista.addEventListener("mouseup", verificarVisaoNaoVista);
+  remover_da_lista.addEventListener("mouseup", verificarVisaoNaoVista);
 });
-
 
 botaoETC.addEventListener("click", () => {
   sourceLinks.classList.toggle("hidden");
@@ -351,8 +331,6 @@ fecharLinks.addEventListener("click", () => {
 })
 
 proximoB.addEventListener("click", () => {
-  console.log(proximoB);
-  console.log(contarAlunos);
   contarAlunos = contarAlunos + 1
   if (contarAlunos === 2) {
     container.classList.add('hidden');
@@ -371,8 +349,6 @@ proximoB.addEventListener("click", () => {
 });
 
 anteriorB.addEventListener("click", () => {
-  console.log(anteriorB);
-  console.log(contarAlunos);
   contarAlunos = contarAlunos - 1
   if (contarAlunos === 1) {
     container.classList.remove('hidden');
@@ -389,3 +365,13 @@ anteriorB.addEventListener("click", () => {
     proximoB.classList.remove("hidden")
   }
 });
+
+function bloquearlista() {
+  if (window.matchMedia("(max-width: 600px").matches) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  }
+}
+  simplificarLista.forEach(quantPX_tela => {
+    quantPX_tela.addEventListener("mouseup", bloquearlista);
+  });
