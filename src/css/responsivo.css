@@ -243,20 +243,20 @@
         width: 50px;
     }
 
-    #proximo {
-        left: 30%;
+    #anterior {
+        left: 23%;
         width: 20px;
         height: 20px;
-        top: 88%;
+        top: 40%;
         height: max-content;
         width: max-content;
     }
 
-    #anterior {
-        left: 30%;
+    #proximo {
+        left: 23%;
         width: 20px;
         height: 20px;
-        top: 33%;
+        bottom: 15%;
         height: max-content;
         width: max-content;
     }
@@ -271,7 +271,7 @@
     #PauloAP,
     #Kamila,
     #Ester {
-        top: 45%;
+        top: 40%;
         left: 30%;
     }
 
@@ -283,7 +283,7 @@
 
     #Guilherme,
     #Daniela {
-        top: 75%;
+        top: 80%;
         left: 30%;
     }
 
