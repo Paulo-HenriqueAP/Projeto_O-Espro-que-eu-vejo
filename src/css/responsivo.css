@@ -232,17 +232,6 @@
         left: 0;
     }
 
-    #PauloAP,
-    #Lucas,
-    #Guilherme,
-    #Kamila,
-    #Sandra,
-    #Daniela,
-    #Ester {
-        margin: 0 2.5px;
-        transform: none;
-    }
-
     #PauloAPFoto,
     #LucasFoto,
     #GuilhermeFoto,
@@ -255,7 +244,7 @@
     }
 
     #proximo {
-        left: 34%;
+        left: 30%;
         width: 20px;
         height: 20px;
         top: 88%;
@@ -264,10 +253,10 @@
     }
 
     #anterior {
-        left: 34%;
+        left: 30%;
         width: 20px;
         height: 20px;
-        top: 36%;
+        top: 33%;
         height: max-content;
         width: max-content;
     }
@@ -282,19 +271,19 @@
     #PauloAP,
     #Kamila,
     #Ester {
-        top: 40%;
+        top: 45%;
         left: 30%;
     }
 
     #Lucas,
     #Sandra {
-        top: 55%;
+        top: 60%;
         left: 30%;
     }
 
     #Guilherme,
     #Daniela {
-        top: 70%;
+        top: 75%;
         left: 30%;
     }
 
