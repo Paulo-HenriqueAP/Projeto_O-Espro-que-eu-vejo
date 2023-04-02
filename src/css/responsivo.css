@@ -101,7 +101,6 @@
     }
 
     .linkAprendiz {
-        position: absolute;
         bottom: 6%;
         width: max-content;
         font-size: small;
@@ -197,12 +196,8 @@
         font-size: x-small;
     }
 
-    #etc {
-        font-size: x-small;
-    }
-
     #textoTuto {
-        top: 19%;
+        top: 22%;
         left: 0%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -214,7 +209,7 @@
     #textoTuto2 {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        top: 19%;
+        top: 22%;
         left: 0%;
         font-size: 12px;
         height: fit-content;
@@ -237,6 +232,17 @@
         left: 0;
     }
 
+    #PauloAP,
+    #Lucas,
+    #Guilherme,
+    #Kamila,
+    #Sandra,
+    #Daniela,
+    #Ester {
+        margin: 0 2.5px;
+        transform: none;
+    }
+
     #PauloAPFoto,
     #LucasFoto,
     #GuilhermeFoto,
@@ -249,19 +255,19 @@
     }
 
     #proximo {
-        left: 35%;
+        left: 34%;
         width: 20px;
         height: 20px;
-        top: 80%;
+        top: 88%;
         height: max-content;
         width: max-content;
     }
 
     #anterior {
-        left: 35%;
+        left: 34%;
         width: 20px;
         height: 20px;
-        top: 29%;
+        top: 36%;
         height: max-content;
         width: max-content;
     }
@@ -277,19 +283,19 @@
     #Kamila,
     #Ester {
         top: 40%;
-        left: 35%;
+        left: 30%;
     }
 
     #Lucas,
     #Sandra {
         top: 55%;
-        left: 35%;
+        left: 30%;
     }
 
     #Guilherme,
     #Daniela {
         top: 70%;
-        left: 35%;
+        left: 30%;
     }
 
     #AlunoGenerico5,
@@ -297,19 +303,28 @@
     #AlunoGenerico7,
     #AlunoGenerico8,
     #AlunoGenerico9 {
-        font-size: xx-small;
-        position: fixed;
+        font-size: 5px;
         width: fit-content;
         height: fit-content;
-        bottom: 10%;
-        left: 40%;
+        left: 25%;
+    }
+
+    #etc {
+        font-size: x-small;
     }
 
     #source {
-        width: 110px;
+        width: 130px;
         height: 125px;
         box-shadow: 5px 5px #FA044B;
         font-size: smaller;
         text-align: left;
     }
+
+    .linkAprendiz {
+        bottom: 1%;
+        width: max-content;
+        font-size: x-small;
+    }
+
 }

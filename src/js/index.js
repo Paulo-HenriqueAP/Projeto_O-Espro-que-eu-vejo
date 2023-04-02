@@ -63,6 +63,11 @@ function bloquearlista(bloquear) {
     listaAlunos.classList.add("hidden")
     atualizarLista.classList.add("hidden")
   }
+  window.addEventListener("resize", function() {
+    listaAlunos.classList.remove("hidden")
+    atualizarLista.classList.remove("hidden")
+    bloquearlista()
+  });
 }
 
 Paulo.addEventListener("mousedown", () => {
@@ -226,10 +231,7 @@ bloquearlista();
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "AlunoG5";
   });
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
+  bloquearlista();
  })
 
  aluno6.addEventListener("mousedown", () => {
