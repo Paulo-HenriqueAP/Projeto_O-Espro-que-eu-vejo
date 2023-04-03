@@ -33,6 +33,7 @@ let anteriorB = document.getElementById("anterior");
 let proximoB = document.getElementById("proximo");
 let contarAlunos = 1;
 var visaoEspro_Link = document.getElementById("visaoEspro-link");
+var ocupado = false
 
 
 atualizarLista.appendChild(listaAlunos);
@@ -56,15 +57,24 @@ function verificarVisaoNaoVista(apertou) {
       listaAlunos.appendChild(nomeAluno);
     });
   }
-}
 
-window.addEventListener("resize", function () {
+}
+function saber_se_bloqueia() {
+  if (window.matchMedia("(max-width: 500px").matches && ocupado === true){
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
+  } else {
     listaAlunos.classList.remove("hidden")
     atualizarLista.classList.remove("hidden")
-});
+  }
+}
 
+window.addEventListener("resize", saber_se_bloqueia)
 
 Paulo.addEventListener("mousedown", () => {
+  ocupado = true
+  console.log(ocupado)
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
@@ -84,6 +94,8 @@ Paulo.addEventListener("mousedown", () => {
 })
 
 Lucas.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
@@ -103,6 +115,8 @@ Lucas.addEventListener("mousedown", () => {
 })
 
 Guilherme.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
@@ -122,6 +136,8 @@ Guilherme.addEventListener("mousedown", () => {
 })
 
 Kamila.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.remove("hidden")
   visaoEspro_Link.href = "https://instagram.com/kamilaemerick87?igshid=ZDdkNTZiNTM=";
@@ -144,6 +160,8 @@ Kamila.addEventListener("mousedown", () => {
 })
 
 Sandra.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -163,6 +181,8 @@ Sandra.addEventListener("mousedown", () => {
   });
 })
 Daniela.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -183,6 +203,8 @@ Daniela.addEventListener("mousedown", () => {
 })
 
 Ester.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -203,6 +225,8 @@ Ester.addEventListener("mousedown", () => {
 })
 
 aluno5.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   console.log(aluno5)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -221,6 +245,8 @@ aluno5.addEventListener("mousedown", () => {
 })
 
 aluno6.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   console.log(aluno6)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -239,6 +265,8 @@ aluno6.addEventListener("mousedown", () => {
 })
 
 aluno7.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   console.log(aluno7)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -257,6 +285,8 @@ aluno7.addEventListener("mousedown", () => {
 })
 
 aluno8.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   console.log(aluno8)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -275,6 +305,8 @@ aluno8.addEventListener("mousedown", () => {
 })
 
 aluno9.addEventListener("mousedown", () => {
+  ocupado = true
+  saber_se_bloqueia()
   console.log(aluno9)
   visaoEspro_Link.textContent = "Clique aqui."
   visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
@@ -293,6 +325,7 @@ aluno9.addEventListener("mousedown", () => {
 })
 
 fecharVisao.addEventListener("click", () => {
+  ocupado = false
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro.classList.add("hidden");
   Paulo.style.backgroundColor = '';
@@ -319,6 +352,7 @@ fecharVisao.addEventListener("click", () => {
 simplificarLista.forEach(remover_da_lista => {
   remover_da_lista.addEventListener("mouseup", verificarVisaoNaoVista);
 });
+
 
 botaoETC.addEventListener("click", () => {
   sourceLinks.classList.toggle("hidden");
@@ -365,13 +399,3 @@ anteriorB.addEventListener("click", () => {
     proximoB.classList.remove("hidden")
   }
 });
-
-function bloquearlista() {
-  if (window.matchMedia("(max-width: 600px").matches) {
-    listaAlunos.classList.add("hidden")
-    atualizarLista.classList.add("hidden")
-  }
-}
-  simplificarLista.forEach(quantPX_tela => {
-    quantPX_tela.addEventListener("mouseup", bloquearlista);
-  });
