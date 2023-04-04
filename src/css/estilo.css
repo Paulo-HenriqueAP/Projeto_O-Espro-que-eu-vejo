@@ -29,6 +29,10 @@ button {
     height: auto;
 }
 
+.opacidade{
+    opacity: 0.7;
+}
+
 
 #PauloAP, #Kamila, #Ester {
     top: 40%;

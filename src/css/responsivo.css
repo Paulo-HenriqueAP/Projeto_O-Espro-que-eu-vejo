@@ -141,7 +141,7 @@
     #visaoEspro {
         top: 48%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.5);
+        transform: translate(-50%, -50%) scale(0.4);
     }
 
     #visaoEspro-midia {
@@ -265,7 +265,12 @@
         top: 35%;
         font-size: medium;
         right: 5%;
+    }
 
+    #visaoEspro {
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.4);
     }
 
     #PauloAP,

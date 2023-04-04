@@ -48,7 +48,9 @@ function verificarVisaoNaoVista(apertou) {
   if (visaoNaoVista.length === 0) {
     tutoVisao2.classList.add("hidden")
     tutoVisao3.classList.remove("hidden")
+    listaAlunos.classList.add("hidden")
     atualizarLista.classList.add("hidden")
+    visaoEspro.setAttribute("src", "src/fotos/Visão/fotoFinal_teste.png");
   } else {
     listaAlunos.innerHTML = "";
     visaoNaoVista.forEach(function (aluno) {
@@ -75,6 +77,7 @@ Paulo.addEventListener("mousedown", () => {
   ocupado = true
   console.log(ocupado)
   saber_se_bloqueia()
+  Paulo.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
@@ -96,6 +99,7 @@ Paulo.addEventListener("mousedown", () => {
 Lucas.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
+  Lucas.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
@@ -117,6 +121,7 @@ Lucas.addEventListener("mousedown", () => {
 Guilherme.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
+  Guilherme.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
@@ -138,6 +143,7 @@ Guilherme.addEventListener("mousedown", () => {
 Kamila.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
+  Kamila.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.remove("hidden")
   visaoEspro_Link.href = "https://instagram.com/kamilaemerick87?igshid=ZDdkNTZiNTM=";
@@ -162,6 +168,7 @@ Kamila.addEventListener("mousedown", () => {
 Sandra.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
+  Sandra.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -183,6 +190,7 @@ Sandra.addEventListener("mousedown", () => {
 Daniela.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
+  Daniela.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -205,6 +213,7 @@ Daniela.addEventListener("mousedown", () => {
 Ester.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
+  Ester.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
@@ -227,13 +236,10 @@ Ester.addEventListener("mousedown", () => {
 aluno5.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
-  console.log(aluno5)
-  visaoEspro_Link.textContent = "Clique aqui."
-  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
-  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Midia.classList.remove("hidden")
+  visaoEspro_Midia.setAttribute("src", "src/fotos/Visão/Video_Teste_VISÃO.mp4")
+  visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
-  visaoEspro_Midia.classList.add("hidden")
-  visaoEspro_Link.classList.remove("hidden")
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#ffffff';
   visaoEspro_Link.classList.remove("hidden")
@@ -248,12 +254,10 @@ aluno6.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
   console.log(aluno6)
-  visaoEspro_Link.textContent = "Clique aqui."
-  visaoEspro_Link.href = "https://images.sympla.com.br/5efaac73cffc8.jpg";
-  visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro_Midia.classList.remove("hidden")
+  visaoEspro_Midia.setAttribute("src", "src/fotos/Visão/Áudio_Teste_VISÃO.mp3")
   visaoEspro.classList.add("hidden");
-  visaoEspro_Midia.classList.add("hidden")
-  visaoEspro_Link.classList.remove("hidden")
+  visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#ffffff';
   visaoEspro_Link.classList.remove("hidden")
@@ -327,7 +331,6 @@ aluno9.addEventListener("mousedown", () => {
 fecharVisao.addEventListener("click", () => {
   ocupado = false
   visaoEspro_Midia.setAttribute("src", "");
-  visaoEspro.classList.add("hidden");
   Paulo.style.backgroundColor = '';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -347,18 +350,19 @@ fecharVisao.addEventListener("click", () => {
     listaAlunos.classList.add("hidden")
     atualizarLista.classList.add("hidden")
   }
+  if (visaoNaoVista.length === 0) {
+    visaoEspro.classList.remove("hidden")
+  }
 });
 
 simplificarLista.forEach(remover_da_lista => {
   remover_da_lista.addEventListener("mouseup", verificarVisaoNaoVista);
 });
 
-
 botaoETC.addEventListener("click", () => {
   sourceLinks.classList.toggle("hidden");
   botaoETC.classList.toggle("hidden");
 });
-
 fecharLinks.addEventListener("click", () => {
   sourceLinks.classList.toggle("hidden");
   botaoETC.classList.toggle("hidden");
