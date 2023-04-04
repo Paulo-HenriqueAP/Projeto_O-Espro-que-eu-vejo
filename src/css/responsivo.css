@@ -1,11 +1,24 @@
+@media (min-width: 1200px) {
+    #visaoEspro {
+        top: 10%;
+        right: 0;
+        transform: scale(0.5);
+    }
+}
+
+/*Deixar a foto de quem não está sendo visto com fundo preto.*/
+
+
 @media (max-width: 600px) {
 
+    html,
     body {
         height: 100%;
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
+
 
     #container:not(.hidden),
     #container2:not(.hidden),
@@ -95,27 +108,40 @@
 
     #textoTuto {
         top: 15%;
+        left: 0%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         height: 38px;
         width: 300px;
         font-size: small;
     }
 
     #textoTuto2 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         top: 15%;
+        left: 0%;
         font-size: small;
         height: 56px;
         width: 350px;
     }
 
     #textoTuto3 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         top: 15%;
+        left: 0%;
         font-size: small;
+    }
+
+    #todosAlunos {
+        top: 30%;
     }
 
     #visaoEspro {
         top: 48%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.4);
+        transform: translate(-50%, -50%) scale(0.5);
     }
 
     #visaoEspro-midia {
@@ -150,6 +176,7 @@
 
 @media (max-height: 500px) {
 
+    html,
     body {
         height: 100%;
         margin: 0;
@@ -180,21 +207,29 @@
     }
 
     #textoTuto2 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         top: 22%;
+        left: 0%;
         font-size: 12px;
         height: fit-content;
         width: max-content;
     }
 
     #textoTuto3 {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         top: 35%;
+        left: 0%;
         font-size: 12px;
         height: 60px;
         width: 200px;
     }
 
     #todosAlunos {
+        top: 25%;
         font-size: small;
+        left: 0;
     }
 
     #PauloAPFoto,
@@ -210,6 +245,8 @@
 
     #anterior {
         left: 23%;
+        width: 20px;
+        height: 20px;
         top: 40%;
         height: max-content;
         width: max-content;
@@ -217,6 +254,8 @@
 
     #proximo {
         left: 23%;
+        width: 20px;
+        height: 20px;
         bottom: 15%;
         height: max-content;
         width: max-content;
@@ -226,12 +265,7 @@
         top: 35%;
         font-size: medium;
         right: 5%;
-    }
 
-    #visaoEspro {
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.4);
     }
 
     #PauloAP,
@@ -281,4 +315,5 @@
         width: max-content;
         font-size: x-small;
     }
+
 }
