@@ -1,24 +1,4 @@
-@media (min-width: 1200px) {
-    #visaoEspro {
-        top: 10%;
-        right: 0;
-        transform: scale(0.5);
-    }
-}
-
-/*Deixar a foto de quem não está sendo visto com fundo preto.*/
-
-
 @media (max-width: 600px) {
-
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
 
     #container:not(.hidden),
     #container2:not(.hidden),
@@ -79,8 +59,6 @@
     /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
     #proximo {
         left: 95%;
-        width: 30px;
-        height: 20px;
         bottom: 17%;
         height: max-content;
         width: max-content;
@@ -88,8 +66,6 @@
 
     #anterior {
         left: 5%;
-        width: 30px;
-        height: 20px;
         top: 80%;
         height: max-content;
         width: max-content;
@@ -108,34 +84,21 @@
 
     #textoTuto {
         top: 15%;
-        left: 0%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         height: 38px;
         width: 300px;
         font-size: small;
     }
 
     #textoTuto2 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 15%;
-        left: 0%;
         font-size: small;
         height: 56px;
         width: 350px;
     }
 
     #textoTuto3 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 15%;
-        left: 0%;
         font-size: small;
-    }
-
-    #todosAlunos {
-        top: 30%;
     }
 
     #visaoEspro {
@@ -176,14 +139,6 @@
 
 @media (max-height: 500px) {
 
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
     #logoPersonalizado {
         height: auto;
         width: 300px;
@@ -207,29 +162,21 @@
     }
 
     #textoTuto2 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 22%;
-        left: 0%;
         font-size: 12px;
         height: fit-content;
         width: max-content;
     }
 
     #textoTuto3 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 35%;
-        left: 0%;
         font-size: 12px;
         height: 60px;
         width: 200px;
     }
 
     #todosAlunos {
-        top: 25%;
         font-size: small;
-        left: 0;
     }
 
     #PauloAPFoto,
@@ -245,8 +192,6 @@
 
     #anterior {
         left: 23%;
-        width: 20px;
-        height: 20px;
         top: 40%;
         height: max-content;
         width: max-content;
@@ -254,8 +199,6 @@
 
     #proximo {
         left: 23%;
-        width: 20px;
-        height: 20px;
         bottom: 15%;
         height: max-content;
         width: max-content;

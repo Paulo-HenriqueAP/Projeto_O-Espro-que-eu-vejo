@@ -35,10 +35,8 @@ let contarAlunos = 1;
 var visaoEspro_Link = document.getElementById("visaoEspro-link");
 var ocupado = false
 
-
 atualizarLista.appendChild(listaAlunos);
 verificarVisaoNaoVista();
-
 
 function verificarVisaoNaoVista(apertou) {
   if (visaoNaoVista.length === 11) {
@@ -59,15 +57,18 @@ function verificarVisaoNaoVista(apertou) {
       listaAlunos.appendChild(nomeAluno);
     });
   }
-
 }
 function saber_se_bloqueia() {
-  if (window.matchMedia("(max-width: 500px").matches && ocupado === true){
+  if (window.matchMedia("(max-width: 500px").matches && ocupado === true) {
     listaAlunos.classList.add("hidden")
     atualizarLista.classList.add("hidden")
   } else {
     listaAlunos.classList.remove("hidden")
     atualizarLista.classList.remove("hidden")
+  }
+  if (visaoNaoVista.length === 0) {
+    listaAlunos.classList.add("hidden")
+    atualizarLista.classList.add("hidden")
   }
 }
 
@@ -79,6 +80,7 @@ Paulo.addEventListener("mousedown", () => {
   saber_se_bloqueia()
   Paulo.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
+  visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   visaoEspro_Texto.textContent = "\"Durante todo processo de aprendizado, eu desenvolvi habilidades para levar minhas ideias e meus projetos adiante. Agradeço a todos os envolvidos pela oportunidade e principalmente ao Hospital Orizonti. Por mais que eu não vá seguir carreira na área em que atuei durante o meu contrato, com toda certeza levarei o aprendizado para a vida toda.\" Paulo Henrique ΛP, 2023"
@@ -102,6 +104,7 @@ Lucas.addEventListener("mousedown", () => {
   Lucas.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
+  visaoEspro.classList.add("hidden");
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
   visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para juntar um dinheiro considerável e começar o seu próprio negócio. Com uma carga horária de apenas 6 horas diárias, você terá outras 18 horas para perseguir seus sonhos. Lembre-se: pense grande, mas comece pequeno.\" Saudações, Lucas Alves";
@@ -124,9 +127,10 @@ Guilherme.addEventListener("mousedown", () => {
   Guilherme.classList.add("opacidade")
   visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Midia.classList.add("hidden")
+  visaoEspro.classList.add("hidden");
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "O meu processo de aprendizado foi muito enriquecedor, pois pude adquirir conhecimentos valiosos sobre autoconhecimento e descobrir o que realmente almejo para mim. Embora o curso tenha abrangido diversos temas, destaco a fase de autoconhecimento no contexto profissional como a mais significativa para mim. Guilherme Henrique";
+  visaoEspro_Texto.textContent = "\"O meu processo de aprendizado foi muito enriquecedor, pois pude adquirir conhecimentos valiosos sobre autoconhecimento e descobrir o que realmente almejo para mim. Embora o curso tenha abrangido diversos temas, destaco a fase de autoconhecimento no contexto profissional como a mais significativa para mim.\" Guilherme Henrique";
   Guilherme.style.backgroundColor = '#04AB93';
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -344,11 +348,12 @@ fecharVisao.addEventListener("click", () => {
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
   visaoEspro_Texto.textContent = (" ")
-  listaAlunos.classList.remove("hidden")
-  atualizarLista.classList.remove("hidden")
   if (visaoNaoVista.length === 0) {
     listaAlunos.classList.add("hidden")
     atualizarLista.classList.add("hidden")
+  } else {
+    listaAlunos.classList.remove("hidden")
+    atualizarLista.classList.remove("hidden")
   }
   if (visaoNaoVista.length === 0) {
     visaoEspro.classList.remove("hidden")

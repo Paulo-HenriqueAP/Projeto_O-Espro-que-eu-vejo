@@ -1,6 +1,12 @@
+html,
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #1C2C4C;
 }
+
 
 img,
 button {
@@ -9,6 +15,7 @@ button {
     -ms-user-drag: none;
     user-select: none;
     border-radius: 10px;
+    
 }
 
 
@@ -49,42 +56,17 @@ button {
     left: 40%;
 }
 
-#textoTuto {
+#textoTuto, #textoTuto2, #textoTuto3  {
+    position: absolute;
+    font-family: 'Lucida Sans Unicode';
     background-color: #ffffff;
     border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    right: 50%;
-    bottom: 68%;
-    font-size: medium;
-    text-align: center;
-    align-items: center;
-}
-
-#textoTuto2 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    right: 25%;
-    bottom: 68%;
-    font-size: medium;
-    text-align: center;
-    align-items: center;
-}
-
-
-#textoTuto3 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    font-size: medium;
-    width: 150px;
-    text-align: center;
-    top: 17%;
-    left: 2%;
-    align-items: center;
+    top: 20%;
+    height: max-content;
+    width: max-content;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    left: 0;
 }
 
 
@@ -121,7 +103,7 @@ button {
     position: absolute;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    top: 50%;
+    top: 40%;
     left: 50%;
     pointer-events: none;
     color: #ffffff;
@@ -131,7 +113,7 @@ button {
 
 #fecharVisao {
     position: absolute;
-    top: 48%;
+    top: 38%;
     cursor: pointer;
     right: 0%;
     border-top-right-radius: 0;
@@ -283,7 +265,7 @@ button {
 #todosAlunos {
     position: absolute;
     color: #c8c8c8;
-    top: 15%;
-    left: 2%;
+    top: 25%;
+    left: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
