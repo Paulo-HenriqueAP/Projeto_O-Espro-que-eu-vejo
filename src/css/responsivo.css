@@ -1,22 +1,12 @@
-@media (min-width: 1200px) {
-    #visaoEspro {
-        top: 10%;
-        right: 0;
-        transform: scale(0.5);
+@media (min-width: 2000px) {
+    
+    #logoPersonalizado {
+        height: auto;
+        width: auto;
     }
 }
 
 @media (max-width: 600px) {
-
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-
     #container:not(.hidden),
     #container2:not(.hidden),
     #container3:not(.hidden),
@@ -166,14 +156,6 @@
 /*Problemas com a lista ao mudar a perspectiva, investigar depois*/
 
 @media (max-height: 500px) {
-
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
 
     #logoPersonalizado {
         height: auto;

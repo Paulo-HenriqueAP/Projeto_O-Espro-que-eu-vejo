@@ -1,4 +1,9 @@
+html,
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #1C2C4C;
 }
 
@@ -9,6 +14,18 @@ button {
     -ms-user-drag: none;
     user-select: none;
     border-radius: 10px;
+}
+
+#PauloAPFoto,
+#LucasFoto,
+#GuilhermeFoto,
+#KamilaFoto,
+#SandraFoto,
+#DanielaFoto,
+#EsterFoto {
+    height: 70px;
+    width: 70px;
+    align-items: center;
 }
 
 #PauloAP,
@@ -28,28 +45,34 @@ button {
 }
 
 
-#PauloAP, #Kamila, #Ester {
+#PauloAP,
+#Kamila,
+#Ester {
     top: 39%;
     left: 40%;
 }
 
-#Lucas, #Sandra {
+#Lucas,
+#Sandra {
     top: 50%;
     left: 40%;
 }
 
-#Guilherme, #Daniela {
+#Guilherme,
+#Daniela {
     top: 61%;
     left: 40%;
 }
 
-#textoTuto, #textoTuto2, #textoTuto3  {
+#textoTuto,
+#textoTuto2,
+#textoTuto3 {
     background-color: #ffffff;
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     left: 0;
-    top: 20%; 
+    top: 20%;
     font-size: medium;
     text-align: center;
     align-items: center;
@@ -76,7 +99,7 @@ button {
     height: 500px;
 }
 
-#visaoEspro-link{
+#visaoEspro-link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #FABA04;
     border-radius: 10px;
