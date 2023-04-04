@@ -5,7 +5,6 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #1C2C4C;
     }
 
     #container:not(.hidden),
@@ -152,7 +151,6 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #1C2C4C;
     }
 
     #logoPersonalizado {
