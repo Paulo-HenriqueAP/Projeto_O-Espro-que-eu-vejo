@@ -6,9 +6,6 @@
     }
 }
 
-/*Deixar a foto de quem não está sendo visto com fundo preto.*/
-
-
 @media (max-width: 600px) {
 
     html,
@@ -109,16 +106,12 @@
     #textoTuto {
         top: 15%;
         left: 0%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         height: 38px;
         width: 300px;
         font-size: small;
     }
 
     #textoTuto2 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 15%;
         left: 0%;
         font-size: small;
@@ -127,8 +120,6 @@
     }
 
     #textoTuto3 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 15%;
         left: 0%;
         font-size: small;

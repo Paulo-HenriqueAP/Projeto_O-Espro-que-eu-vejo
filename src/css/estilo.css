@@ -29,7 +29,7 @@ button {
 
 
 #PauloAP, #Kamila, #Ester {
-    top: 40%;
+    top: 39%;
     left: 40%;
 }
 
@@ -39,7 +39,7 @@ button {
 }
 
 #Guilherme, #Daniela {
-    top: 60%;
+    top: 61%;
     left: 40%;
 }
 
@@ -48,11 +48,13 @@ button {
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
-    right: 50%;
-    bottom: 68%;
+    left: 0;
+    top: 20%; 
     font-size: medium;
     text-align: center;
     align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #textoTuto2 {
@@ -60,11 +62,13 @@ button {
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
-    right: 32%;
-    bottom: 68%;
+    left: 0;
+    top: 20%; 
     font-size: medium;
     text-align: center;
     align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 
@@ -76,9 +80,11 @@ button {
     font-size: medium;
     width: 150px;
     text-align: center;
-    top: 17%;
-    left: 2%;
+    top: 20%; 
+    left: 0%;
     align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 
@@ -196,7 +202,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    bottom: 31.5%;
+    bottom: 30.5%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;
@@ -210,7 +216,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    top: 33.5%;
+    top: 32.5%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;
@@ -277,7 +283,11 @@ button {
 #todosAlunos {
     position: absolute;
     color: #c8c8c8;
-    top: 15%;
+    top: 25%;
     left: 2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opacidade {
+    opacity: 0.5;
 }
