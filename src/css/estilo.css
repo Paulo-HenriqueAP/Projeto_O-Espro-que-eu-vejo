@@ -9,7 +9,6 @@ button {
     -ms-user-drag: none;
     user-select: none;
     border-radius: 10px;
-
 }
 
 #PauloAP,
@@ -263,6 +262,6 @@ button {
     position: absolute;
     color: #c8c8c8;
     top: 30%;
-    left: 0%;
+    left: 2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
