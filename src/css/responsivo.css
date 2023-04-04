@@ -1,5 +1,13 @@
 @media (max-width: 600px) {
 
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1C2C4C;
+    }
+
     #container:not(.hidden),
     #container2:not(.hidden),
     #container3:not(.hidden),
@@ -138,6 +146,14 @@
 /*Problemas com a lista ao mudar a perspectiva, investigar depois*/
 
 @media (max-height: 500px) {
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1C2C4C;
+    }
 
     #logoPersonalizado {
         height: auto;
