@@ -41,13 +41,13 @@ button {
 
 #Lucas,
 #Sandra {
-    top: 55%;
+    top: 50%;
     left: 40%;
 }
 
 #Guilherme,
 #Daniela {
-    top: 70%;
+    top: 60%;
     left: 40%;
 }
 
@@ -181,7 +181,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    bottom: 18.5%;
+    bottom: 31.5%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;
@@ -195,7 +195,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    top: 31%;
+    top: 33.5%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;

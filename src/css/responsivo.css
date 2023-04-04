@@ -73,14 +73,14 @@
 
     /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
     #proximo {
-        left: 95%;
+        left: 90%;
         bottom: 17%;
         height: max-content;
         width: max-content;
     }
 
     #anterior {
-        left: 5%;
+        left: 10%;
         top: 80%;
         height: max-content;
         width: max-content;
