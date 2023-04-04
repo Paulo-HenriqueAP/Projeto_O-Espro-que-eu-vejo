@@ -1,3 +1,11 @@
+@media (min-width: 1200px) {
+    #visaoEspro {
+        top: 10%;
+        right: 0;
+        transform: scale(0.5);
+    }
+}
+
 @media (max-width: 600px) {
 
     body {
