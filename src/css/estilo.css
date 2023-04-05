@@ -34,19 +34,19 @@ button {
 #PauloAP,
 #Kamila,
 #Ester {
-    top: 39%;
+    top: 40%;
     left: 40%;
 }
 
 #Lucas,
 #Sandra {
-    top: 50%;
+    top: 55%;
     left: 40%;
 }
 
 #Guilherme,
 #Daniela {
-    top: 61%;
+    top: 70%;
     left: 40%;
 }
 
@@ -58,7 +58,7 @@ button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 23%;
     font-size: medium;
     text-align: center;
     align-items: center;
@@ -78,11 +78,11 @@ button {
 
 #visaoEspro-midia {
     position: absolute;
-    top: 21%;
+    top: 20%;
     right: 10%;
     border: none;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 #visaoEspro-link {
@@ -109,7 +109,7 @@ button {
 
 #fecharVisao {
     position: absolute;
-    top: 48%;
+    top: 42%;
     cursor: pointer;
     right: 0%;
     border-top-right-radius: 0;
@@ -180,7 +180,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    bottom: 30.5%;
+    bottom: 19%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;
@@ -194,7 +194,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    top: 32.5%;
+    top: 31.5%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;

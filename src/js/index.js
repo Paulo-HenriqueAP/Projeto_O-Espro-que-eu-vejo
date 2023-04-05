@@ -83,7 +83,7 @@ Paulo.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   visaoEspro_Link.classList.add("hidden")
-  visaoEspro_Texto.textContent = "\"Durante todo processo de aprendizado, eu desenvolvi habilidades para levar minhas ideias e meus projetos adiante. Agradeço a todos os envolvidos pela oportunidade e principalmente ao Hospital Orizonti. Por mais que eu não vá seguir carreira na área em que atuei durante o meu contrato, com toda certeza levarei o aprendizado para a vida toda.\" Paulo Henrique ΛP, 2023"
+  visaoEspro_Texto.textContent = "\"Durante todo percurso sendo um jovem aprendiz, eu desenvolvi habilidades para alavancar minhas ideias, projetos pessoais e profissionais. Agradeço a todos os envolvidos pela oportunidade e principalmente ao Hospital Orizonti. Por mais que eu não vá seguir carreira na área em que atuei durante o meu contrato, com certeza levarei o aprendizado para a vida toda.\" Paulo Henrique ΛP, 2023"
   Paulo.style.backgroundColor = '#FABA04';
   Lucas.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
