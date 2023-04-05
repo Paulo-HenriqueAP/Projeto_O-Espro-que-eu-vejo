@@ -1,12 +1,68 @@
-@media (min-width: 2000px) {
-    
+@media screen and (min-width: 1921px) {
+    #todosAlunos {
+        top: 30%;
+        left: 0;
+    }
+
     #logoPersonalizado {
         height: auto;
-        width: auto;
+        height: auto;
+        max-width: 500px;
+        max-height: 500px;
     }
+
+    #PauloAP,
+    #Kamila,
+    #Ester {
+        top: 40%;
+        left: 40%;
+    }
+
+    #Lucas,
+    #Sandra {
+        top: 55%;
+        left: 40%;
+    }
+
+    #Guilherme,
+    #Daniela {
+        top: 70%;
+        left: 40%;
+    }
+
+    #proximo {
+        position: absolute;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        left: 40%;
+        bottom: 25%;
+        width: 80px;
+        background-color: #bfc1c2;
+        border: none;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    #anterior {
+        position: absolute;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        left: 40%;
+        top: 36%;
+        width: 80px;
+        background-color: #bfc1c2;
+        border: none;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+
 }
 
 @media (max-width: 600px) {
+
     #container:not(.hidden),
     #container2:not(.hidden),
     #container3:not(.hidden),
