@@ -16,18 +16,6 @@ button {
     border-radius: 10px;
 }
 
-#PauloAPFoto,
-#LucasFoto,
-#GuilhermeFoto,
-#KamilaFoto,
-#SandraFoto,
-#DanielaFoto,
-#EsterFoto {
-    height: 70px;
-    width: 70px;
-    align-items: center;
-}
-
 #PauloAP,
 #Lucas,
 #Guilherme,
@@ -40,8 +28,6 @@ button {
     border: none;
     position: absolute;
     transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
 }
 
 
