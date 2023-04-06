@@ -7,6 +7,24 @@ body {
     background-color: #1C2C4C;
 }
 
+.temaAzul{
+    background-color: #1C2C4C;
+}
+
+.temaBranco{
+    background-color: #ffffff;
+}
+
+.temaAmarelo{
+    background-color: #FABA04;
+}
+
+.temaVermelho{
+    background-color: #FC233F;
+}
+
+    
+
 img,
 button {
     -webkit-user-drag: none;

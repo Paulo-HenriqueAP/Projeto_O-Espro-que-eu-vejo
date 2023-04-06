@@ -33,7 +33,11 @@ let anteriorB = document.getElementById("anterior");
 let proximoB = document.getElementById("proximo");
 let contarAlunos = 1;
 var visaoEspro_Link = document.getElementById("visaoEspro-link");
-var ocupado = false
+var ocupado = false;
+var trocarTema = document.getElementById("trocarTema");
+var corpo = document.getElementById("corpo");
+let contTema = 0;
+
 
 atualizarLista.appendChild(listaAlunos);
 verificarVisaoNaoVista();
@@ -408,3 +412,24 @@ anteriorB.addEventListener("click", () => {
     proximoB.classList.remove("hidden")
   }
 });
+
+trocarTema.addEventListener("click", () => {
+  contTema = contTema + 1;  
+  console.log(contTema) 
+
+  if (contTema === 1) {
+    corpo.classList.add("temaBranco");
+  } else if (contTema === 2) {
+    corpo.classList.remove("temaBranco");
+    corpo.classList.add("temaAmarelo");
+  } else if (contTema === 3) {
+    corpo.classList.remove("temaAmarelo");
+    corpo.classList.add("temaVermelho");
+  } else if (contTema === 4) {
+    corpo.classList.remove("temaVermelho");
+    corpo.classList.add("temaAzul");
+    contTema = 0;
+  }
+})
+
+

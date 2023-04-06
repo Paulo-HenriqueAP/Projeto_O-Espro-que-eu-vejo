@@ -6,7 +6,6 @@
         top: 20%;
     }
 
-
     #PauloAPFoto,
     #LucasFoto,
     #GuilhermeFoto,
@@ -47,7 +46,6 @@
 }
 
 @media (max-width: 600px) {
-
     #container:not(.hidden),
     #container2:not(.hidden),
     #container3:not(.hidden),
@@ -106,7 +104,7 @@
 
     /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
     #proximo {
-        left: 95%;
+        left: 90%;
         width: 30px;
         height: 20px;
         bottom: 17%;
@@ -115,7 +113,7 @@
     }
 
     #anterior {
-        left: 5%;
+        left: 10%;
         width: 30px;
         height: 20px;
         top: 80%;
@@ -211,19 +209,15 @@
     }
 
     #textoTuto {
-        top: 22%;
+        top: 23%;
         left: 0%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        height: 20px;
-        width: max-content;
         font-size: 12px;
+        height: 20px;
+        width: max-content; 
     }
 
     #textoTuto2 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        top: 22%;
+        top: 23%;
         left: 0%;
         font-size: 12px;
         height: fit-content;
@@ -231,17 +225,15 @@
     }
 
     #textoTuto3 {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         top: 35%;
         left: 0%;
         font-size: 12px;
-        height: 60px;
-        width: 200px;
+        height: 80px;
+        width: 150px;
     }
 
     #todosAlunos {
-        top: 25%;
+        top: 26%;
         font-size: small;
         left: 0;
     }
@@ -314,6 +306,7 @@
 
     #etc {
         font-size: x-small;
+        bottom: 0;
     }
 
     #source {
