@@ -427,6 +427,10 @@ trocarTema.addEventListener("click", () => {
     corpo.classList.add("temaVermelho");
   } else if (contTema === 4) {
     corpo.classList.remove("temaVermelho");
+    corpo.classList.add("temaVerde");
+  }
+  else if (contTema === 5) {
+    corpo.classList.remove("temaVerde");
     corpo.classList.add("temaAzul");
     contTema = 0;
   }
