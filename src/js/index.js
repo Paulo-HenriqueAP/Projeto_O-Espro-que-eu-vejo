@@ -37,6 +37,8 @@ var ocupado = false;
 var trocarTema = document.getElementById("trocarTema");
 var corpo = document.getElementById("corpo");
 let contTema = 0;
+let temaPersonalizado = document.getElementById("logoPersonalizado")
+
 
 
 atualizarLista.appendChild(listaAlunos);
@@ -419,19 +421,23 @@ trocarTema.addEventListener("click", () => {
 
   if (contTema === 1) {
     corpo.classList.add("temaBranco");
+    temaPersonalizado.setAttribute("src","src/fotos/Logo/Logo_Espro_personalizado_TEMA-BRANCO.png")
   } else if (contTema === 2) {
     corpo.classList.remove("temaBranco");
+    temaPersonalizado.setAttribute("src","src/fotos/Logo/Logo_Espro_personalizado_TEMA-AMARELO.png")
     corpo.classList.add("temaAmarelo");
   } else if (contTema === 3) {
     corpo.classList.remove("temaAmarelo");
+    temaPersonalizado.setAttribute("src","src/fotos/Logo/Logo_Espro_personalizado_TEMA-VERMELHO.png")
     corpo.classList.add("temaVermelho");
   } else if (contTema === 4) {
     corpo.classList.remove("temaVermelho");
+    temaPersonalizado.setAttribute("src","src/fotos/Logo/Logo_Espro_personalizado_TEMA-VERDE.png")
     corpo.classList.add("temaVerde");
   }
   else if (contTema === 5) {
     corpo.classList.remove("temaVerde");
-    corpo.classList.add("temaAzul");
+    temaPersonalizado.setAttribute("src","src/fotos/Logo/Logo_Espro_personalizado.png")
     contTema = 0;
   }
 })

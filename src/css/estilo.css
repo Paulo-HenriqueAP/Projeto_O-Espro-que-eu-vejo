@@ -1,34 +1,99 @@
 html,
 body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #1C2C4C;
 }
 
-.temaAzul{
-    background-color: #1C2C4C;
+#trocarTema {
+    font-size: x-small;
+    position: fixed;
+    left: 0;
+    bottom: 8%;
+    width: max-content;
+    height: 8vh;
+    cursor: pointer;
 }
 
-.temaBranco{
-    background-color: #ffffff;
+.temaBranco {
+    background-color: #F5F5F5;
+}
+
+.temaBranco #visaoEsproTexto,
+.temaBranco #todosAlunos,
+.temaBranco #linkAprendiz {
+    color: #343434;
+}
+
+.temaBranco #textoTuto,
+.temaBranco #textoTuto2,
+.temaBranco #textoTuto3 {
+    background-color: #343434;
+    color: #ffffff;
+}
+
+.temaBranco #proximo,
+.temaBranco #anterior {
+    background-color: #343434;
+    color: #F5F5F5;
 }
 
 .temaAmarelo{
     background-color: #FABA04;
 }
 
+.temaAmarelo #todosAlunos,
+.temaAmarelo #linkAprendiz {
+    color: #343434;
+}
+
+.temaAmarelo  #proximo,
+.temaAmarelo  #anterior {
+    background-color: #F5F5F5;
+    color: #343434;
+}
+
+.temaAmarelo #etc {
+    background-color: #F5F5F5;
+}
+
 .temaVermelho{
     background-color: #FC233F;
+}
+
+.temaVermelho #todosAlunos,
+.temaVermelho #linkAprendiz {
+    color: black;
+}
+
+.temaVermelho  #proximo,
+.temaVermelho  #anterior {
+    background-color: #343434;
+    color: #F5F5F5;
+}
+
+.temaVermelho #source {
+    box-shadow: 10px 10px #343434;
+
 }
 
 .temaVerde{
     background-color: #04AC94;
 }
 
+.temaVerde #todosAlunos,
+.temaVerde #linkAprendiz {
+    color: black;
+}
 
-    
+.temaBranco   .opacidade,
+.temaAmarelo  .opacidade,
+.temaVerde    .opacidade,
+.temaVermelho .opacidade {
+    opacity: 0.7;
+}
 
 img,
 button {
@@ -47,7 +112,7 @@ button {
 #Daniela,
 #Ester {
     cursor: pointer;
-    background-color: #1C2C4C;
+    background-color: unset;
     border: none;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -138,7 +203,7 @@ button {
     border-top-right-radius: 0;
 }
 
-.linkAprendiz {
+#linkAprendiz {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #bbbbbb;
     position: absolute;
@@ -186,7 +251,7 @@ button {
     cursor: help;
 }
 
-#logoPersonalizado {
+.logoPersonalizado {
     pointer-events: none;
     position: absolute;
     left: 1%;
