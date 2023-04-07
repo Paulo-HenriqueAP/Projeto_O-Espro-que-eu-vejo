@@ -5,8 +5,8 @@ const Kamila = document.getElementById("Kamila");
 const Sandra = document.getElementById("Sandra");
 const Daniela = document.getElementById("Daniela");
 const Ester = document.getElementById("Ester");
-const aluno5 = document.getElementById("AlunoGenerico5");
-const aluno6 = document.getElementById("AlunoGenerico6");
+const Sarah = document.getElementById("Sarah");
+const Edvan = document.getElementById("Edvan");
 const aluno7 = document.getElementById("AlunoGenerico7");
 const aluno8 = document.getElementById("AlunoGenerico8");
 const aluno9 = document.getElementById("AlunoGenerico9");
@@ -18,7 +18,7 @@ const container = document.getElementById("container");
 const container2 = document.getElementById("container2");
 const container3 = document.getElementById("container3");
 const container4 = document.getElementById("container4");
-const simplificarLista = [Paulo, Lucas, Guilherme, Kamila, Sandra, Daniela, Ester, aluno5, aluno6, aluno7, aluno8, aluno9];
+const simplificarLista = [Paulo, Lucas, Guilherme, Kamila, Sandra, Daniela, Ester, Sarah, Edvan, aluno7, aluno8, aluno9];
 let visaoEspro = document.querySelector('#visaoEspro');
 let visaoEspro_Midia = document.querySelector('#visaoEspro-midia');
 let href = document.querySelector('#visaoEspro-link');
@@ -26,7 +26,7 @@ let visaoEspro_Texto = document.querySelector('#visaoEsproTexto');
 let tutoVisao = document.getElementById("textoTuto");
 let tutoVisao2 = document.getElementById("textoTuto2");
 let tutoVisao3 = document.getElementById("textoTuto3");
-let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "Kamila", , "Sandra", , "Daniela", "Ester", "AlunoG5", "AlunoG6", "AlunoG7", "AlunoG8", "AlunoG9"];
+let visaoNaoVista = ["Paulo", "Lucas", "Guilherme", "Kamila", , "Sandra", , "Daniela", "Ester", "Sarah", "Edvan", "AlunoG7", "AlunoG8", "AlunoG9"];
 let atualizarLista = document.getElementById("todosAlunos")
 let listaAlunos = document.createElement("ul");
 let anteriorB = document.getElementById("anterior");
@@ -97,6 +97,8 @@ Paulo.addEventListener("mousedown", () => {
   Sandra.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.classList.remove("hidden");
   fecharVisao.style.backgroundColor = '#FABA04';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
@@ -113,7 +115,7 @@ Lucas.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para juntar um dinheiro considerável e começar o seu próprio negócio. Com uma carga horária de apenas 6 horas diárias, você terá outras 18 horas para perseguir seus sonhos. Lembre-se: pense grande, mas comece pequeno.\" Saudações, Lucas Alves";
+  visaoEspro_Texto.textContent = "\"Espro é uma ótima oportunidade para juntar um dinheiro considerável e começar o seu próprio negócio. Com uma carga horária de apenas 6 horas diárias, você terá outras 18 horas para perseguir seus sonhos. Lembre-se: pense grande, mas comece pequeno.\" Lucas Alves, 2023";
   Lucas.style.backgroundColor = '#F16B39';
   Paulo.style.backgroundColor = '';
   Guilherme.style.backgroundColor = '';
@@ -121,6 +123,8 @@ Lucas.addEventListener("mousedown", () => {
   Sandra.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#F16B39';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Lucas";
@@ -136,7 +140,7 @@ Guilherme.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Link.classList.add("hidden")
   fecharVisao.classList.remove("hidden");
-  visaoEspro_Texto.textContent = "\"O meu processo de aprendizado foi muito enriquecedor, pois pude adquirir conhecimentos valiosos sobre autoconhecimento e descobrir o que realmente almejo para mim. Embora o curso tenha abrangido diversos temas, destaco a fase de autoconhecimento no contexto profissional como a mais significativa para mim.\" Guilherme Henrique";
+  visaoEspro_Texto.textContent = "\"O meu processo de aprendizado foi muito enriquecedor, pois pude adquirir conhecimentos valiosos sobre autoconhecimento e descobrir o que realmente almejo para mim. Embora o curso tenha abrangido diversos temas, destaco a fase de autoconhecimento no contexto profissional como a mais significativa para mim.\" Guilherme Henrique, 2023";
   Guilherme.style.backgroundColor = '#04AB93';
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -144,6 +148,8 @@ Guilherme.addEventListener("mousedown", () => {
   Sandra.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#04AB93';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Guilherme";
@@ -161,7 +167,7 @@ Kamila.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Kamila.style.backgroundColor = '#9966cc';
-  visaoEspro_Texto.textContent = "\"Para os novos estudantes, desejo que aproveitem as oportunidades e absorvam todo o conteúdo que tivemos aqui. Com certeza, fazendo isso, obterão muito sucesso! 🙏🏻🙏🏻🙏🏻.\" Kamila, março de 2023";
+  visaoEspro_Texto.textContent = "\"Para os novos estudantes, desejo que aproveitem as oportunidades e absorvam todo o conteúdo que tivemos aqui. Com certeza, fazendo isso, obterão muito sucesso! 🙏🏻🙏🏻🙏🏻.\" Kamila, 2023";
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -169,6 +175,8 @@ Kamila.addEventListener("mousedown", () => {
   Sandra.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#9966cc';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Kamila";
@@ -184,7 +192,7 @@ Sandra.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Sandra.style.backgroundColor = '#95456c';
-  visaoEspro_Texto.textContent = "\"Se tem algo que eu aprendi no Espro e que levarei para a vida toda é que devemos sempre dar o nosso melhor, mesmo com as condições atuais, até que possamos ter melhores condições. O Espro nos incentiva a desenvolver nossas habilidades profissionais e devemos aproveitar ao máximo cada dia da parte teórica.\" Sandra, março de 2023"
+  visaoEspro_Texto.textContent = "\"Se tem algo que eu aprendi no Espro e que levarei para a vida toda é que devemos sempre dar o nosso melhor, mesmo com as condições atuais, até que possamos ter melhores condições. O Espro nos incentiva a desenvolver nossas habilidades profissionais e devemos aproveitar ao máximo cada dia da parte teórica.\" Sandra, 2023"
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -192,6 +200,8 @@ Sandra.addEventListener("mousedown", () => {
   Kamila.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#95456c';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Sandra";
@@ -206,7 +216,7 @@ Daniela.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Daniela.style.backgroundColor = '#f5d1d1';
-  visaoEspro_Texto.textContent = "\"O que eu venho aprendendo com o Espro é que nunca devemos desistir, mesmo quando enfrentamos altos e baixos, mantendo sempre o foco em nossos objetivos. O Espro nos acolhe e ensina a desenvolver nossas habilidades, transformando-nos em pessoas mais capacitadas e preparadas para o mercado de trabalho. Quem uma vez passa pelo Espro, nunca sai a mesma pessoa.\" Daniela, março de 2023"
+  visaoEspro_Texto.textContent = "\"O que eu venho aprendendo com o Espro é que nunca devemos desistir, mesmo quando enfrentamos altos e baixos, mantendo sempre o foco em nossos objetivos. O Espro nos acolhe e ensina a desenvolver nossas habilidades, transformando-nos em pessoas mais capacitadas e preparadas para o mercado de trabalho. Quem uma vez passa pelo Espro, nunca sai a mesma pessoa.\" Daniela, 2023"
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -214,6 +224,8 @@ Daniela.addEventListener("mousedown", () => {
   Kamila.style.backgroundColor = '';
   Sandra.style.backgroundColor = '';
   Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#f5d1d1';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Daniela";
@@ -229,7 +241,7 @@ Ester.addEventListener("mousedown", () => {
   visaoEspro.classList.add("hidden");
   visaoEspro_Midia.classList.add("hidden")
   Ester.style.backgroundColor = '#6aa84f';
-  visaoEspro_Texto.textContent = "\"O Espro nos ajuda a evoluir, não só no âmbito profissional, mas também no pessoal, pois nos permite desenvolver nossas habilidades de liderança, comunicação interpessoal, trabalho em equipe e outras competências essenciais. Todos os dias do curso agregaram muito e sou grata por tudo o que aprendi.\" Ester, março de 2023"
+  visaoEspro_Texto.textContent = "\"O Espro nos ajuda a evoluir, não só no âmbito profissional, mas também no pessoal, pois nos permite desenvolver nossas habilidades de liderança, comunicação interpessoal, trabalho em equipe e outras competências essenciais. Todos os dias do curso agregaram muito e sou grata por tudo o que aprendi.\" Ester, 2023"
   fecharVisao.classList.remove("hidden");
   Lucas.style.backgroundColor = '';
   Paulo.style.backgroundColor = '';
@@ -237,44 +249,61 @@ Ester.addEventListener("mousedown", () => {
   Kamila.style.backgroundColor = '';
   Sandra.style.backgroundColor = '';
   Daniela.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
   fecharVisao.style.backgroundColor = '#6aa84f';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
     return filtrar !== "Ester";
   });
 })
 
-aluno5.addEventListener("mousedown", () => {
+Sarah.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
-  visaoEspro_Midia.classList.remove("hidden")
-  visaoEspro_Midia.setAttribute("src", "src/fotos/Visão/Video_Teste_VISÃO.mp4")
+  Sarah.classList.add("opacidade")
+  visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
   visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  Sarah.style.backgroundColor = '#7f6000';
+  visaoEspro_Texto.textContent = "\"O Espro oferece uma oportunidade única para nós. São meses de aprendizado, desenvolvimento profissional e pessoal que talvez eu não teria se não estivesse aqui. Não me arrependo de ter embarcado nessa jornada como aprendiz e sou muito grata por tudo o que o programa me proporcionou. Aprendi muito, conheci pessoas valiosas e vivenciei experiências que levarei para a vida toda.\" Sarah, 2023"
   fecharVisao.classList.remove("hidden");
-  fecharVisao.style.backgroundColor = '#ffffff';
-  visaoEspro_Link.classList.remove("hidden")
-  visaoEspro_Texto.textContent = (" ")
+  Lucas.style.backgroundColor = '';
+  Paulo.style.backgroundColor = '';
+  Guilherme.style.backgroundColor = '';
   Kamila.style.backgroundColor = '';
+  Sandra.style.backgroundColor = '';
+  Daniela.style.backgroundColor = '';
+  Ester.style.backgroundColor = '';
+  Edvan.style.backgroundColor = '';
+  fecharVisao.style.backgroundColor = '#7f6000';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-    return filtrar !== "AlunoG5";
+    return filtrar !== "Sarah";
   });
 })
 
-aluno6.addEventListener("mousedown", () => {
+Edvan.addEventListener("mousedown", () => {
   ocupado = true
   saber_se_bloqueia()
-  console.log(aluno6)
-  visaoEspro_Midia.classList.remove("hidden")
-  visaoEspro_Midia.setAttribute("src", "src/fotos/Visão/Áudio_Teste_VISÃO.mp3")
-  visaoEspro.classList.add("hidden");
+  Edvan.classList.add("opacidade")
+  visaoEspro_Midia.setAttribute("src", "");
   visaoEspro_Link.classList.add("hidden")
+  visaoEspro.classList.add("hidden");
+  visaoEspro_Midia.classList.add("hidden")
+  Edvan.style.backgroundColor = '#b70000';
+  visaoEspro_Texto.textContent = "\"O ESPRO desempenha um papel fundamental no desenvolvimento profissional e pessoal dos jovens que se dedicam aos exercícios teóricos com afinco. Durante o programa, somos submetidos a atividades que treinam e desenvolvem nossas habilidades profissionais, capacitando-nos a nos tornarmos excelentes profissionais e seres humanos em todos os aspectos de nossas vidas.\" Edvan, 2023"
   fecharVisao.classList.remove("hidden");
-  fecharVisao.style.backgroundColor = '#ffffff';
-  visaoEspro_Link.classList.remove("hidden")
-  visaoEspro_Texto.textContent = (" ")
+  Lucas.style.backgroundColor = '';
+  Paulo.style.backgroundColor = '';
+  Guilherme.style.backgroundColor = '';
   Kamila.style.backgroundColor = '';
+  Sandra.style.backgroundColor = '';
+  Daniela.style.backgroundColor = '';
+  Ester.style.backgroundColor = '';
+  Sarah.style.backgroundColor = '';
+  fecharVisao.style.backgroundColor = '#a30000';
   visaoNaoVista = visaoNaoVista.filter(function (filtrar) {
-    return filtrar !== "AlunoG6";
+    return filtrar !== "Edvan";
   });
 })
 
@@ -389,12 +418,13 @@ proximoB.addEventListener("click", () => {
   if (contarAlunos === 3) {
     container2.classList.add('hidden');
     container3.classList.remove('hidden');
-  }
-  if (contarAlunos === 4) {
-    container3.classList.add('hidden')
-    container4.classList.remove('hidden')
     proximoB.classList.add("hidden")
   }
+  //if (contarAlunos === 4) {
+    //container3.classList.add('hidden')
+    //container4.classList.remove('hidden')
+    //proximoB.classList.add("hidden")
+  //}
 });
 
 anteriorB.addEventListener("click", () => {
@@ -407,11 +437,11 @@ anteriorB.addEventListener("click", () => {
   if (contarAlunos === 2) {
     container2.classList.remove('hidden');
     container3.classList.add('hidden');
+    proximoB.classList.remove("hidden")
   }
   if (contarAlunos === 3) {
     container3.classList.remove('hidden')
-    container4.classList.add('hidden')
-    proximoB.classList.remove("hidden")
+    //container4.classList.add('hidden')
   }
 });
 

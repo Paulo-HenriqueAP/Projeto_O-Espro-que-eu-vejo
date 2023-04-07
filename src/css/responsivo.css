@@ -12,7 +12,9 @@
     #KamilaFoto,
     #SandraFoto,
     #DanielaFoto,
-    #EsterFoto {
+    #EsterFoto,
+    #SarahFoto,
+    #EdvanFoto {
         height: 80px;
         width: 80px;
     }
@@ -25,13 +27,15 @@
     }
 
     #Lucas,
-    #Sandra {
+    #Sandra,
+    #Sarah {
         top: 50%;
         left: 40%;
     }
 
     #Guilherme,
-    #Daniela {
+    #Daniela,
+    #Edvan {
         top: 60%;
         left: 40%;
     }
@@ -70,8 +74,8 @@
     #Sandra,
     #Daniela,
     #Ester,
-    #AlunoGenerico5,
-    #AlunoGenerico6,
+    #Sarah,
+    #Edvan,
     #AlunoGenerico7,
     #AlunoGenerico8,
     #AlunoGenerico9 {
@@ -86,14 +90,14 @@
     #KamilaFoto,
     #SandraFoto,
     #DanielaFoto,
-    #EsterFoto {
+    #EsterFoto,
+    #SarahFoto,
+    #EdvanFoto  {
         height: 60px;
         width: 60px;
         align-items: center;
     }
 
-    #AlunoGenerico5,
-    #AlunoGenerico6,
     #AlunoGenerico7,
     #AlunoGenerico8,
     #AlunoGenerico9 {
@@ -126,7 +130,7 @@
         width: 360px;
     }
 
-    .linkAprendiz {
+    #linkAprendiz {
         bottom: 6%;
         width: max-content;
         font-size: small;
@@ -244,7 +248,9 @@
     #KamilaFoto,
     #SandraFoto,
     #DanielaFoto,
-    #EsterFoto {
+    #EsterFoto,
+    #SarahFoto,
+    #EdvanFoto {
         height: 50px;
         width: 50px;
     }
@@ -282,19 +288,19 @@
     }
 
     #Lucas,
-    #Sandra {
+    #Sandra,
+    #Sarah {
         top: 60%;
         left: 30%;
     }
 
     #Guilherme,
-    #Daniela {
+    #Daniela,
+    #Edvan {
         top: 80%;
         left: 30%;
     }
-
-    #AlunoGenerico5,
-    #AlunoGenerico6,
+    
     #AlunoGenerico7,
     #AlunoGenerico8,
     #AlunoGenerico9 {
@@ -317,7 +323,7 @@
         text-align: left;
     }
 
-    .linkAprendiz {
+    #linkAprendiz {
         bottom: 1%;
         width: max-content;
         font-size: x-small;
