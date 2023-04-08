@@ -1,8 +1,6 @@
 @media screen and (min-width: 1920px) {
 
-    #textoTuto,
-    #textoTuto2,
-    #textoTuto3 {
+    #textoTuto {
         top: 20%;
     }
 
@@ -40,27 +38,22 @@
         left: 40%;
     }
 
-    #proximo {
+    #KSD, #ESE, #PLG {
         bottom: 30.5%;
     }
     
-    #anterior {
-        top: 32.5%;
-    }
 }
 
 @media (max-width: 600px) {
     #container:not(.hidden),
     #container2:not(.hidden),
-    #container3:not(.hidden),
-    #container4:not(.hidden) {
+    #container3:not(.hidden) {
         display: flex;
     }
 
     #container,
     #container2,
-    #container3,
-    #container4 {
+    #container3 {
         justify-content: center;
         position: fixed;
         bottom: 15%;
@@ -75,10 +68,7 @@
     #Daniela,
     #Ester,
     #Sarah,
-    #Edvan,
-    #AlunoGenerico7,
-    #AlunoGenerico8,
-    #AlunoGenerico9 {
+    #Edvan {
         position: static;
         margin: 0 5px;
         transform: none;
@@ -98,25 +88,8 @@
         align-items: center;
     }
 
-    #AlunoGenerico7,
-    #AlunoGenerico8,
-    #AlunoGenerico9 {
-        width: 60px;
-        height: 60px;
-        font-size: x-small;
-    }
 
-    /* tanto proximo quanto anterior está com problemas? tudo parece invertido*/
-    #proximo {
-        left: 90%;
-        width: 30px;
-        height: 20px;
-        bottom: 17%;
-        height: max-content;
-        width: max-content;
-    }
-
-    #anterior {
+    #KSD, #ESE, #PLG {
         left: 10%;
         width: 30px;
         height: 20px;
@@ -137,35 +110,23 @@
     }
 
     #textoTuto {
+        font-size: small;
         top: 15%;
         left: 0%;
-        height: 38px;
-        width: 300px;
-        font-size: small;
-    }
-
-    #textoTuto2 {
-        top: 15%;
-        left: 0%;
-        font-size: small;
-        height: 56px;
-        width: 350px;
-    }
-
-    #textoTuto3 {
-        top: 15%;
-        left: 0%;
-        font-size: small;
+        height: max-content;
+        width: fit-content;
+        text-align: center;
     }
 
     #todosAlunos {
         top: 30%;
+        font-size: small;
     }
 
     #visaoEspro {
         top: 48%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0.5);
+        transform: translate(-50%, -50%) scale(0.4);
     }
 
     #visaoEspro-midia {
@@ -220,26 +181,9 @@
         width: max-content; 
     }
 
-    #textoTuto2 {
-        top: 23%;
-        left: 0%;
-        font-size: 12px;
-        height: fit-content;
-        width: max-content;
-    }
-
-    #textoTuto3 {
-        top: 35%;
-        left: 0%;
-        font-size: 12px;
-        height: 80px;
-        width: 150px;
-    }
-
     #todosAlunos {
         top: 26%;
         font-size: small;
-        left: 0;
     }
 
     #PauloAPFoto,
@@ -264,7 +208,7 @@
         width: max-content;
     }
 
-    #proximo {
+    #KSD, #ESE, #PLG {
         left: 23%;
         width: 20px;
         height: 20px;
@@ -278,6 +222,12 @@
         font-size: medium;
         right: 5%;
 
+    }
+
+    #visaoEspro {
+        width: 300px;
+        height: 300px;
+        left: 50%;
     }
 
     #PauloAP,
@@ -299,15 +249,6 @@
     #Edvan {
         top: 80%;
         left: 30%;
-    }
-    
-    #AlunoGenerico7,
-    #AlunoGenerico8,
-    #AlunoGenerico9 {
-        font-size: 5px;
-        width: fit-content;
-        height: fit-content;
-        left: 25%;
     }
 
     #etc {
