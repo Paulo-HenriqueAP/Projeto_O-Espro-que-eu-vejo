@@ -288,16 +288,11 @@ button {
 #logo {
     background-image: url("/src/fotos/Logo/L1.png");
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     top: 1%;
     left: 1%;
     width: 626px;
     height: 135px;   
-}
-
-.logoP {
-    left: 0;
-    top: 1%;
 }
 
 .hidden {
