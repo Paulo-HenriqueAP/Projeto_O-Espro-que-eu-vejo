@@ -46,7 +46,11 @@ let proximob = document.getElementById("ESE");
 let proximoc = document.getElementById("PLG");
 let contTema = 0;
 let temaPersonalizado = document.getElementById("logoPersonalizado")
+
+let lerVisao = document.getElementById("textoAudio")
+
 var corpo = document.getElementById("corpo");
+
 
 atualizarLista.appendChild(listaAlunos);
 verificarVisaoNaoVista();
@@ -98,11 +102,16 @@ function limpar() {
   }
 }
 
+lerVisao.addEventListener("click", () => {
+  visaoEspro_Midia.classList.toggle("hidden")
+})
+
 window.addEventListener("resize", saber_se_bloqueia)
 
 Paulo.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Paulo_TEXTOparaVOZ.mp3")
   Paulo.classList.add("opacidade")
   Paulo.style.backgroundColor = '#1a1a1a';
   fecharVisao.style.backgroundColor = '#FABA04';
@@ -115,6 +124,7 @@ Paulo.addEventListener("mousedown", () => {
 Lucas.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Lucas_TEXTOparaVOZ.mp3")
   Lucas.classList.add("opacidade")
   Lucas.style.backgroundColor = '#F16B39';
   fecharVisao.style.backgroundColor = '#F16B39';
@@ -127,6 +137,7 @@ Lucas.addEventListener("mousedown", () => {
 Guilherme.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Guilherme_TEXTOparaVOZ.mp3")
   Guilherme.classList.add("opacidade")
   Guilherme.style.backgroundColor = '#04AB93';
   fecharVisao.style.backgroundColor = '#04AB93';
@@ -139,6 +150,7 @@ Guilherme.addEventListener("mousedown", () => {
 Kamila.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Kamila_TEXTOparaVOZ.mp3")
   Kamila.classList.add("opacidade")
   Kamila.style.backgroundColor = '#9966cc';
   fecharVisao.style.backgroundColor = '#9966cc';
@@ -154,6 +166,7 @@ Kamila.addEventListener("mousedown", () => {
 Sandra.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Sandra_TEXTOparaVOZ.mp3")
   Sandra.classList.add("opacidade")
   Sandra.style.backgroundColor = '#95456c';
   fecharVisao.style.backgroundColor = '#95456c';
@@ -165,6 +178,7 @@ Sandra.addEventListener("mousedown", () => {
 Daniela.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Daniela_TEXTOparaVOZ.mp3")
   Daniela.classList.add("opacidade")
   Daniela.style.backgroundColor = '#f5d1d1';
   fecharVisao.style.backgroundColor = '#f5d1d1';
@@ -177,6 +191,7 @@ Daniela.addEventListener("mousedown", () => {
 Ester.addEventListener("mousedown", () => {
   limpar();
   saber_se_bloqueia();
+  visaoEspro_Midia.setAttribute("src", "src/audio/Ester_TEXTOparaVOZ.mp3")
   Ester.classList.add("opacidade");
   Ester.style.backgroundColor = '#6aa84f';
   fecharVisao.style.backgroundColor = '#6aa84f';
@@ -189,6 +204,7 @@ Ester.addEventListener("mousedown", () => {
 Sarah.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Sarah_TEXTOparaVOZ.mp3")
   Sarah.classList.add("opacidade")
   Sarah.style.backgroundColor = '#7f6000';
   fecharVisao.style.backgroundColor = '#7f6000';
@@ -201,6 +217,7 @@ Sarah.addEventListener("mousedown", () => {
 Edvan.addEventListener("mousedown", () => {
   limpar()
   saber_se_bloqueia()
+  visaoEspro_Midia.setAttribute("src", "src/audio/Edvan_TEXTOparaVOZ.mp3")
   Edvan.classList.add("opacidade")
   Edvan.style.backgroundColor = '#b70000';
   fecharVisao.style.backgroundColor = '#a30000';

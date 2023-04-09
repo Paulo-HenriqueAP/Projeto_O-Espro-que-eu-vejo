@@ -146,7 +146,7 @@
 
     #source {
         width: 120px;
-        height: 125px;
+        height: 135px;
         box-shadow: 5px 5px #FA044B;
         font-size: small;
         text-align: left;
@@ -177,7 +177,7 @@
         top: 23%;
         left: 0%;
         font-size: 12px;
-        height: 20px;
+        height: max-content;
         width: max-content; 
     }
 
@@ -221,7 +221,6 @@
         top: 35%;
         font-size: medium;
         right: 5%;
-
     }
 
     #visaoEspro {
@@ -258,7 +257,7 @@
 
     #source {
         width: 130px;
-        height: 125px;
+        height: 135px;
         box-shadow: 5px 5px #FA044B;
         font-size: smaller;
         text-align: left;
