@@ -286,8 +286,8 @@ button {
 }
 
 #logo {
-    display: flex;
-    position: absolute;
+    position: relative;
+    z-index: 9999;
     background-image: url("/src/fotos/Logo/L1.png");
     background-repeat: no-repeat;
     width: 626px;
