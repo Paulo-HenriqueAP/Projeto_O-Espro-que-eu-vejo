@@ -286,11 +286,9 @@ button {
 }
 
 #logo {
+    position: absolute;
     background-image: url("/src/fotos/Logo/L1.png");
     background-repeat: no-repeat;
-    position: absolute;
-    top: 1%;
-    left: 1%;
     width: 626px;
     height: 135px;   
 }
