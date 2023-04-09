@@ -19,10 +19,6 @@ body {
     color: #F5F5F5;
 }
 
-.temaBranco #logo {
-    background-image: url("/src/fotos/Logo/L2.png");
-}
-
 .temaBranco {
     background-color: #F5F5F5;
 }
@@ -45,10 +41,6 @@ body {
 .temaBranco #PLG {
     background-color: #343434;
     color: #F5F5F5;
-}
-
-.temaAmarelo #logo {
-    background-image: url("/src/fotos/Logo/L3.png");
 }
 
 .temaAmarelo {
@@ -76,10 +68,6 @@ body {
     background-color: #F5F5F5;
 }
 
-.temaVermelho #logo {
-    background-image: url("/src/fotos/Logo/L4.png");
-}
-
 .temaVermelho {
     background-color: #FC233F;
 }
@@ -98,10 +86,6 @@ body {
 
 .temaVermelho #source {
     box-shadow: 10px 10px #343434;
-}
-
-.temaVerde #logo {
-    background-image: url("/src/fotos/Logo/L5.png");
 }
 
 .temaVerde {
@@ -286,12 +270,10 @@ button {
 }
 
 #logo {
-    position: relative;
-    z-index: 9999;
-    background-image: url("/src/fotos/Logo/L1.png");
-    background-repeat: no-repeat;
-    width: 626px;
-    height: 135px;   
+    position: fixed;
+    display: flex;
+    top: 1%;
+   left: 1%;
 }
 
 .hidden {

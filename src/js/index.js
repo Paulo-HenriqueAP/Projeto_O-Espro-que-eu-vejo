@@ -19,6 +19,7 @@ const simplificarLista = [
   Ester, Sarah, Edvan
 ];
 
+let qualLogo = document.getElementById("logo")
 let ocupado = false;
 let visaoEspro_Texto = document.querySelector('#visaoEsproTexto');
 let visaoEspro = document.querySelector('#visaoEspro');
@@ -281,18 +282,23 @@ trocarTema.addEventListener("click", () => {
   contTema = contTema + 1;
   if (contTema === 1) {
     corpo.classList.add("temaBranco");
+    qualLogo.setAttribute("src", "src/fotos/Logo/L2.png")
   } else if (contTema === 2) {
     corpo.classList.remove("temaBranco");
     corpo.classList.add("temaAmarelo");
+    qualLogo.setAttribute("src", "src/fotos/Logo/L3.png")
   } else if (contTema === 3) {
     corpo.classList.remove("temaAmarelo");
     corpo.classList.add("temaVermelho");
+    qualLogo.setAttribute("src", "src/fotos/Logo/L4.png")
   } else if (contTema === 4) {
     corpo.classList.remove("temaVermelho");
     corpo.classList.add("temaVerde");
+    qualLogo.setAttribute("src", "src/fotos/Logo/L5.png")
   }
   else if (contTema === 5) {
     corpo.classList.remove("temaVerde");
+    qualLogo.setAttribute("src", "src/fotos/Logo/L1.png")
     contTema = 0;
   }
 })

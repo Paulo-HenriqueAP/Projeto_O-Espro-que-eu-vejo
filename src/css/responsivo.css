@@ -38,16 +38,13 @@
         left: 40%;
     }
 
-    #KSD,
-    #ESE,
-    #PLG {
+    #KSD, #ESE, #PLG {
         bottom: 30.5%;
     }
-
+    
 }
 
 @media (max-width: 600px) {
-
     #container:not(.hidden),
     #container2:not(.hidden),
     #container3:not(.hidden) {
@@ -85,16 +82,14 @@
     #DanielaFoto,
     #EsterFoto,
     #SarahFoto,
-    #EdvanFoto {
+    #EdvanFoto  {
         height: 60px;
         width: 60px;
         align-items: center;
     }
 
 
-    #KSD,
-    #ESE,
-    #PLG {
+    #KSD, #ESE, #PLG {
         left: 10%;
         width: 30px;
         height: 20px;
@@ -103,13 +98,6 @@
         width: max-content;
     }
 
-    #logo {
-        transform: scale(0.5);
-        width: 620px;
-        height: 140px;
-        left: -35%;
-        top: -3%;
-    }
 
     #linkAprendiz {
         bottom: 6%;
@@ -164,22 +152,20 @@
         font-size: x-small;
     }
 
-    #textoAudio {
+    #textoAudio{
         bottom: 28%;
     }
+
+   #logo {
+   width: 350px;
+   height: auto;
+   }
 
 }
 
 /*Problemas com a lista ao mudar a perspectiva, investigar depois*/
 
 @media (max-height: 500px) {
-    #logo {
-        transform: scale(0.5);
-        width: 620px;
-        height: 140px;
-        left: -17%;
-        top: -7%;
-    }
 
     #fecharVisao {
         top: 30%;
@@ -193,7 +179,7 @@
         left: 0%;
         font-size: 12px;
         height: max-content;
-        width: max-content;
+        width: max-content; 
     }
 
     #todosAlunos {
@@ -223,9 +209,7 @@
         width: max-content;
     }
 
-    #KSD,
-    #ESE,
-    #PLG {
+    #KSD, #ESE, #PLG {
         left: 23%;
         width: 20px;
         height: 20px;
@@ -285,12 +269,17 @@
         font-size: x-small;
     }
 
-    #textoAudio {
+    #textoAudio{
         bottom: 20%;
     }
 
     #trocarTema {
         height: 20vh;
     }
+
+    #logo {
+        width: 350px;
+        height: auto;
+        }
 
 }
