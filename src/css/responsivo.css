@@ -98,9 +98,12 @@
         width: max-content;
     }
 
-    #logoPersonalizado {
-        height: auto;
-        width: 360px;
+    #logo {
+       transform: scale(0.5);
+       width: 620px;
+       height: 140px;
+       left: -35%;
+       top: -3%;
     }
 
     #linkAprendiz {
@@ -145,8 +148,8 @@
     }
 
     #source {
-        width: 120px;
-        height: 135px;
+        width: 140px;
+        height: 140px;
         box-shadow: 5px 5px #FA044B;
         font-size: small;
         text-align: left;
@@ -155,16 +158,23 @@
     #etc {
         font-size: x-small;
     }
+
+    #textoAudio{
+        bottom: 28%;
+    }
+
 }
 
 /*Problemas com a lista ao mudar a perspectiva, investigar depois*/
 
 @media (max-height: 500px) {
-
-    #logoPersonalizado {
-        height: auto;
-        width: 300px;
-    }
+    #logo {
+        transform: scale(0.5);
+        width: 620px;
+        height: 140px;
+        left: -17%;
+        top: -7%;
+     }
 
     #fecharVisao {
         top: 30%;
@@ -252,12 +262,11 @@
 
     #etc {
         font-size: x-small;
-        bottom: 0;
     }
 
     #source {
-        width: 130px;
-        height: 135px;
+        width: 140px;
+        height: 140px;
         box-shadow: 5px 5px #FA044B;
         font-size: smaller;
         text-align: left;
@@ -267,6 +276,14 @@
         bottom: 1%;
         width: max-content;
         font-size: x-small;
+    }
+
+    #textoAudio{
+        bottom: 20%;
+    }
+
+    #trocarTema {
+        height: 20vh;
     }
 
 }

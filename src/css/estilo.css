@@ -13,8 +13,14 @@ body {
     left: 0;
     bottom: 8%;
     width: max-content;
-    height: 8vh;
+    height: 10vh;
     cursor: pointer;
+    background-color: #343434;
+    color: #F5F5F5;
+}
+
+.temaBranco #logo {
+    background-image: url("/src/fotos/Logo/L2.png");
 }
 
 .temaBranco {
@@ -32,10 +38,17 @@ body {
     color: #ffffff;
 }
 
-.temaBranco #proximo,
-.temaBranco #anterior {
+
+
+.temaBranco #KSD,
+.temaBranco #ESE,
+.temaBranco #PLG {
     background-color: #343434;
     color: #F5F5F5;
+}
+
+.temaAmarelo #logo {
+    background-image: url("/src/fotos/Logo/L3.png");
 }
 
 .temaAmarelo {
@@ -47,14 +60,24 @@ body {
     color: #343434;
 }
 
-.temaAmarelo #proximo,
-.temaAmarelo #anterior {
+.temaAmarelo #KSD,
+.temaAmarelo #ESE,
+.temaAmarelo #PLG {
     background-color: #F5F5F5;
     color: #343434;
 }
 
+.temaAmarelo #source {
+    background-color: #F5F5F5;
+    box-shadow: 10px 10px #343434;
+}
+
 .temaAmarelo #etc {
     background-color: #F5F5F5;
+}
+
+.temaVermelho #logo {
+    background-image: url("/src/fotos/Logo/L4.png");
 }
 
 .temaVermelho {
@@ -66,14 +89,19 @@ body {
     color: black;
 }
 
-.temaVermelho #proximo,
-.temaVermelho #anterior {
+.temaVermelho #KSD,
+.temaVermelho #ESE,
+.temaVermelho #PLG {
     background-color: #343434;
     color: #F5F5F5;
 }
 
 .temaVermelho #source {
     box-shadow: 10px 10px #343434;
+}
+
+.temaVerde #logo {
+    background-image: url("/src/fotos/Logo/L5.png");
 }
 
 .temaVerde {
@@ -83,6 +111,13 @@ body {
 .temaVerde #todosAlunos,
 .temaVerde #linkAprendiz {
     color: black;
+}
+
+.temaVerde #KSD,
+.temaVerde #ESE,
+.temaVerde #PLG {
+    background-color: #F5F5F5;
+    color: #343434;
 }
 
 .temaBranco .opacidade,
@@ -250,10 +285,18 @@ button {
     cursor: help;
 }
 
-.logoPersonalizado {
-    pointer-events: none;
-    position: absolute;
+#logo {
+    background-image: url("/src/fotos/Logo/L1.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 1%;
     left: 1%;
+    width: 626px;
+    height: 135px;   
+}
+
+.logoP {
+    left: 0;
     top: 1%;
 }
 
@@ -286,4 +329,10 @@ button {
 
 .opacidade {
     filter: grayscale(0.8);
+}
+
+#textoAudio{
+    position: absolute;
+    bottom: 40%;
+    right: 0%;
 }
