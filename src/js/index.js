@@ -278,27 +278,17 @@ fecharLinks.addEventListener("click", () => {
   botaoETC.classList.toggle("hidden");
 })
 
+const temas = [
+  { classe: "temaBranco", logo: "src/fotos/Logo/L2.png" },
+  { classe: "temaAmarelo", logo: "src/fotos/Logo/L3.png" },
+  { classe: "temaVermelho", logo: "src/fotos/Logo/L4.png" },
+  { classe: "temaVerde", logo: "src/fotos/Logo/L5.png" },
+  { classe: "", logo: "src/fotos/Logo/L1.png" }
+];
+
 trocarTema.addEventListener("click", () => {
-  contTema = contTema + 1;
-  if (contTema === 1) {
-    corpo.classList.add("temaBranco");
-    qualLogo.setAttribute("src", "src/fotos/Logo/L2.png")
-  } else if (contTema === 2) {
-    corpo.classList.remove("temaBranco");
-    corpo.classList.add("temaAmarelo");
-    qualLogo.setAttribute("src", "src/fotos/Logo/L3.png")
-  } else if (contTema === 3) {
-    corpo.classList.remove("temaAmarelo");
-    corpo.classList.add("temaVermelho");
-    qualLogo.setAttribute("src", "src/fotos/Logo/L4.png")
-  } else if (contTema === 4) {
-    corpo.classList.remove("temaVermelho");
-    corpo.classList.add("temaVerde");
-    qualLogo.setAttribute("src", "src/fotos/Logo/L5.png")
-  }
-  else if (contTema === 5) {
-    corpo.classList.remove("temaVerde");
-    qualLogo.setAttribute("src", "src/fotos/Logo/L1.png")
-    contTema = 0;
-  }
-})
+  contTema++;
+  const tema = temas[contTema % temas.length];
+  corpo.classList = tema.classe;
+  qualLogo.setAttribute("src", tema.logo);
+});
