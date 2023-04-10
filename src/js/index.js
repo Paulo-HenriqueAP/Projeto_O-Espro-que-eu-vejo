@@ -287,8 +287,8 @@ const temas = [
 ];
 
 trocarTema.addEventListener("click", () => {
-  contTema++;
   const tema = temas[contTema % temas.length];
   corpo.classList = tema.classe;
   qualLogo.setAttribute("src", tema.logo);
+  contTema++;
 });

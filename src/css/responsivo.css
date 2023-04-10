@@ -1,5 +1,9 @@
 @media screen and (min-width: 1920px) {
 
+    #visaoEspro-link {
+        top: 50%;
+    }
+
     #textoTuto {
         top: 20%;
     }
@@ -175,7 +179,7 @@
     }
 
     #textoTuto {
-        top: 23%;
+        top: 25%;
         left: 0%;
         font-size: 12px;
         height: max-content;
