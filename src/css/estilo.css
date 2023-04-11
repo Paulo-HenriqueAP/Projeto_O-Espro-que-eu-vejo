@@ -119,8 +119,10 @@ body {
 }
 
 .temaBlack #source {
-    box-shadow: 5px 5px #343434;
-    background-color: slategrey;
+    box-shadow: 10px 10px #343434;
+    background-color: #272733;
+    color: #bbbbbb;
+    filter: brightness(80%);
 }
 
 .temaBlack #logo {
@@ -134,9 +136,10 @@ body {
     box-shadow: 0px 2px #bbbbbb;
 }
 
-.temaBlack 
-#todosAlunos,
-#linkAprendiz {
+.temaBlack #todosAlunos,
+.temaBlack #linkAprendiz,
+.temaBlack #fecharVisao,
+.temaBlack #textoAudio {
     opacity: 0.3;
 }
 
@@ -149,6 +152,12 @@ body {
 
 .temaBlack #visaoEsproTexto {
     opacity: 0.5;
+}
+
+.temaBlack #etc {
+    opacity: 0.5;
+    background-color: #343434;
+    color: #bbbbbb;
 }
 
 
