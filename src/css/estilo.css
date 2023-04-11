@@ -43,6 +43,11 @@ body {
     color: #F5F5F5;
 }
 
+.temaBranco #source {
+    box-shadow: 10px 10px #343434;
+    background-color: #c8c8c8
+}
+
 .temaAmarelo {
     background-color: #FABA04;
 }
@@ -85,7 +90,7 @@ body {
 }
 
 .temaVermelho #source {
-    box-shadow: 10px 10px #343434;
+    box-shadow: 10px 10px black;
 }
 
 .temaVerde {
@@ -103,6 +108,49 @@ body {
     background-color: #F5F5F5;
     color: #343434;
 }
+
+.temaVerde #source {
+    box-shadow: 10px 10px #F5F5F5;
+    background-color: #bbbbbb;
+}
+
+.temaBlack {
+    background-color: #16161D;
+}
+
+.temaBlack #source {
+    box-shadow: 5px 5px #343434;
+    background-color: slategrey;
+}
+
+.temaBlack #logo {
+    opacity: 0.5;
+}
+
+.temaBlack #textoTuto {
+    opacity: 0.3;
+    background-color: #16161D;
+    color: whitesmoke;
+    box-shadow: 0px 2px #bbbbbb;
+}
+
+.temaBlack 
+#todosAlunos,
+#linkAprendiz {
+    opacity: 0.3;
+}
+
+.temaBlack #KSD,
+.temaBlack #ESE,
+.temaBlack #PLG {
+    color: white;
+    background-color: #16161D;
+}
+
+.temaBlack #visaoEsproTexto {
+    opacity: 0.5;
+}
+
 
 .temaBranco .opacidade,
 .temaAmarelo .opacidade,
@@ -273,14 +321,16 @@ button {
     position: fixed;
     display: flex;
     top: 1%;
-   left: 1%;
+    left: 1%;
 }
 
 .hidden {
     visibility: hidden;
 }
 
-#KSD, #ESE, #PLG {
+#KSD,
+#ESE,
+#PLG {
     position: absolute;
     cursor: pointer;
     transform: translate(-50%, -50%);
@@ -307,7 +357,7 @@ button {
     filter: grayscale(0.8);
 }
 
-#textoAudio{
+#textoAudio {
     position: absolute;
     bottom: 40%;
     right: 0%;

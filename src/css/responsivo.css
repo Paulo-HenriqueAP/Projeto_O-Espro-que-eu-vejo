@@ -94,7 +94,7 @@
 
 
     #KSD, #ESE, #PLG {
-        left: 10%;
+        left: 90%;
         width: 30px;
         height: 20px;
         top: 80%;
@@ -147,7 +147,6 @@
     #source {
         width: 140px;
         height: 140px;
-        box-shadow: 5px 5px #FA044B;
         font-size: small;
         text-align: left;
     }
@@ -262,7 +261,6 @@
     #source {
         width: 140px;
         height: 140px;
-        box-shadow: 5px 5px #FA044B;
         font-size: smaller;
         text-align: left;
     }

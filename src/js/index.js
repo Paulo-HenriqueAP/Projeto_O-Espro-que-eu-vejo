@@ -231,22 +231,16 @@ Edvan.addEventListener("mousedown", () => {
 proximoa.addEventListener("click", () => {
   container.classList.add("hidden")
   container2.classList.remove("hidden")
-  proximoa.classList.add("hidden")
-  proximob.classList.remove("hidden")
 })
 
 proximob.addEventListener("click", () => {
   container2.classList.add("hidden")
   container3.classList.remove("hidden")
-  proximob.classList.add("hidden")
-  proximoc.classList.remove("hidden")
 })
 
 proximoc.addEventListener("click", () => {
   container3.classList.add("hidden")
   container.classList.remove("hidden")
-  proximoc.classList.add("hidden")
-  proximoa.classList.remove("hidden")
 })
 
 
@@ -283,6 +277,7 @@ const temas = [
   { classe: "temaAmarelo", logo: "src/fotos/Logo/L3.png" },
   { classe: "temaVermelho", logo: "src/fotos/Logo/L4.png" },
   { classe: "temaVerde", logo: "src/fotos/Logo/L5.png" },
+  { classe: "temaBlack", logo: "src/fotos/Logo/L1.png" },
   { classe: "", logo: "src/fotos/Logo/L1.png" }
 ];
 
