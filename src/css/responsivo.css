@@ -136,13 +136,13 @@
     }
 
     #visaoEsproTexto {
-        top: 40%;
+        top: 39%;
         left: auto;
         font-size: 19px;
     }
 
     #fecharVisao {
-        top: 37%;
+        top: 36%;
     }
 
     #source {
@@ -157,7 +157,7 @@
     }
 
     #textoAudio{
-        bottom: 25%;
+        top: 75%;
     }
 
    #logo {

@@ -114,6 +114,10 @@ body {
     background-color: #bbbbbb;
 }
 
+.temaBlack img {
+    filter: brightness(70%);
+}
+
 .temaBlack {
     background-color: #16161D;
 }
@@ -221,7 +225,7 @@ button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     left: 0;
-    top: 23%;
+    top: 24%;
     font-size: medium;
     text-align: center;
     align-items: center;
@@ -331,6 +335,8 @@ button {
     display: flex;
     top: 1%;
     left: 1%;
+    max-width: 626px;
+    max-height: 135px;
 }
 
 .hidden {
@@ -344,7 +350,7 @@ button {
     cursor: pointer;
     transform: translate(-50%, -50%);
     left: 40%;
-    bottom: 19%;
+    bottom: 18%;
     width: 80px;
     background-color: #bfc1c2;
     border: none;
@@ -356,7 +362,7 @@ button {
 #todosAlunos {
     position: absolute;
     color: #c8c8c8;
-    top: 25%;
+    top: 26%;
     left: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     pointer-events: none;
@@ -368,6 +374,9 @@ button {
 
 #textoAudio {
     position: absolute;
-    bottom: 40%;
+    top: 35%;
     right: 0%;
+    width: max-content;
+    height: max-content;
+    border-top-right-radius: 0%;
 }
