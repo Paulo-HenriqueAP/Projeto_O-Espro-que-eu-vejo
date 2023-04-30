@@ -56,9 +56,8 @@ function verificarVisaoNaoVista() {
     listaAlunos.appendChild(nomeAluno);
   });
   if (visaoNaoVista.length === 0) {
-    visaoEspro.setAttribute("src", "src/fotos/Visão/fotoFinal_teste.png");
     atualizarLista.textContent = ("")
-    tutoVisao.textContent = "Re-explore usando ᐁ e reveja as mensagens dos alunos."
+    tutoVisao.textContent = "Agradecemos sinceramente por ter lido todas as nossas mensagens. Obrigado!"
   }
 }
 
@@ -251,10 +250,6 @@ fecharVisao.addEventListener("click", () => {
   ocupado = false
   listaAlunos.classList.remove("hidden")
   atualizarLista.classList.remove("hidden")
-  if (visaoNaoVista.length === 0) {
-    visaoEspro.classList.remove("hidden")
-    tutoVisao.textContent = "Agradecemos sinceramente por ter lido todas as nossas mensagens. Obrigado!"
-  }
 });
 
 simplificarLista.forEach(remover_da_lista => {

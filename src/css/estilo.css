@@ -53,7 +53,8 @@ body {
 }
 
 .temaAmarelo #todosAlunos,
-.temaAmarelo #linkAprendiz {
+.temaAmarelo #linkAprendiz,
+.temaAmarelo #visaoEspro-link {
     color: #343434;
 }
 
@@ -337,6 +338,7 @@ button {
     left: 1%;
     max-width: 626px;
     max-height: 135px;
+    pointer-events: none;
 }
 
 .hidden {
@@ -362,7 +364,7 @@ button {
 #todosAlunos {
     position: absolute;
     color: #c8c8c8;
-    top: 26%;
+    top: 28%;
     left: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     pointer-events: none;
@@ -380,3 +382,4 @@ button {
     height: max-content;
     border-top-right-radius: 0%;
 }
+
