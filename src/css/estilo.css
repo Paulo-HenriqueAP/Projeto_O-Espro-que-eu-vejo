@@ -227,15 +227,17 @@ li {
 }
 
 #textoTuto {
+    font-size: small;
     font-family: 'Lucida Sans Unicode';
     background-color: #ffffff;
     border-radius: 10px;
     position: fixed;
-    top: 25%;
+    top: 1%;
     text-align: center;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     pointer-events: none;
+    right: 0%;
 }
 
 #visaoEspro-link {
@@ -325,10 +327,9 @@ li {
     display: flex;
     top: 1%;
     left: 1%;
-    max-width: 626px;
-    max-height: 135px;
+    max-width: 60%;
+    max-height: 60%;
     pointer-events: none;
-    width: 95%;
 }
 
 .hidden {

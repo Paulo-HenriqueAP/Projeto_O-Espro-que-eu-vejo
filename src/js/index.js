@@ -15,7 +15,7 @@ let jovens = [
 
 function filtrarJ() {
   if (jovens.length === 8) {
-    msgTela.textContent = ("Explore usando ᐁ e descubra perspectivas únicas deixadas por cada jovem. Consulte a lista para verificar quem ainda não foi visto.")
+    msgTela.textContent = ("Explore usando ᐁ e descubra perspectivas deixadas por cada jovem.")
   }
 
   if (jovens.length === 0) {
@@ -24,7 +24,6 @@ function filtrarJ() {
   }
   
 }
-
 
 const temas = [
   { tema: 0, logo: "src/fotos/Logo/L1.png", classe: "" },
@@ -186,7 +185,6 @@ function textoEdvan() {
   textoPara_voz.setAttribute("src", "src/audio/Edvan_TEXTOparaVOZ.mp3")
 };
 
-
 function avancarC() {
   container3.classList.add("hidden")
   container.classList.remove("hidden")
@@ -211,8 +209,6 @@ function fecharComofoi() {
   links.classList.toggle("hidden")
   comoFoifeito.classList.toggle("hidden")
 };
-
-
 
 function definirTema() {
   definirLogo.setAttribute("src", temas[limitarTema].logo)
