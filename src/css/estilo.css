@@ -1,31 +1,30 @@
-html,
 body {
-    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #1C2C4C;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #trocarTema {
     font-size: x-small;
     position: fixed;
     left: 0;
-    bottom: 8%;
-    width: max-content;
-    height: 10vh;
-    cursor: pointer;
+    height: 100px;
+    bottom: 10%;
+    width: min-content;
     background-color: #343434;
     color: #F5F5F5;
+    border-radius: 10px;
 }
 
 .temaBranco {
     background-color: #F5F5F5;
 }
 
-.temaBranco #visaoEsproTexto,
 .temaBranco #todosAlunos,
-.temaBranco #linkAprendiz {
+.temaBranco #linkAprendiz,
+.temaBranco #visaoEspro-link {
     color: #343434;
 }
 
@@ -36,15 +35,15 @@ body {
 
 
 
-.temaBranco #KSD,
-.temaBranco #ESE,
-.temaBranco #PLG {
+.temaBranco #avancarC,
+.temaBranco #avancarC2,
+.temaBranco #avancarC3 {
     background-color: #343434;
     color: #F5F5F5;
 }
 
-.temaBranco #source {
-    box-shadow: 10px 10px #343434;
+.temaBranco #links {
+    box-shadow: 8px 8px #343434;
     background-color: #c8c8c8
 }
 
@@ -58,19 +57,19 @@ body {
     color: #343434;
 }
 
-.temaAmarelo #KSD,
-.temaAmarelo #ESE,
-.temaAmarelo #PLG {
+.temaAmarelo #avancarC,
+.temaAmarelo #avancarC2,
+.temaAmarelo #avancarC3 {
     background-color: #F5F5F5;
     color: #343434;
 }
 
-.temaAmarelo #source {
+.temaAmarelo #links {
     background-color: #F5F5F5;
-    box-shadow: 10px 10px #343434;
+    box-shadow: 8px 8px #343434;
 }
 
-.temaAmarelo #etc {
+.temaAmarelo #comoFoi {
     background-color: #F5F5F5;
 }
 
@@ -79,19 +78,20 @@ body {
 }
 
 .temaVermelho #todosAlunos,
-.temaVermelho #linkAprendiz {
+.temaVermelho #linkAprendiz,
+.temaVermelho #visaoEspro-link {
     color: black;
 }
 
-.temaVermelho #KSD,
-.temaVermelho #ESE,
-.temaVermelho #PLG {
+.temaVermelho #avancarC,
+.temaVermelho #avancarC2,
+.temaVermelho #avancarC3 {
     background-color: #343434;
     color: #F5F5F5;
 }
 
-.temaVermelho #source {
-    box-shadow: 10px 10px black;
+.temaVermelho #links {
+    box-shadow: 8px 8px black;
 }
 
 .temaVerde {
@@ -99,19 +99,20 @@ body {
 }
 
 .temaVerde #todosAlunos,
-.temaVerde #linkAprendiz {
+.temaVerde #linkAprendiz,
+.temaVerde #visaoEspro-link {
     color: black;
 }
 
-.temaVerde #KSD,
-.temaVerde #ESE,
-.temaVerde #PLG {
+.temaVerde #avancarC,
+.temaVerde #avancarC2,
+.temaVerde #avancarC3 {
     background-color: #F5F5F5;
     color: #343434;
 }
 
-.temaVerde #source {
-    box-shadow: 10px 10px #F5F5F5;
+.temaVerde #links {
+    box-shadow: 8px 8px #F5F5F5;
     background-color: #bbbbbb;
 }
 
@@ -123,8 +124,8 @@ body {
     background-color: #16161D;
 }
 
-.temaBlack #source {
-    box-shadow: 10px 10px #343434;
+.temaBlack #links {
+    box-shadow: 8px 8px #343434;
     background-color: #272733;
     color: #bbbbbb;
     filter: brightness(80%);
@@ -144,13 +145,13 @@ body {
 .temaBlack #todosAlunos,
 .temaBlack #linkAprendiz,
 .temaBlack #fecharVisao,
-.temaBlack #textoAudio {
+.temaBlack #add_removerVoz {
     opacity: 0.3;
 }
 
-.temaBlack #KSD,
-.temaBlack #ESE,
-.temaBlack #PLG {
+.temaBlack #avancarC,
+.temaBlack #avancarC2,
+.temaBlack #avancarC3 {
     color: white;
     background-color: #16161D;
 }
@@ -159,7 +160,7 @@ body {
     opacity: 0.5;
 }
 
-.temaBlack #etc {
+.temaBlack #comoFoi {
     opacity: 0.5;
     background-color: #343434;
     color: #bbbbbb;
@@ -173,16 +174,18 @@ body {
     opacity: 0.7;
 }
 
-img,
-button {
+img {
     -webkit-user-drag: none;
-    -moz-user-drag: none;
-    -ms-user-drag: none;
-    user-select: none;
     border-radius: 10px;
+    user-select: none;
 }
 
-#PauloAP,
+button:hover {
+    cursor: pointer;
+    opacity: 85%;
+}
+
+#Paulo,
 #Lucas,
 #Guilherme,
 #Kamila,
@@ -191,110 +194,98 @@ button {
 #Ester,
 #Sarah,
 #Edvan {
-    cursor: pointer;
+    border-radius: 10px;
     background-color: unset;
     border: none;
+}
+
+#container,
+#container2,
+#container3 {
     position: absolute;
-    transform: translate(-50%, -50%);
+    left: 35%;
+    list-style: none;
+    bottom: 30%;
+    user-select: none;
+    padding: 0%;
 }
 
-
-#PauloAP,
-#Kamila,
-#Ester {
-    top: 40%;
-    left: 40%;
+li {
+    margin-bottom: 5px;
 }
 
-#Lucas,
-#Sandra,
-#Sarah {
-    top: 55%;
-    left: 40%;
-}
-
-#Guilherme,
-#Daniela,
-#Edvan {
-    top: 70%;
-    left: 40%;
+#avancarC,
+#avancarC2,
+#avancarC3 {
+    width: 90px;
+    background-color: #bfc1c2;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: medium;
+    border: none;
 }
 
 #textoTuto {
+    font-family: 'Lucida Sans Unicode';
     background-color: #ffffff;
     border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    left: 0;
-    top: 24%;
-    font-size: medium;
+    position: fixed;
+    top: 25%;
     text-align: center;
-    align-items: center;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     pointer-events: none;
 }
 
-#visaoEspro {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    border: none;
-    pointer-events: none;
-    width: 800px;
-    height: 800px;
-}
-
-#visaoEspro-midia {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    border: none;
-    width: 400px;
-    height: 400px;
-}
-
 #visaoEspro-link {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
     color: #FABA04;
-    border-radius: 10px;
-    position: absolute;
-    right: 1%;
-    top: 60%;
-    font-size: medium;
-}
-
-#visaoEsproTexto {
-    position: absolute;
-    display: flex;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    top: 45%;
-    left: 50%;
-    color: #ffffff;
-    font-size: 20px;
+    font-size: small;
+    height: max-content;
     text-align: center;
+    bottom: 35%;
+    right: 5%;
 }
 
 #fecharVisao {
-    position: absolute;
-    top: 42%;
-    cursor: pointer;
-    right: 0%;
-    border-top-right-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: start;
+    font-size: xx-small;
+    padding: 0.5%;
+    color: white;
+}
+
+#texto {
+    transform: translateY(50%);
+    position: fixed;
+    bottom: 45%;
+    right: 5%;
+    text-align: center;
+    display: flex;
+    height: max-content;
+    width: 40%;
+    margin: 30px 0;
+    color: #ffffff;
+    border-bottom-right-radius: 0;
+    font-size: large;
+}
+
+#visaoEsproTexto {
+    background: #16161D;
 }
 
 #linkAprendiz {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #bbbbbb;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     bottom: 2%;
-    font-size: medium;
+    width: max-content;
 }
 
-#etc {
-    cursor: pointer;
+#comoFoi {
     position: absolute;
     left: 1%;
     bottom: 2%;
@@ -304,26 +295,24 @@ button {
     border-radius: 4px;
 }
 
-#source {
+#links {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     bottom: 5%;
     width: 160px;
-    height: 170px;
+    height: max-content;
     background-color: #FABA04;
-    box-shadow: 10px 10px #FA044B;
+    box-shadow: 8px 8px #FA044B;
     padding: 5px;
     border-radius: 10px;
 }
 
-#fecharSource {
+#fecharLinks {
     position: absolute;
     right: 0%;
-    top: -1%;
-    color: #bfc1c2;
+    top: 0%;
     background-color: #343434;
-    cursor: pointer;
-    width: 25px;
+    width: max-content;
 }
 
 #linksLista {
@@ -339,47 +328,76 @@ button {
     max-width: 626px;
     max-height: 135px;
     pointer-events: none;
+    width: 95%;
 }
 
 .hidden {
     visibility: hidden;
 }
 
-#KSD,
-#ESE,
-#PLG {
-    position: absolute;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    left: 40%;
-    bottom: 18%;
-    width: 80px;
-    background-color: #bfc1c2;
-    border: none;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
-
 #todosAlunos {
     position: absolute;
     color: #c8c8c8;
-    top: 28%;
-    left: 0%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    pointer-events: none;
+    top: 30%;
+    left: 2%;
+    padding: 0%;
+    border-radius: 10px;
+    list-style: none;
 }
 
 .opacidade {
     filter: grayscale(0.8);
 }
 
-#textoAudio {
-    position: absolute;
-    top: 35%;
-    right: 0%;
-    width: max-content;
-    height: max-content;
-    border-top-right-radius: 0%;
+#add_removerVoz {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 5px;
+    background-color: white;
+    font-size: xx-small;
+    padding: 0.5%;
 }
 
+.block {
+    display: none;
+}
+
+.bloqueiaLista {
+    display: list-item;
+
+}
+
+.boxP {
+    box-shadow: 0px 8px #bfc1c2;
+}
+
+.boxL {
+    box-shadow: 0px 8px #F16B39;
+}
+
+.boxG {
+    box-shadow: 0px 8px #257FFF;
+}
+
+.boxK {
+    box-shadow: 0px 8px #9966cc;
+}
+
+.boxS {
+    box-shadow: 0px 8px #863e61;
+}
+
+.boxD {
+    box-shadow: 0px 8px #485643;
+}
+
+.boxE {
+    box-shadow: 0px 8px #6aa84f;
+}
+
+.boxSa {
+    box-shadow: 0px 8px #cbbf99;
+}
+
+.boxEd {
+    box-shadow: 0px 8px #b70000;
+}

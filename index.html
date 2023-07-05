@@ -4,74 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
- <link rel="stylesheet" href="src/css/estilo.css">
-   
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="src/css/estilo.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
     <title>O Espro que eu vejo</title>
+    <link rel="shortcut icon" href="src/fotos/Logo/ico.ico" type="image/x-icon">
+    <img id="logo" alt="Logo personalizado: Espro + Turma / 12629" src="src/fotos/Logo/L1.png">
 
 </head>
 
-<link rel="shortcut icon" href="src/fotos/Logo/ico.ico" type="image/x-icon">
 
-<img id="logo" alt="Logo personalizado: Espro + Turma / 12629" src="src/fotos/Logo/L1.png">
+<body>
 
-<body id="corpo">
+    <ul id="container" oncontextmenu="return false;">
+        <li><button id="Paulo" onclick="textoPaulo()"><img id="PauloAPFoto" alt="Paulo" src="src/fotos/Paulo_FOTO.png"></button></li>
+        <li></li><button id="Lucas" onclick="textoLucas()"><img id="LucasFoto" alt="Lucas" src="src/fotos/lucas_FOTO.png"></button></li>
+        <li></li><button id="Guilherme" onclick="textoGuilherme()"><img id="GuilhermeFoto" alt="Guilherme" src="src/fotos/Guilherme_FOTO.png"></button></li>
+        <li><button id="avancarC2" onclick="avancarC2()">ᐁ</button></li>
+    </ul>
 
-    <div id="container" oncontextmenu="return false;">
-        <button id="PauloAP"><img id="PauloAPFoto" alt="Paulo" src="src/fotos/Paulo_FOTO.png"></button>
-        <button id="Lucas"><img id="LucasFoto" alt="Lucas" src="src/fotos/lucas_FOTO.png"></button>
-        <button id="Guilherme"><img id="GuilhermeFoto" alt="Guilherme" src="src/fotos/Guilherme_FOTO.png"></button>
-        <button id="KSD">ᐁ</button>
-    </div>
+    <ul id="container2" class="hidden" oncontextmenu="return false;">
+        <li><button id="Kamila" onclick="textoKamila()"><img id="KamilaFoto" alt="Kamila" src="src/fotos/Kamila_FOTO.png"></button></li>
+        <li><button id="Sandra" onclick="textoSandra()"><img id="SandraFoto" alt="Sandra" src="src/fotos/Sandra_FOTO.png"></button></li>
+        <li><button id="Daniela" onclick="textoDaniela()"><img id="DanielaFoto" alt="Daniela" src="src/fotos/Daniela_FOTO.png"></button></li>
+        <li><button id="avancarC3" onclick="avancarC3()">ᐁ</button></li>
+    </ul>
 
-    <div id="container2" class="hidden" oncontextmenu="return false;">
-        <button id="Kamila"><img id="KamilaFoto" alt="Kamila" src="src/fotos/Kamila_FOTO.png"></button>
-        <button id="Sandra"><img id="SandraFoto" alt="Sandra" src="src/fotos/Sandra_FOTO.png"></button>
-        <button id="Daniela"><img id="DanielaFoto" alt="Daniela" src="src/fotos/Daniela_FOTO.png"></button>
-        <button id="ESE">ᐁ</button>
-    </div>
+    <ul id="container3" class="hidden" oncontextmenu="return false;">
+        <li><button id="Ester" onclick="textoEster()"><img id="EsterFoto" alt="Ester" src="src/fotos/Ester_FOTO.png"></button></li>
+        <li><button id="Sarah" onclick="textoSarah()"><img id="SarahFoto" alt="Sarah" src="src/fotos/Sarah_FOTO.png"></button></li>
+        <li><button id="Edvan" onclick="textoEdvan()"><img id="EdvanFoto" alt="Edvan" src="src/fotos/Edvan_FOTO.png"></button></li>
+        <li><button id="avancarC" onclick="avancarC()">ᐁ</button></li>
 
-    <div id="container3" class="hidden" oncontextmenu="return false;">
-        <button id="Ester"><img id="EsterFoto" alt="Ester" src="src/fotos/Ester_FOTO.png"></button>
-        <button id="Sarah"><img id="SarahFoto" alt="Sarah" src="src/fotos/Sarah_FOTO.png"></button>
-        <button id="Edvan"><img id="EdvanFoto" alt="Edvan" src="src/fotos/Edvan_FOTO.png"></button>
-        <button id="PLG">ᐁ</button>
-    </div>
+    </ul>
 
-    <span id="textoTuto">Selecione uma das fotos para visualizar a mensagem do jovem ESPRO.</span>
+    <span id="textoTuto">Selecione um(a) jovem para visualizar sua mensagem.</span>
 
-    <ul id="todosAlunos">Jovens:</ul>
-
-    <img id="visaoEspro" class="hidden" src="">
-
-    <div id="visaoEsproTexto">
+    <ul id="todosAlunos">
+        Não visto:
         <p></p>
-    </div>
+        <li id="po">Paulo</li>
+        <li id="ls">Lucas</li>
+        <li id="ge">Guilherme</li>
+        <li id="ka">Kamila</li>
+        <li id="sa">Sandra</li>
+        <li id="da">Daniela</li>
+        <li id="er">Ester</li>
+        <li id="sh">Sarah</li>
+        <li id="en">Edvan</li>
+    </ul>
 
-    <video controls class="hidden" id="visaoEspro-midia" autoplay>
+    <!--<img id="visaoEspro" class="hidden" src="">-->
+        
+       
+        
+        <div id="texto">
+            <button id="add_removerVoz" onclick="audio_On_Off()" class="hidden">||</button>
+            <span id="visaoEsproTexto"></span>
+            <button id="fecharVisao" class="hidden" onclick="botao_fecharVisao()">☓</button> 
+        </div>
+   
+
+    <!--<video controls class="hidden" id="visaoEspro-midia" autoplay>
         <source src="" type="video/mp4">
         Video do aluno Espro, seu navegador não suporta :/
-    </video>
+    </video>-->
 
-    <audio controls class="hidden" id="visaoEspro-midia">
+    <audio controls id="textoVoz" class="block" autoplay>
         <source src="" type="audio/mpeg">
         Áudio do aluno Espro, seu navegador não suporta :/
     </audio>
 
-    <button id="textoAudio" class="hidden">Voz</button>
-
     <a class="hidden" id="visaoEspro-link" href="" target="_blank" rel="noopener noreferrer"></a>
-
-    <button id="fecharVisao" class="hidden">X</button>
 
     <a href="https://espro-app.taqe.com.br/#!/home" target="_blank" rel="noopener noreferrer" id="linkAprendiz">Quer se
         tornar um aprendiz? Clique aqui para saber como!</a>
 
-    <button id="etc">Como foi feito?</button>
-    <div id="source" class="hidden">Usando:<button id="fecharSource">x</button>
+    <button id="comoFoi">⚙️ Como foi feito?</button>
+    <div id="links" class="hidden">Usando:<button id="fecharLinks" onclick="fecharComofoi()">❌</button>
+        <button id="trocarTema" onclick="trocouTema()">⚙️ Tema </button>
         <ul id="linksLista">
             <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" title="HTML, CSS e JS">VS Code</a></li>
             <li><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a></li>
@@ -82,7 +98,6 @@
             <p>
                 <li><a href="https://1drv.ms/f/s!AjyXhFdwcJjrgP45uk5wgN2FcOLpqQ?e=nx4sO1" style="font-size: 14px;" target="_blank" rel="noopener noreferrer">VER PRINTS</a></li>
             </p>
-            <button id="trocarTema">Tema</button>
         </ul>
     </div>
     <script src="src/js/index.js"></script>

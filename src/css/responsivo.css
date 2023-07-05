@@ -1,288 +1,141 @@
-@media screen and (min-width: 1920px) {
-
-    #visaoEspro-link {
-        top: 50%;
+@media (max-height:420px) {
+    body {
+        font-size: small;
     }
 
-    #textoTuto {
-        top: 20%;
+    img {
+        width: 45px;
     }
 
-    #PauloAPFoto,
-    #LucasFoto,
-    #GuilhermeFoto,
-    #KamilaFoto,
-    #SandraFoto,
-    #DanielaFoto,
-    #EsterFoto,
-    #SarahFoto,
-    #EdvanFoto {
-        height: 80px;
-        width: 80px;
+    #linkAprendiz {
+        font-size: x-small;
     }
 
-    #PauloAP,
-    #Kamila,
-    #Ester {
-        top: 40%;
-        left: 40%;
-    }
-
-    #Lucas,
-    #Sandra,
-    #Sarah {
-        top: 50%;
-        left: 40%;
-    }
-
-    #Guilherme,
-    #Daniela,
-    #Edvan {
-        top: 60%;
-        left: 40%;
-    }
-
-    #KSD, #ESE, #PLG {
-        bottom: 30.5%;
-    }
-    
-}
-
-@media (max-width: 600px) {
-    #container:not(.hidden),
-    #container2:not(.hidden),
-    #container3:not(.hidden) {
-        display: flex;
+    #logo {
+        width: 40%;
     }
 
     #container,
     #container2,
     #container3 {
-        justify-content: center;
-        position: fixed;
-        bottom: 15%;
-        width: 100%;
+        left: 20%;
+        bottom: 1%;
     }
 
-    #PauloAP,
-    #Lucas,
-    #Guilherme,
-    #Kamila,
-    #Sandra,
-    #Daniela,
-    #Ester,
-    #Sarah,
-    #Edvan {
-        position: static;
-        margin: 0 5px;
-        transform: none;
-    }
-
-    #PauloAPFoto,
-    #LucasFoto,
-    #GuilhermeFoto,
-    #KamilaFoto,
-    #SandraFoto,
-    #DanielaFoto,
-    #EsterFoto,
-    #SarahFoto,
-    #EdvanFoto  {
-        height: 60px;
-        width: 60px;
-        align-items: center;
-    }
-
-
-    #KSD, #ESE, #PLG {
-        left: 90%;
-        width: 30px;
-        height: 20px;
-        top: 80%;
-        height: max-content;
+    #avancarC,
+    #avancarC2,
+    #avancarC3 {
         width: max-content;
     }
 
+    #links {
+        width: max-content;
+        height: max-content;
+        font-size: smaller;
+        text-align: left;
+    }
+
+    #trocarTema {
+        height: 90px;
+    }
+
+    #texto {
+        font-size: small;
+        right: 5%;
+        bottom: 30%;
+    }
+
+    #comoFoi {
+        font-size: x-small;
+    }
+
+    #textoTuto {
+        font-size: x-small;
+    }
+
+    li {
+        margin-bottom: 2px;
+    }
+
+    #todosAlunos {
+        font-size: x-small;
+        top: 35%;
+    }
+
+    #fecharLinks {
+        font-size: x-small;
+    }
+
+    #visaoEspro-link {
+        bottom: 15%;
+    }
+    
+
+}
+
+@media (max-width: 600px) {
+    .bloqueiaLista {
+        display: none;
+    }
 
     #linkAprendiz {
-        bottom: 6%;
-        width: max-content;
         font-size: small;
+        bottom: 5%;
+    }
+
+    #comoFoi {
+        font-size: x-small;
+    }
+
+    #container,
+    #container2,
+    #container3 {
+        display: inline-flex;
+        left: 0%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    #avancarC,
+    #avancarC2,
+    #avancarC3 {
+        width: max-content;
+        text-align: center;
+    }
+
+    #texto {
+        transform: translateY(-50%);
+        width: 100%;
+        top: 45%;
+        left: 0%;
     }
 
     #textoTuto {
         font-size: small;
         top: 15%;
-        left: 0%;
-        height: max-content;
-        width: fit-content;
-        text-align: center;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    li {
+        margin-right: 5px;
     }
 
     #todosAlunos {
-        top: 30%;
+        left: 5%;
         font-size: small;
     }
 
-    #visaoEspro {
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.4);
-    }
-
-    #visaoEspro-midia {
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.7);
-    }
-
-    #visaoEsproTexto {
-        top: 39%;
-        left: auto;
-        font-size: 19px;
-    }
-
-    #fecharVisao {
-        top: 36%;
-    }
-
-    #source {
-        width: 140px;
-        height: 140px;
+    #links {
+        width: max-content;
         font-size: small;
         text-align: left;
     }
 
-    #etc {
+    #fecharLinks {
         font-size: x-small;
     }
-
-    #textoAudio{
-        top: 75%;
-    }
-
-   #logo {
-   width: 350px;
-   height: auto;
-   }
-
-}
-
-/*Problemas com a lista ao mudar a perspectiva, investigar depois*/
-
-@media (max-height: 500px) {
-
-    #fecharVisao {
-        top: 30%;
-        max-height: fit-content;
-        max-width: fit-content;
-        font-size: x-small;
-    }
-
-    #textoTuto {
-        top: 25%;
-        left: 0%;
-        font-size: 12px;
-        height: max-content;
-        width: max-content; 
-    }
-
-    #todosAlunos {
-        top: 26%;
-        font-size: small;
-    }
-
-    #PauloAPFoto,
-    #LucasFoto,
-    #GuilhermeFoto,
-    #KamilaFoto,
-    #SandraFoto,
-    #DanielaFoto,
-    #EsterFoto,
-    #SarahFoto,
-    #EdvanFoto {
-        height: 50px;
-        width: 50px;
-    }
-
-    #anterior {
-        left: 23%;
-        width: 20px;
-        height: 20px;
-        top: 40%;
-        height: max-content;
-        width: max-content;
-    }
-
-    #KSD, #ESE, #PLG {
-        left: 23%;
-        width: 20px;
-        height: 20px;
-        bottom: 15%;
-        height: max-content;
-        width: max-content;
-    }
-
-    #visaoEsproTexto {
-        top: 35%;
-        font-size: medium;
-        right: 5%;
-    }
-
-    #visaoEspro {
-        width: 300px;
-        height: 300px;
-        left: 50%;
-    }
-
-    #PauloAP,
-    #Kamila,
-    #Ester {
-        top: 40%;
-        left: 30%;
-    }
-
-    #Lucas,
-    #Sandra,
-    #Sarah {
-        top: 60%;
-        left: 30%;
-    }
-
-    #Guilherme,
-    #Daniela,
-    #Edvan {
-        top: 80%;
-        left: 30%;
-    }
-
-    #etc {
-        font-size: x-small;
-    }
-
-    #source {
-        width: 140px;
-        height: 140px;
-        font-size: smaller;
-        text-align: left;
-    }
-
-    #linkAprendiz {
-        bottom: 1%;
-        width: max-content;
-        font-size: x-small;
-    }
-
-    #textoAudio{
-        bottom: 20%;
-    }
-
-    #trocarTema {
-        height: 20vh;
-    }
-
-    #logo {
-        width: 350px;
-        height: auto;
-        }
-
 }
