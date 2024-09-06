@@ -13,18 +13,6 @@ let jovens = [
   "Ester", "Sarah", "Edvan"
 ];
 
-function filtrarJ() {
-  if (jovens.length === 8) {
-    msgTela.textContent = ("Explore usando ᐁ e descubra perspectivas deixadas por cada jovem.")
-  }
-
-  if (jovens.length === 0) {
-    document.getElementById("todosAlunos").classList.add("hidden")
-    msgTela.textContent = ("Agradecemos sinceramente por ter lido todas as nossas mensagens. Obrigado!")
-  }
-  
-}
-
 const temas = [
   { tema: 0, logo: "src/fotos/Logo/L1.png", classe: "" },
   { tema: 1, logo: "src/fotos/Logo/L2.png", classe: "temaBranco" },
@@ -45,8 +33,6 @@ function limpar() {
     return filtrar !== remover;
   });
 
-  filtrarJ()
-
   document.getElementById("add_removerVoz").textContent = "||"
   document.getElementById("add_removerVoz").classList.remove("hidden")
   document.getElementById("todosAlunos").classList.add("bloqueiaLista")
@@ -63,7 +49,16 @@ function limpar() {
   Ester.style.backgroundColor = '';
   Sarah.style.backgroundColor = '';
   Edvan.style.backgroundColor = '';
-  
+
+  switch (jovens.length) {
+    case 8:
+      msgTela.textContent = ("Explore usando ᐁ e descubra perspectivas deixadas por cada jovem.")
+      break;
+
+    case 0:
+      document.getElementById("todosAlunos").classList.add("hidden")
+      msgTela.textContent = ("Agradecemos sinceramente por ter lido todas as nossas mensagens. Obrigado!")
+  }
 };
 
 function botao_fecharVisao() {
@@ -185,20 +180,21 @@ function textoEdvan() {
   textoPara_voz.setAttribute("src", "src/audio/Edvan_TEXTOparaVOZ.mp3")
 };
 
-function avancarC() {
-  container3.classList.add("hidden")
-  container.classList.remove("hidden")
-};
-
-function avancarC2() {
-  container.classList.add("hidden")
-  container2.classList.remove("hidden")
-};
-
-function avancarC3() {
-  container2.classList.add("hidden")
-  container3.classList.remove("hidden")
-};
+function avancar(event) {
+  switch (event.target.id) {
+    case "avancarC2":
+      container.classList.add("hidden")
+      container2.classList.remove("hidden")
+      break;
+    case "avancarC3":
+      container2.classList.add("hidden")
+      container3.classList.remove("hidden")
+      break;
+    case "avancarC":
+      container3.classList.add("hidden")
+      container.classList.remove("hidden")
+  }
+}
 
 comoFoifeito.addEventListener("click", function () {
   links.classList.toggle("hidden")

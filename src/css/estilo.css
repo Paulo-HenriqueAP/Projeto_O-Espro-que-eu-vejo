@@ -3,19 +3,18 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #1C2C4C;
+}
+
+* {
     font-family: 'Quicksand', sans-serif;
 }
 
 #trocarTema {
-    font-size: x-small;
-    position: fixed;
     left: 0;
-    height: 100px;
-    bottom: 10%;
-    width: min-content;
+    height: 50%;
     background-color: #343434;
     color: #F5F5F5;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .temaBranco {
@@ -32,8 +31,6 @@ body {
     background-color: #343434;
     color: #ffffff;
 }
-
-
 
 .temaBranco #avancarC,
 .temaBranco #avancarC2,
@@ -166,7 +163,6 @@ body {
     color: #bbbbbb;
 }
 
-
 .temaBranco .opacidade,
 .temaAmarelo .opacidade,
 .temaVerde .opacidade,
@@ -228,14 +224,12 @@ li {
 
 #textoTuto {
     font-size: small;
-    font-family: 'Lucida Sans Unicode';
     background-color: #ffffff;
-    border-radius: 10px;
     position: fixed;
     top: 1%;
     text-align: center;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 3px;
     pointer-events: none;
     right: 0%;
 }
@@ -289,18 +283,20 @@ li {
 
 #comoFoi {
     position: absolute;
-    left: 1%;
-    bottom: 2%;
+    left: 0%;
+    bottom: 0%;
     background-color: #FABA04;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: medium;
-    border-radius: 4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+
 }
 
 #links {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     width: 160px;
     height: max-content;
     background-color: #FABA04;

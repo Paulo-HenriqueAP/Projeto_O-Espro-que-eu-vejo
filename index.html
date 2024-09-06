@@ -24,21 +24,21 @@
         <li><button id="Paulo" onclick="textoPaulo()"><img id="PauloAPFoto" alt="Paulo" src="src/fotos/Paulo_FOTO.png"></button></li>
         <li></li><button id="Lucas" onclick="textoLucas()"><img id="LucasFoto" alt="Lucas" src="src/fotos/lucas_FOTO.png"></button></li>
         <li></li><button id="Guilherme" onclick="textoGuilherme()"><img id="GuilhermeFoto" alt="Guilherme" src="src/fotos/Guilherme_FOTO.png"></button></li>
-        <li><button id="avancarC2" onclick="avancarC2()">ᐁ</button></li>
+        <li><button id="avancarC2" onclick="avancar(event)">ᐁ</button></li>
     </ul>
 
     <ul id="container2" class="hidden" oncontextmenu="return false;">
         <li><button id="Kamila" onclick="textoKamila()"><img id="KamilaFoto" alt="Kamila" src="src/fotos/Kamila_FOTO.png"></button></li>
         <li><button id="Sandra" onclick="textoSandra()"><img id="SandraFoto" alt="Sandra" src="src/fotos/Sandra_FOTO.png"></button></li>
         <li><button id="Daniela" onclick="textoDaniela()"><img id="DanielaFoto" alt="Daniela" src="src/fotos/Daniela_FOTO.png"></button></li>
-        <li><button id="avancarC3" onclick="avancarC3()">ᐁ</button></li>
+        <li><button id="avancarC3" onclick="avancar(event)">ᐁ</button></li>
     </ul>
 
     <ul id="container3" class="hidden" oncontextmenu="return false;">
         <li><button id="Ester" onclick="textoEster()"><img id="EsterFoto" alt="Ester" src="src/fotos/Ester_FOTO.png"></button></li>
         <li><button id="Sarah" onclick="textoSarah()"><img id="SarahFoto" alt="Sarah" src="src/fotos/Sarah_FOTO.png"></button></li>
         <li><button id="Edvan" onclick="textoEdvan()"><img id="EdvanFoto" alt="Edvan" src="src/fotos/Edvan_FOTO.png"></button></li>
-        <li><button id="avancarC" onclick="avancarC()">ᐁ</button></li>
+        <li><button id="avancarC" onclick="avancar(event)">ᐁ</button></li>
 
     </ul>
 
@@ -78,11 +78,10 @@
 
     <a class="hidden" id="visaoEspro-link" href="" target="_blank" rel="noopener noreferrer"></a>
 
-    <a href="https://espro-app.taqe.com.br/#!/home" target="_blank" rel="noopener noreferrer" id="linkAprendiz">Quer se tornar um aprendiz? Clique aqui para saber como!</a>
+    <a href="https://espro-app.taqe.com.br/#!/home" target="_blank" rel="noopener noreferrer" id="linkAprendiz">Quer se tornar um aprendiz? Clique aqui!</a>
 
-    <button id="comoFoi">⚙️ Como foi feito?</button>
-    <div id="links" class="hidden">Usando:<button id="fecharLinks" onclick="fecharComofoi()">❌</button>
-        <button id="trocarTema" onclick="trocouTema()">⚙️ Tema </button>
+    <button id="comoFoi">⚙️</button>
+    <div id="links" class="hidden">Feito com:<button id="fecharLinks" onclick="fecharComofoi()">❌</button>
         <ul id="linksLista">
             <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" title="HTML, CSS e JS">VS Code</a></li>
             <li><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a></li>
@@ -90,9 +89,7 @@
             <li><a href="https://ttsfree.com/pt" target="_blank" rel="noopener noreferrer">Texto para voz</a>
             </li>
             <li title="Sites de Hex, fóruns, etc" style="color: #5e1f51; font-size: 13px;">Entre outros</li>
-            <p>
-                <li><a href="https://1drv.ms/f/s!AjyXhFdwcJjrgP45uk5wgN2FcOLpqQ?e=nx4sO1" style="font-size: 14px;" target="_blank" rel="noopener noreferrer">VER PRINTS</a></li>
-            </p>
+            <button id="trocarTema" onclick="trocouTema()">⚙️ Tema </button>
         </ul>
     </div>
     <script src="src/js/index.js"></script>
